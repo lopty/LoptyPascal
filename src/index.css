@@ -5,11 +5,11 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", serif;
   
-  --color-luxury-beige: #050505;
-  --color-luxury-obsidian: #0A0A0B;
+  --color-luxury-beige: #FFFFFF;
+  --color-luxury-obsidian: #F8F8F8;
   --color-luxury-accent: #FF6B00;
-  --color-luxury-white: #121212;
-  --color-luxury-text: #F5F5F5;
+  --color-luxury-white: #FFFFFF;
+  --color-luxury-text: #111111;
 }
 
 @layer base {
