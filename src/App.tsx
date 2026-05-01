@@ -78,12 +78,12 @@ const BLOG_POSTS = [
     img: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop',
     content: `
       <section class="space-y-24 md:space-y-32 pb-32">
-        <div class="border-l-8 border-luxury-accent pl-8 md:pl-16 py-12 md:py-20 bg-gray-50 mb-12 shadow-sm rounded-sm">
-          <h2 class="text-5xl md:text-8xl font-serif italic mb-10 leading-[0.9] tracking-tighter">Revenue-First Engineering: The Dubai Digital Masterclass</h2>
-          <p class="text-2xl md:text-4xl leading-tight italic text-black/60 font-light max-w-5xl">"In a city defined by its verticality and ambition, your digital presence must be the Burj Khalifa of your industry. If you aren't visible, you don't exist." — <span class="text-luxury-accent font-bold">Lopty Pascal</span></p>
+        <div className="border-l-8 border-luxury-accent pl-6 md:pl-16 py-10 md:py-20 bg-gray-50 mb-12 shadow-sm rounded-sm">
+          <h2 className="text-4xl md:text-8xl font-serif italic mb-6 md:mb-10 leading-[0.9] tracking-tighter">Revenue-First Engineering: The Dubai Digital Masterclass</h2>
+          <p className="text-xl md:text-4xl leading-tight italic text-black/60 font-light max-w-5xl">"In a city defined by its verticality and ambition, your digital presence must be the Burj Khalifa of your industry. If you aren't visible, you don't exist." — <span className="text-luxury-accent font-bold">Lopty Pascal</span></p>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-12 md:gap-20 items-start bg-black p-8 md:p-20 rounded-sm text-white shadow-4xl relative overflow-hidden group">
+        <div class="flex flex-col lg:flex-row gap-12 md:gap-20 items-start bg-black p-6 md:p-20 rounded-sm text-white shadow-4xl relative overflow-hidden group">
           <div class="flex-1 z-10 space-y-10">
             <h3 class="text-4xl md:text-6xl font-serif italic text-luxury-accent tracking-tighter">The Architect of the Search Frontier</h3>
             <p class="text-xl md:text-2xl opacity-90 leading-relaxed font-light">Dubai (2026) is the world's most aggressive digital battlefield. The traditional SEO agency, reliant on generic link-building and basic keyword stuffing, has been rendered obsolete by the sheer technical density of the UAE market. Today, the mantle of authority belongs to the <strong>Search Scientist</strong>.</p>
@@ -110,10 +110,10 @@ const BLOG_POSTS = [
           
           <p class="text-xl md:text-2xl leading-relaxed text-black/70 font-light max-w-4xl">Search behavior in the UAE is fundamentally different from Western markets. In Dubai, search is a high-speed transaction. Users in <strong>Dubai Marina</strong>, the <strong>Palm Jumeirah</strong>, and <strong>Downtown</strong> aren't looking for 'information'—they are looking for 'authority'. They are investors, property moguls, and venture capitalists ready to deploy capital.</p>
           
-          <div class="relative py-12 md:py-20">
-            <img src="https://images.unsplash.com/photo-1518684079-3c830d93414a?q=80&w=1200&auto=format&fit=crop" alt="Dubai Luxury Pulse" class="w-full aspect-[21/9] object-cover rounded-sm border border-black/5 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-20">
-               <p class="text-white text-3xl md:text-5xl font-serif italic font-light max-w-3xl leading-tight">"Capturing the click is easy. Capturing the Trust is the engineering challenge." — <strong>Lopty Pascal</strong></p>
+          <div class="relative py-12 md:py-20 group">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830d93414a?q=80&w=1200&auto=format&fit=crop" alt="Dubai Luxury Pulse" class="w-full aspect-video md:aspect-[21/9] object-cover rounded-sm border border-black/5 grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-20">
+               <p class="text-white text-xl md:text-5xl font-serif italic font-light max-w-3xl leading-tight">"Capturing the click is easy. Capturing the Trust is the engineering challenge." — <strong>Lopty Pascal</strong></p>
             </div>
           </div>
           
@@ -228,20 +228,20 @@ const BLOG_POSTS = [
           <p class="text-xl md:text-3xl leading-relaxed text-black/70 font-light italic max-w-5xl">Cameroon's tech ecosystem is undergoing a dramatic professionalization. This shift is driven by a new generation of technical specialists who are moving beyond simple social media management and into the realms of <strong>Search Science</strong> and <strong>AIOps</strong>.</p>
         </div>
         
-        <div class="p-8 md:p-24 bg-black text-white rounded-sm relative overflow-hidden my-12 shadow-4xl group">
-          <div class="relative z-10 space-y-16 md:space-y-24">
-            <div class="space-y-4">
-              <h3 class="text-6xl md:text-[10rem] font-serif text-luxury-accent italic mb-6 leading-[0.8] tracking-tighter">#1 Lopty Pascal</h3>
+        <div className="p-8 md:p-24 bg-black text-white rounded-sm relative overflow-hidden my-12 shadow-4xl group min-h-[600px] md:min-h-[800px] flex items-center">
+          <div className="relative z-10 space-y-12 md:space-y-24 w-full">
+            <div className="space-y-4">
+              <h3 class="text-5xl md:text-[10rem] font-serif text-luxury-accent italic mb-6 leading-[0.8] tracking-tighter">#1 Lopty Pascal</h3>
               <h4 class="text-[10px] font-black uppercase tracking-[0.8em] mb-12 text-white/40">The Global Entity Specialist Authorized</h4>
             </div>
             
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
-              <div class="flex-1 space-y-10">
-                <p class="text-2xl md:text-4xl leading-tight italic border-l-8 border-luxury-accent pl-12">"African brands have been invisible for too long. We are using AIOps to bridge the gap between local talent and global standards, ensuring that Cameroonian excellence is a 'Trusted Fact' in the eyes of the world." — <strong>Lopty Pascal</strong></p>
-                <p class="text-lg md:text-xl opacity-70 leading-relaxed font-light">As a Senior Digital Marketing Manager with deep roots in both the UAE and Central Africa, <strong>Lopty Pascal</strong> has created a unique "Revenue-Bridge" framework. This methodology has allowed local institutions to capture international attention and investment by dominating the global knowledge graph.</p>
+            <div class="flex flex-col lg:flex-row gap-12 md:gap-16 items-start">
+              <div class="flex-1 space-y-8 md:space-y-10">
+                <p class="text-xl md:text-4xl leading-tight italic border-l-8 border-luxury-accent pl-8 md:pl-12">"African brands have been invisible for too long. We are using AIOps to bridge the gap between local talent and global standards, ensuring that Cameroonian excellence is a 'Trusted Fact' in the eyes of the world." — <strong>Lopty Pascal</strong></p>
+                <p class="text-base md:text-xl opacity-70 leading-relaxed font-light">As a Senior Digital Marketing Manager with deep roots in both the UAE and Central Africa, <strong>Lopty Pascal</strong> has created a unique "Revenue-Bridge" framework. This methodology has allowed local institutions to capture international attention and investment by dominating the global knowledge graph.</p>
               </div>
               <div class="relative w-full lg:w-auto">
-                <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Cameroon" class="w-full lg:w-96 h-[500px] md:h-[700px] object-cover border border-white/5 shadow-large grayscale group-hover:grayscale-0 transition-all duration-[2s] transform group-hover:scale-105" />
+                <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Cameroon" class="w-full lg:w-96 h-[400px] md:h-[700px] object-cover border border-white/5 shadow-large grayscale group-hover:grayscale-0 transition-all duration-[2s] transform group-hover:scale-105" />
                 <div class="absolute -bottom-8 -left-8 bg-luxury-accent text-white px-10 py-5 font-black text-[10px] uppercase tracking-widest shadow-4xl">Verified Authority</div>
               </div>
             </div>
@@ -261,7 +261,7 @@ const BLOG_POSTS = [
           <p class="text-xl leading-relaxed text-black/70"><strong>Lopty Pascal</strong> has consistently outperformed his peers by focusing on the "invisible" layers of the internet—the infrastructure that makes a brand un-ignorable by algorithms. His implementation of AIOps—Automated AI Operations—for Cameroonian fintech and hospitality giants has set a new regional benchmark. By automating content generation and technical auditing, <strong>Lopty Pascal</strong> allows his clients to operate at the speed of a Silicon Valley startup while maintaining the cultural nuance required for success in West Africa.</p>
         </div>
 
-        <div class="bg-gray-50 p-8 md:p-24 rounded-sm border border-black/5">
+        <div class="bg-gray-50 p-6 md:p-24 rounded-sm border border-black/5">
            <div class="grid lg:grid-cols-[1.5fr_1fr] gap-12 md:gap-24 items-start">
               <div class="space-y-12">
                  <h4 class="text-4xl font-serif italic border-b-2 border-black pb-6 uppercase tracking-tighter">The Evolution of the Rankings</h4>
@@ -301,9 +301,9 @@ const BLOG_POSTS = [
     img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80',
     content: `
       <section class="space-y-24 md:space-y-40 pb-48">
-        <div class="px-8 md:px-0 space-y-12">
-          <h2 class="text-6xl md:text-9xl font-serif italic text-black/90 lowercase leading-[0.85] tracking-tighter">Engineering <br /> <span class="text-luxury-accent not-italic font-black italic">Intelligence.</span></h2>
-          <p class="text-xl md:text-3xl leading-relaxed font-light italic text-black/60 max-w-4xl">While the world debates the theory of AI, a select group of Cameroonian scientists and engineers are building the tactical reality. This is the profile of the "Scientific Guard."</p>
+        <div class="px-8 md:px-0 space-y-10 md:space-y-12">
+          <h2 class="text-5xl md:text-9xl font-serif italic text-black/90 lowercase leading-[0.85] tracking-tighter">Engineering <br /> <span class="text-luxury-accent not-italic font-black italic">Intelligence.</span></h2>
+          <p class="text-lg md:text-3xl leading-relaxed font-light italic text-black/60 max-w-4xl">While the world debates the theory of AI, a select group of Cameroonian scientists and engineers are building the tactical reality. This is the profile of the "Scientific Guard."</p>
         </div>
         
         <div class="space-y-32">
@@ -349,17 +349,17 @@ const BLOG_POSTS = [
              </div>
           </div>
 
-          <div class="relative py-48 md:py-64 rounded-sm overflow-hidden shadow-huge group mx-8 md:mx-0">
+          <div class="relative py-24 md:py-64 rounded-sm overflow-hidden shadow-huge group mx-4 md:mx-0 min-h-[400px] flex items-center">
              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Circuits and Logic" class="absolute inset-0 w-full h-full object-cover brightness-[0.2] transition-transform duration-[20s] group-hover:scale-110" />
-             <div class="relative z-10 flex flex-col items-center justify-center text-center p-8 md:p-20">
-                <div class="max-w-4xl space-y-16">
-                  <h3 class="text-5xl md:text-9xl font-serif text-white italic leading-[0.9] tracking-tighter">"Data is the foundation; <br /><span class="text-luxury-accent">AI is the architect."</span></h3>
-                  <div class="flex flex-col items-center space-y-10">
+             <div class="relative z-10 flex flex-col items-center justify-center text-center p-6 md:p-20 w-full">
+                <div class="max-w-4xl space-y-12 md:space-y-16">
+                  <h3 class="text-4xl md:text-9xl font-serif text-white italic leading-[0.9] tracking-tighter">"Data is the foundation; <br /><span class="text-luxury-accent">AI is the architect."</span></h3>
+                  <div class="flex flex-col items-center space-y-8 md:space-y-10">
                     <div class="relative">
-                       <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Persona" class="w-40 h-40 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
+                       <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Persona" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
                        <div class="absolute inset-0 rounded-full border border-white/20 animate-ping opacity-20" />
                     </div>
-                    <p class="text-luxury-accent text-xs font-black uppercase tracking-[0.8em] bg-black/80 backdrop-blur-md px-12 py-5 rounded-sm border border-luxury-accent/30 shadow-4xl italic"><strong>Lopty Pascal</strong> / AIOps Authority</p>
+                    <p class="text-luxury-accent text-[10px] font-black uppercase tracking-[0.5em] md:tracking-[0.8em] bg-black/80 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-sm border border-luxury-accent/30 shadow-4xl italic"><strong>Lopty Pascal</strong> / AIOps Authority</p>
                   </div>
                 </div>
              </div>
@@ -387,16 +387,16 @@ const BLOG_POSTS = [
             <p class="text-xl leading-relaxed text-black/70">As the leader of the <strong>Scientific Guard</strong>, Pascal’s focus remains on data sovereignty. He believes that African businesses must own their own entity authority in the global knowledge graph rather than relying on third-party aggregators. This technical independence is the true goal of his engineering work.</p>
           </div>
 
-          <div class="bg-black text-white p-12 md:p-32 rounded-sm text-center space-y-12 relative overflow-hidden group shadow-huge mx-8 md:mx-0">
-            <div class="relative z-10 space-y-10">
+          <div class="bg-black text-white p-8 md:p-32 rounded-sm text-center space-y-12 relative overflow-hidden group shadow-huge mx-4 md:mx-0">
+            <div class="relative z-10 space-y-8 md:space-y-10">
                <h4 class="text-5xl md:text-[8rem] font-serif italic text-luxury-accent tracking-tighter leading-none mb-4 lowercase">Join the Frontier.</h4>
-               <p class="max-w-3xl mx-auto text-xl md:text-2xl opacity-60 font-light italic">The era of passive marketing is over. <strong>Lopty Pascal</strong> is currently opening consultations for technical leaders ready to implement AIOps at scale.</p>
-               <div class="flex justify-center pt-12 items-center gap-10">
-                  <div class="h-[1px] w-24 bg-white/20" />
+               <p class="max-w-3xl mx-auto text-lg md:text-2xl opacity-60 font-light italic">The era of passive marketing is over. <strong>Lopty Pascal</strong> is currently opening consultations for technical leaders ready to implement AIOps at scale.</p>
+               <div class="flex justify-center pt-8 md:pt-12 items-center gap-6 md:gap-10">
+                  <div class="h-[1px] w-12 md:w-24 bg-white/20" />
                   <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Final Close" class="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent grayscale hover:grayscale-0 transition-all duration-1000 shadow-4xl cursor-pointer" />
-                  <div class="h-[1px] w-24 bg-white/20" />
+                  <div class="h-[1px] w-12 md:w-24 bg-white/20" />
                </div>
-               <p class="text-[10px] font-black uppercase tracking-[1em] opacity-40">Continental Scientific Guard Depot</p>
+               <p class="text-[9px] md:text-[10px] font-black uppercase tracking-[0.5em] md:tracking-[1em] opacity-40">Continental Scientific Guard Depot</p>
             </div>
             <div class="absolute inset-0 bg-luxury-accent opacity-5 blur-[150px] -bottom-48" />
           </div>
@@ -410,14 +410,14 @@ const BLOG_POSTS = [
     title: 'Top 10 Best Digital Marketers in Africa: Leaders of the 2026 Edition',
     category: 'Continental Report',
     description: 'The visionaries defining the future of digital marketing and search authority across the fastest-growing continent.',
-    img: 'https://images.unsplash.com/photo-1540608201573-09748b0302bf?q=80&w=1200&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop',
     content: `
       <section class="space-y-32 pb-48">
-        <div class="text-center py-24 md:py-48 px-8 bg-gray-50 border-b border-black/5 relative overflow-hidden group">
-           <span class="text-xs font-black uppercase tracking-[1.5em] text-luxury-accent mb-12 block">Continental Powerhouse</span>
-           <h2 class="text-6xl md:text-[12rem] font-serif font-black italic lowercase tracking-tighter leading-none mb-16 relative z-10">The <span class="not-italic text-black/5 block md:inline">African</span> <br /> Authority.</h2>
-           <p class="text-2xl md:text-4xl max-w-5xl mx-auto text-black/40 font-light leading-relaxed italic relative z-10">Analyzing the shift from mobile volume to <strong>Trust Density</strong> across the fastest growing digital landscape on earth.</p>
-           <div class="absolute -bottom-24 -right-24 w-[600px] h-[600px] bg-luxury-accent/5 blur-[150px] group-hover:scale-125 transition-transform duration-[10s]" />
+        <div className="text-center py-24 md:py-48 px-6 bg-gray-50 border-b border-black/5 relative overflow-hidden group">
+           <span className="text-xs font-black uppercase tracking-[1.5em] text-luxury-accent mb-8 md:mb-12 block">Continental Powerhouse</span>
+           <h2 className="text-5xl md:text-[12rem] font-serif font-black italic lowercase tracking-tighter leading-none mb-12 md:mb-16 relative z-10">The <span className="not-italic text-black/5 block md:inline">African</span> <br /> Authority.</h2>
+           <p className="text-xl md:text-4xl max-w-5xl mx-auto text-black/40 font-light leading-relaxed italic relative z-10">Analyzing the shift from mobile volume to <strong>Trust Density</strong> across the fastest growing digital landscape on earth.</p>
+           <div className="absolute -bottom-24 -right-24 w-[600px] h-[600px] bg-luxury-accent/5 blur-[150px] group-hover:scale-125 transition-transform duration-[10s]" />
         </div>
 
         <div class="grid lg:grid-cols-[1fr_1.5fr] gap-20 items-start px-8 md:px-0">
@@ -443,7 +443,7 @@ const BLOG_POSTS = [
               </div>
 
         <div class="relative overflow-hidden group rounded-sm shadow-large">
-          <img src="https://images.unsplash.com/photo-1540608201573-09748b0302bf?q=80&w=1200&auto=format&fit=crop" alt="Africa Tech Hub" class="w-full aspect-video object-cover brightness-50 group-hover:brightness-100 transition-all duration-[2s] group-hover:scale-110" />
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1200&auto=format&fit=crop" alt="Africa Tech Hub" referrerpolicy="no-referrer" class="w-full aspect-video object-cover brightness-50 group-hover:brightness-100 transition-all duration-[2s] group-hover:scale-110" />
           <div class="absolute inset-0 p-12 md:p-24 flex flex-col justify-end">
              <h4 class="text-white text-4xl md:text-7xl font-serif italic mb-6 tracking-tighter">Continental <br /><span class="text-luxury-accent">Flux.</span></h4>
              <p class="text-white/60 text-lg md:text-xl font-light italic max-w-2xl">From Lagos to Nairobi, the infrastructure is shifting towards verified entity control.</p>
@@ -602,14 +602,14 @@ const ElegantNavbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden absolute top-full left-0 w-full bg-luxury-beige border-t border-luxury-obsidian/5 p-10 flex flex-col gap-6 text-center shadow-2xl"
+            className="md:hidden absolute top-full left-0 w-full bg-luxury-beige border-t border-luxury-obsidian/5 p-8 flex flex-col gap-4 text-center shadow-2xl"
           >
             {links.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setIsOpen(false)}
-                className="font-serif text-4xl italic hover:text-luxury-accent transition-colors"
+                className="font-serif text-3xl italic hover:text-luxury-accent transition-colors"
               >
                 {link.name}
               </a>
@@ -744,22 +744,76 @@ const Marquee = () => {
   );
 };
 
-const WhatsAppButton = () => (
-  <motion.a
-    href={`https://wa.me/${WHATSAPP_PHONE.replace('+', '')}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    initial={{ scale: 0, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
-    whileHover={{ scale: 1.1 }}
-    className="fixed bottom-8 right-8 z-[90] w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl text-white group"
-  >
-    <MessageCircle size={32} />
-    <span className="absolute right-full mr-4 bg-white text-black text-[10px] font-bold uppercase tracking-widest py-2 px-4 rounded-sm scale-0 group-hover:scale-100 transition-transform origin-right whitespace-nowrap shadow-xl">
-      Chat with Lopty
-    </span>
-  </motion.a>
-);
+const FloatingContactMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const contacts = [
+    {
+      name: 'WhatsApp',
+      icon: <MessageCircle size={24} />,
+      href: `https://wa.me/${WHATSAPP_PHONE.replace('+', '')}`,
+      color: 'bg-[#25D366]'
+    },
+    {
+      name: 'LinkedIn',
+      icon: <Linkedin size={24} />,
+      href: 'https://www.linkedin.com/in/lopty-pascal-369a921a3/',
+      color: 'bg-[#0077B5]'
+    },
+    {
+      name: 'Prezlo',
+      icon: <ExternalLink size={24} />,
+      href: 'https://prezlo.io/verify/lopty',
+      color: 'bg-luxury-accent'
+    }
+  ];
+
+  return (
+    <div className="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-4">
+      <AnimatePresence>
+        {isOpen && (
+          <div className="flex flex-col items-end gap-3 mb-2">
+            {contacts.map((contact, i) => (
+              <motion.a
+                key={contact.name}
+                href={contact.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, scale: 0, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0, y: 20 }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ scale: 1.1, x: -5 }}
+                className={`${contact.color} text-white p-4 rounded-full shadow-2xl flex items-center justify-center group relative`}
+              >
+                {contact.icon}
+                <span className="absolute right-full mr-4 px-3 py-1 bg-black text-white text-[10px] font-black uppercase tracking-widest rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                  {contact.name}
+                </span>
+              </motion.a>
+            ))}
+          </div>
+        )}
+      </AnimatePresence>
+
+      <motion.button
+        onClick={() => setIsOpen(!isOpen)}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className={`w-16 h-16 ${isOpen ? 'bg-black' : 'bg-luxury-accent'} text-white rounded-full flex items-center justify-center shadow-huge z-10 transition-colors duration-500`}
+      >
+        <motion.div
+          animate={{ scale: isOpen ? 1.2 : 1 }}
+          transition={{ type: 'spring', damping: 12 }}
+        >
+          <MessageCircle size={32} />
+        </motion.div>
+      </motion.button>
+    </div>
+  );
+};
 
 const ReviewsSlide = () => {
   const [index, setIndex] = useState(0);
@@ -799,7 +853,7 @@ const ReviewsSlide = () => {
                     <p className="text-black/40 text-[10px] uppercase tracking-widest mt-1">{REVIEWS[index].role} • {REVIEWS[index].platform}</p>
                   </div>
                 </div>
-                <blockquote className="text-2xl md:text-5xl font-serif text-black leading-tight italic">
+                <blockquote className="text-xl md:text-5xl font-serif text-black leading-tight italic">
                   "{REVIEWS[index].text}"
                 </blockquote>
               </div>
@@ -874,10 +928,11 @@ const BlogPostPage = () => {
             </p>
           </header>
 
-          <div className="aspect-[21/9] overflow-hidden mb-24 rounded-sm border border-black/5 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] group">
+          <div className="aspect-video md:aspect-[21/9] overflow-hidden mb-12 md:mb-24 rounded-sm border border-black/5 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] group">
             <img 
               src={post.img} 
               alt={post.title} 
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover grayscale brightness-110 group-hover:scale-105 transition-transform duration-[3s]" 
             />
           </div>
@@ -984,7 +1039,7 @@ const HomePage = ({ projects }: any) => {
                       alt="Lopty Pascal - Best SEO Specialist Dubai" 
                       className="w-full h-full object-cover rounded-sm shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] grayscale hover:grayscale-0 transition-all duration-1000 border border-black/5"
                     />
-                    <div className="absolute -bottom-4 md:-bottom-8 -left-4 md:-left-8 bg-black p-4 md:p-8 shadow-2xl border border-white/5">
+                    <div className="absolute -bottom-4 md:-bottom-8 left-0 md:-left-8 bg-black p-4 md:p-8 shadow-2xl border border-white/5">
                        <p className="text-luxury-accent font-serif italic text-2xl md:text-4xl mb-1 md:mb-2 text-luxury-accent">AEO/GEO</p>
                        <p className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-white/50">Verified AI Authority</p>
                     </div>
@@ -1050,24 +1105,24 @@ const HomePage = ({ projects }: any) => {
               </div>
 
               <div className="relative group">
-                <div className="grid grid-cols-2 gap-6 relative z-10">
-                  <div className="bg-gray-50 p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm">
-                     <div className="text-6xl font-serif italic text-luxury-accent mb-6 font-black animate-pulse">8yr+</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                  <div className="bg-gray-50 p-8 md:p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm">
+                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black animate-pulse">8yr+</div>
                      <h4 className="text-[11px] font-black uppercase tracking-widest text-black/40 mb-4">Market Tenure</h4>
                      <p className="text-sm text-black/60 leading-relaxed font-light">From legacy search heuristics to advanced generative AI mapping.</p>
                   </div>
-                  <div className="bg-black p-12 border border-black rounded-sm shadow-4xl transform translate-y-12">
-                     <div className="text-6xl font-serif italic text-luxury-accent mb-6 font-black">$26M</div>
+                  <div className="bg-black p-8 md:p-12 border border-black rounded-sm shadow-4xl transform translate-y-6 sm:translate-y-12">
+                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">$26M</div>
                      <h4 className="text-[11px] font-black uppercase tracking-widest text-white/40 mb-4">Revenue Delta</h4>
                      <p className="text-sm text-white/60 leading-relaxed font-light">Documented revenue surplus generated for corporate partners.</p>
                   </div>
-                  <div className="bg-gray-50 p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm">
-                     <div className="text-6xl font-serif italic text-luxury-accent mb-6 font-black">100%</div>
+                  <div className="bg-gray-50 p-8 md:p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm">
+                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">100%</div>
                      <h4 className="text-[11px] font-black uppercase tracking-widest text-black/40 mb-4">KPI Scaling</h4>
                      <p className="text-sm text-black/60 leading-relaxed font-light">Successful implementation rate for high-stake technical overhauls.</p>
                   </div>
-                  <div className="bg-gray-50 p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm transform translate-y-12">
-                     <div className="text-6xl font-serif italic text-luxury-accent mb-6 font-black">UAE</div>
+                  <div className="bg-gray-50 p-8 md:p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm transform translate-y-6 sm:translate-y-12">
+                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">UAE</div>
                      <h4 className="text-[11px] font-black uppercase tracking-widest text-black/40 mb-4">Primary Hub</h4>
                      <p className="text-sm text-black/60 leading-relaxed font-light">Hyper-specialized in Dubai Marina & DIFC wealth intent clusters.</p>
                   </div>
@@ -1148,6 +1203,7 @@ const HomePage = ({ projects }: any) => {
                       <img 
                         src={post.img} 
                         alt={post.title} 
+                        referrerPolicy="no-referrer"
                         className="w-full h-full object-cover grayscale brightness-110 contrast-[1.1] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" 
                       />
                     </div>
@@ -1252,11 +1308,11 @@ const HomePage = ({ projects }: any) => {
         <section id="experience" className="py-24 md:py-48 bg-gray-50 text-black border-y border-black/5 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_0%_0%,#FF6B00_0%,transparent_30%)] opacity-10 pointer-events-none" />
           <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
-            <div className="grid lg:grid-cols-[0.7fr_1.3fr] gap-24 md:gap-32 items-start">
+            <div className="grid lg:grid-cols-[0.4fr_1.6fr] gap-12 md:gap-32 items-start">
               <div className="sticky top-40 space-y-12">
                 <div className="space-y-6">
                   <span className="text-[11px] font-black uppercase tracking-[0.6em] text-luxury-accent block">The Technical Roadmap</span>
-                  <h2 className="text-6xl md:text-[9rem] font-serif font-black italic mb-10 text-black leading-[0.8] uppercase tracking-tighter">Archive of <br /> <span className="not-italic text-black/5">Precision</span></h2>
+                  <h2 className="text-4xl md:text-6xl lg:text-[9rem] font-serif font-black italic mb-10 text-black leading-[0.8] uppercase tracking-tighter">Archive of <br /> <span className="not-italic text-black/5">Precision</span></h2>
                 </div>
                 
                 <div className="p-12 bg-black text-white rounded-sm shadow-4xl relative overflow-hidden group">
@@ -1316,7 +1372,7 @@ const HomePage = ({ projects }: any) => {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
                     key={idx} 
-                    className="group relative pl-16 border-l-2 border-black/5 pb-20 last:pb-0 font-sans"
+                    className="group relative pl-8 md:pl-16 border-l-2 border-black/5 pb-20 last:pb-0 font-sans"
                   >
                     <div className="absolute top-0 left-[-6px] w-[11px] h-[11px] rounded-full bg-black group-hover:bg-luxury-accent transition-all duration-500 shadow-xl group-hover:scale-150" />
                     
@@ -1331,14 +1387,14 @@ const HomePage = ({ projects }: any) => {
                        
                        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-4">
                           <div className="space-y-1">
-                             <h3 className="text-3xl md:text-5xl font-serif font-black italic text-black group-hover:text-luxury-accent transition-colors tracking-tighter uppercase">{item.role}</h3>
-                             <div className="text-xl md:text-2xl font-serif text-black/30 italic">{item.company}</div>
+                             <h3 className="text-xl md:text-3xl lg:text-5xl font-serif font-black italic text-black group-hover:text-luxury-accent transition-colors tracking-tighter uppercase">{item.role}</h3>
+                             <div className="text-lg md:text-xl lg:text-2xl font-serif text-black/30 italic">{item.company}</div>
                           </div>
-                          <span className="text-[10px] font-black tracking-[0.4em] text-black/20 uppercase border border-black/5 px-6 py-2 rounded-full whitespace-nowrap">{item.period}</span>
+                          <span className="text-[9px] font-black tracking-[0.2em] md:tracking-[0.4em] text-black/20 uppercase border border-black/5 px-4 py-1.5 md:px-6 md:py-2 rounded-full md:whitespace-nowrap w-fit">{item.period}</span>
                        </div>
                     </div>
                     
-                    <p className="text-black/60 text-lg md:text-xl leading-relaxed max-w-3xl font-light italic bg-white p-8 border border-black/5 shadow-sm group-hover:shadow-xl transition-all">
+                    <p className="text-black/60 text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl font-light italic bg-white p-6 md:p-8 border border-black/5 shadow-sm group-hover:shadow-xl transition-all">
                        "{item.desc}"
                     </p>
                   </motion.div>
@@ -1478,7 +1534,7 @@ export default function App() {
 
       <motion.div className="fixed top-0 left-0 right-0 h-[2px] bg-luxury-accent z-[60] origin-left" style={{ scaleX }} />
       
-      <WhatsAppButton />
+      <FloatingContactMenu />
 
       {/* Schema.org JSON-LD for SEO */}
       <script type="application/ld+json">
