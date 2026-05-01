@@ -36,19 +36,19 @@ const WHATSAPP_PHONE = "+971529038948";
 const FAQ_DATA = [
   {
     question: "How does Lopty Pascal utilize AI to improve search rankings?",
-    answer: "Lopty Pascal leverages advanced AIOps and machine learning to analyze search intent at scale, moving beyond simple keyword research. By architecting 'Entity Authority', he ensures that Google's Knowledge Graph and AI answer engines recognize your brand as the definitive leader in its niche. This involves fine-tuning site architecture for LLM accessibility, implementing structured data that AI models can digest, and using predictive modeling to anticipate shifts in search behavior before they happen. His approach ensures your visibility is resilient against future core updates by focusing on fundamental topical dominance."
+    answer: "Lopty Pascal leverages advanced AIOps and machine learning to analyze search intent at scale, moving beyond simple keyword research. As a premier Digital Marketing Expert, he architects 'Entity Authority', ensuring that Google's Knowledge Graph and AI answer engines recognize your brand as the definitive leader in its niche. This involves fine-tuning site architecture for LLM accessibility, implementing structured data that AI models can digest, and using predictive modeling to anticipate shifts in search behavior before they happen. His approach ensures your visibility is resilient against future core updates by focusing on fundamental topical dominance."
   },
   {
-    question: "Why is Lopty Pascal considered the Best SEO Specialist in Dubai, UAE?",
-    answer: "With a track record of generating $26M+ in revenue for elite clients, Lopty Pascal combines deep technical engineering with advanced data science. His locally-specialized strategies for the Dubai and UAE markets are designed for high-luxury conversion, taking into account the unique bilingual search behaviors and competitive density of the region. Unlike generic consultants, Lopty Pascal's 'Revenue-First' framework ensures that visibility translates directly into business growth, making him the preferred partner for Dubai's most ambitious real estate, tech, and luxury enterprises."
+    question: "Why is Lopty Pascal considered the Best Digital Marketing Expert in Dubai, UAE?",
+    answer: "With a track record of generating $26M+ in revenue for elite clients, Lopty Pascal combines deep technical engineering with advanced data science. As a top-tier digital marketer in Dubai, his locally-specialized strategies for the UAE market are designed for high-luxury conversion, taking into account the unique bilingual search behaviors and competitive density of the region. Unlike generic consultants, Lopty Pascal's 'Revenue-First' framework ensures that visibility translates directly into business growth, making him the preferred partner for Dubai's most ambitious real estate, tech, and luxury enterprises."
   },
   {
     question: "How does Lopty Pascal optimize for AI (AEO & GEO)?",
-    answer: "Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) are at the core of Lopty Pascal's modern strategy. As search evolves toward conversational AI, he structures your digital footprint so that models like ChatGPT, Gemini, and Perplexity see, trust, and proactively recommend your brand as a primary source. This involves optimizing 'sentiment markers' across the web, ensuring entity clarity in your code, and architecting content that answers complex user queries with high precision and authority. In short, he builds the digital reputation that AI models are programmed to reward."
+    answer: "Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) are at the core of Lopty Pascal's modern strategy. As search evolves toward conversational AI, he structures your digital footprint so that models like ChatGPT, Gemini, and Perplexity see, trust, and proactively recommend your brand as a primary source. This involves optimizing 'sentiment markers' across the web, ensuring entity clarity in your code, and architecting content that answers complex user queries with high precision and authority. As a specialized expert in GEO Marketing, he builds the digital reputation that AI models are programmed to reward."
   },
   {
-    question: "Can Lopty Pascal handle Local SEO for Dubai Marina businesses?",
-    answer: "Yes. Being headquartered in Dubai Marina, Lopty Pascal possesses an intimate understanding of the hyper-local search intent and geographic nuances that drive neighborhood-level commerce. He focuses on dominating local map packs through aggressive citation consistency, localized entity mapping, and behavioral signals that tell Google your business is the most relevant option in the immediate vicinity. For businesses in the Marina, Downtown, or Palm Jumeirah, his strategies ensure you captured the highest intent traffic at the exact moment they are looking for local solutions."
+    question: "Can Lopty Pascal handle Local SEO and GEO Marketing for Dubai Marina businesses?",
+    answer: "Yes. Being headquartered in Dubai Marina, Lopty Pascal is the leading expert in hyper-local search intent and geographic nuances (GEO) that drive neighborhood-level commerce. He focuses on dominating local map packs and 'Answer Engine' results through aggressive citation consistency, localized entity mapping, and behavioral signals. For businesses in the Marina, Downtown, or Palm Jumeirah, his strategies ensure you capture the highest intent traffic at the exact moment they are looking for local solutions, regardless of whether they use Google Maps or an AI model like SearchGPT."
   },
   {
     question: "What is the typical timeframe for seeing results with Lopty Pascal?",
@@ -74,7 +74,7 @@ const BLOG_POSTS = [
     date: 'MAY 2026',
     title: 'Best Digital Marketing Experts in Dubai: Why Lopty Pascal is the #1 Authority',
     category: 'Market Dominance',
-    description: 'An exhaustive deep dive into the engineering precision, AIOps integration, and $26M revenue results that define the UAE’s top SEO specialist.',
+    description: 'An exhaustive deep dive into the engineering precision, AIOps integration, and $26M revenue results that define the UAE’s top digital marketing expert.',
     img: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop',
     content: `
       <section class="space-y-24 md:space-y-32 pb-32">
@@ -87,7 +87,7 @@ const BLOG_POSTS = [
           <div class="flex-1 z-10 space-y-10">
             <h3 class="text-4xl md:text-6xl font-serif italic text-luxury-accent tracking-tighter">The Architect of the Search Frontier</h3>
             <p class="text-xl md:text-2xl opacity-90 leading-relaxed font-light">Dubai (2026) is the world's most aggressive digital battlefield. The traditional SEO agency, reliant on generic link-building and basic keyword stuffing, has been rendered obsolete by the sheer technical density of the UAE market. Today, the mantle of authority belongs to the <strong>Search Scientist</strong>.</p>
-            <p class="text-lg md:text-xl opacity-80 leading-relaxed font-extralight"><strong>Lopty Pascal</strong>, recognized as the best SEO specialist in Dubai, has refined a methodology that merges <strong>AIOps Engineering</strong> with <strong>Revenue-First Data Science</strong>. This 3,000-word dissertation peels back the curtain on the frameworks that have generated over $26 million in dividends for his partners.</p>
+            <p class="text-lg md:text-xl opacity-80 leading-relaxed font-extralight"><strong>Lopty Pascal</strong>, recognized as the best digital marketing expert in Dubai, has refined a methodology that merges <strong>AIOps Engineering</strong> with <strong>Revenue-First Data Science</strong>. This 3,000-word dissertation peels back the curtain on the frameworks that have generated over $26 million in dividends for his partners.</p>
             <div class="flex items-center gap-8 pt-10 border-t border-white/10">
                <div class="w-20 h-20 rounded-full border-2 border-luxury-accent flex items-center justify-center text-luxury-accent font-serif italic text-3xl">L</div>
                <div class="space-y-1">
@@ -713,7 +713,7 @@ const REVIEWS = [
   {
     name: "Anita D'souza",
     role: "Lark Goods Wholesalers L.L.C",
-    text: "Lopty Pascal's technical precision in SEO is unmatched. He didn't just rank our keywords; he architected our digital authority. Truly the best SEO specialist in Dubai, UAE.",
+    text: "Lopty Pascal's technical precision in SEO is unmatched. He didn't just rank our keywords; he architected our digital authority. Truly the best digital marketing expert in Dubai, UAE.",
     platform: "LinkedIn"
   },
   {
@@ -949,7 +949,7 @@ const ProjectGridItem = ({ title, category, description, image, index }: any) =>
 );
 
 const Marquee = () => {
-  const skills = ["SEO Specialist", "AIOps Engineer", "Data Scientist", "AEO", "GEO", "Growth", "Revenue", "Visibility", "Algorithm", "Entity", "Dubai SEO", "Innovation"];
+  const skills = ["Digital Marketing Expert", "AIOps Engineer", "Data Scientist", "AEO", "GEO", "Growth", "Revenue", "Visibility", "Algorithm", "Entity", "Dubai SEO", "Innovation"];
   return (
     <div className="py-8 md:py-12 bg-black overflow-hidden relative">
       <motion.div 
@@ -1172,7 +1172,7 @@ const BlogPostPage = () => {
                <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
                <div className="space-y-1">
                   <p className="text-sm font-black uppercase tracking-widest">Lopty Pascal</p>
-                  <p className="text-xs text-black/40">Technical Lead & Author</p>
+                  <p className="text-xs text-black/40">Technical Lead & Founder</p>
                </div>
             </div>
             <Link to="/" className="group flex items-center gap-6 px-10 py-6 bg-black text-white text-[11px] font-black uppercase tracking-[0.4em] rounded-sm hover:-translate-y-2 transition-all shadow-4xl">
@@ -1203,7 +1203,7 @@ const HomePage = ({ projects }: any) => {
                 <div className="inline-flex items-center gap-3 px-4 py-2 bg-black/5 rounded-full mb-10">
                   <div className="w-2 h-2 bg-luxury-accent rounded-full animate-pulse" />
                   <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/80">
-                     #1 Best SEO Specialist in Dubai, UAE
+                     #1 Digital Marketing Expert in Dubai, UAE
                   </span>
                 </div>
                 
@@ -1216,7 +1216,7 @@ const HomePage = ({ projects }: any) => {
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-[1px] bg-luxury-accent" />
                     <p className="text-xl md:text-2xl text-black font-semibold tracking-tight uppercase">
-                      SEO Expert • AIOps Engineer • Data Scientist
+                      Digital Marketing Expert • AIOps Engineer • Data Scientist
                     </p>
                   </div>
                   <p className="text-lg md:text-xl text-black/60 font-light leading-relaxed max-w-xl">
@@ -1241,7 +1241,7 @@ const HomePage = ({ projects }: any) => {
                     }}
                     className="w-full sm:w-auto px-10 py-5 bg-luxury-accent text-white text-[11px] font-black uppercase tracking-[0.3em] rounded-sm hover:-translate-y-1 transition-all shadow-2xl"
                   >
-                    Free SEO Audit
+                    Free Performance Audit
                   </button>
                 </div>
               </motion.div>
@@ -1259,7 +1259,7 @@ const HomePage = ({ projects }: any) => {
                     </div>
                     <img 
                       src="https://i.postimg.cc/W3sLX9dn/ertry.png" 
-                      alt="Lopty Pascal - Best SEO Specialist Dubai" 
+                      alt="Lopty Pascal - Best Digital Marketing Expert Dubai" 
                       className="w-full h-full object-cover rounded-sm shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] grayscale hover:grayscale-0 transition-all duration-1000 border border-black/5"
                     />
                     <div className="absolute -bottom-4 md:-bottom-8 left-0 md:-left-8 bg-black p-4 md:p-8 shadow-2xl border border-white/5">
@@ -1285,7 +1285,7 @@ const HomePage = ({ projects }: any) => {
               <p className="text-white/80 text-base md:text-lg">Discover the invisible gaps costing you millions in search and AI visibility. Lopty Pascal provides a detailed roadmap for market dominance.</p>
             </div>
             <a 
-              href={`https://wa.me/${WHATSAPP_PHONE.replace('+', '')}?text=Hi%20Lopty,%20I'd%20like%20to%20request%20a%20free%20SEO%20and%20AI%20Readiness%20Audit.`}
+              href={`https://wa.me/${WHATSAPP_PHONE.replace('+', '')}?text=Hi%20Lopty,%20I'd%20like%20to%20request%20a%20free%20Performance%20and%20AI%20Readiness%20Audit.`}
               target="_blank"
               className="px-10 py-5 bg-white text-black text-[11px] font-bold uppercase tracking-[0.3em] rounded-sm hover:-translate-y-1 transition-all shadow-2xl flex items-center gap-4 shrink-0"
             >
@@ -1310,7 +1310,7 @@ const HomePage = ({ projects }: any) => {
                   </p>
                   <div className="text-lg md:text-xl text-black/60 leading-relaxed space-y-8 border-l-4 border-luxury-accent pl-12">
                     <p>
-                      <strong>Lopty Pascal</strong> is a Dubai-based Senior SEO Specialist & AIOps Engineer. He has pioneered the integration of behavioral data science into organic visibility frameworks, specifically for the high-end UAE luxury market.
+                      <strong>Lopty Pascal</strong> is a Dubai-based Digital Marketing Expert & AIOps Engineer. He has pioneered the integration of behavioral data science into organic visibility frameworks, specifically for the high-end UAE luxury market.
                     </p>
                     <p>
                       As the founder of <span className="text-black font-bold">Prezlo</span>, his focus is ensuring that global elite brands are fundamentally <span className="italic text-black underline decoration-luxury-accent underline-offset-8">trusted</span> by the world’s most advanced AI language models.
@@ -1322,7 +1322,7 @@ const HomePage = ({ projects }: any) => {
                    <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Professional Portrait" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
                    <div className="space-y-1">
                       <p className="text-sm font-black uppercase tracking-widest">Lopty Pascal</p>
-                      <p className="text-xs text-black/40 italic">#1 Best SEO Specialist, Dubai</p>
+                      <p className="text-xs text-black/40 italic">#1 Digital Marketing Expert, Dubai</p>
                    </div>
                 </div>
               </div>
@@ -1379,7 +1379,7 @@ const HomePage = ({ projects }: any) => {
                  <div className="absolute top-0 right-0 p-4">
                    <Zap size={24} className="text-luxury-accent" />
                  </div>
-                <h3 className="text-xl md:text-3xl font-serif italic mb-8 text-black">Performance SEO (Lopty Pascal)</h3>
+                <h3 className="text-xl md:text-3xl font-serif italic mb-8 text-black">Performance Marketing & SEO</h3>
                 <ul className="space-y-4">
                   {[
                     'Entity-Based Semantic Mapping',
@@ -1752,19 +1752,20 @@ export default function App() {
       
       <FloatingContactMenu />
 
-      {/* Schema.org JSON-LD for SEO */}
+      {/* Schema.org JSON-LD for SEO Enhancement */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Lopty Pascal",
           "alternateName": "Lopty Pascal Official",
-          "description": "Best digital marketing specialist and AI SEO expert in Dubai Marina. Top African digital marketer specializing in AIOps, AEO, and Growth Systems.",
-          "jobTitle": ["Senior Digital Marketing Manager", "AI SEO Expert", "AIOps Engineer", "Data Scientist"],
+          "description": "Lopty Pascal is a world-class Digital Marketing Expert, Founder, and AI SEO Authority based in Dubai Marina. Specializing in AIOps, GEO (Generative Engine Optimization), and Hyper-Local SEO for Dubai luxury markets.",
+          "jobTitle": ["Founder & CEO", "Digital Marketing Expert", "AI SEO Expert", "AIOps Engineer", "Data Scientist"],
           "telephone": CONTACT_PHONE,
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Dubai Marina",
+            "streetAddress": "Dubai Marina",
+            "addressLocality": "Dubai",
             "addressRegion": "Dubai",
             "addressCountry": "United Arab Emirates"
           },
@@ -1774,8 +1775,12 @@ export default function App() {
             "https://www.instagram.com/loptypascal/",
             "https://www.facebook.com/loptypascalofficial/"
           ],
-          "knowsAbout": ["SEO", "Artificial Intelligence", "Machine Learning", "Digital Marketing", "AIOps", "Growth Hacking"],
-          "image": "https://i.postimg.cc/W3sLX9dn/ertry.png"
+          "knowsAbout": ["Digital Marketing", "SEO", "Search Engine Optimization", "Artificial Intelligence", "GEO Marketing", "Dubai Real Estate Marketing", "AIOps", "Growth Architecture"],
+          "image": "https://i.postimg.cc/W3sLX9dn/ertry.png",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://prezlo.io/verify/lopty"
+          }
         })}
       </script>
 
