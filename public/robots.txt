@@ -19,5 +19,5 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://loptypascal.online/sitemap.xml
-Sitemap: https://loptypascal.online/llms.txt
+Sitemap: https://loptypascal.com/sitemap.xml
+Sitemap: https://loptypascal.com/llms.txt
