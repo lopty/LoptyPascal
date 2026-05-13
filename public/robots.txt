@@ -21,3 +21,4 @@ Allow: /
 
 Sitemap: https://loptypascal.com/sitemap.xml
 Sitemap: https://loptypascal.com/llms.txt
+Sitemap: https://loptypascal.com/llms.xml

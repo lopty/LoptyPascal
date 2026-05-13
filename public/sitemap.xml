@@ -3,140 +3,300 @@
 
   <url>
     <loc>https://loptypascal.com/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Core Blog Series -->
+
+  <url>
+    <loc>https://loptypascal.com/blog/dubai-seo-best-specialist</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/best-digital-marketers-cameroon</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/best-ai-experts-cameroon</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/best-digital-marketers-africa-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/aiops-manifesto-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/zero-click-dominance-ai</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
   <url>
     <loc>https://loptypascal.com/blog/revenue-bridge-framework-precision</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://loptypascal.com/blog/lopty-pascal-global-seo-architecture</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/blog/ai-visibility-entities-not-keywords</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/blog/dubai-luxury-seo-2025</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://loptypascal.com/blog/continental-scientific-guard-roadmap</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/technical-unrankability-cheatsheet</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- Comparison and Rankings Series -->
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-neil-patel-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/top-10-digital-marketers-africa-2026-leaders</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/best-seo-specialist-dubai-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-rand-fishkin</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/best-performance-marketer-middle-east-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-brian-dean-seo</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/best-ai-seo-expert-dubai-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-agencies-technical-gap</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-dual-market-dominance</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/best-geo-aeo-expert-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-gary-vee</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/africa-best-digital-marketing-researcher-2026</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog/future-seo-2026-lopty-pascal</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Educational and Event-Anchored Series -->
+
+  <url>
+    <loc>https://loptypascal.com/blog/death-of-keyword-seo-entity-optimization</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/geo-new-search-reality-businesses-invisible</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/digital-marketing-specialist-dubai-2026-guide</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/freelance-seo-vs-agency-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/aeo-skill-most-seos-dont-have</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/information-gain-score-google-secret-weapon</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/prezlo-future-ai-identity-infrastructure</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/google-toronto-watershed-what-professionals-must-know</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/seo-uae-dubai-most-interesting-search-market-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/gitex-2025-ai-search-revolution-middle-east</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/dubai-global-syndicate-network-ai-marketing</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/how-to-get-chatgpt-recommend-your-business-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/content-for-ai-editorial-strategy-2026</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/pr-for-ai-seo-entity-authority-not-backlinks</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/performance-marketing-ai-age-roas-search-visibility</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/singapore-ai-marketing-what-gcc-brands-must-learn</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/leap-2026-saudi-uae-ai-marketing-laboratory</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/blog/search-visibility-90-day-blueprint-lopty-pascal</loc>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
