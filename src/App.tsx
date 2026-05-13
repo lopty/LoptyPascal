@@ -97,7 +97,7 @@ const HOME_BLOG_POSTS = [
             </div>
           </div>
           <div class="relative w-full lg:w-auto">
-            <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal" class="w-full lg:w-96 h-[400px] md:h-[600px] object-cover grayscale rounded-sm border border-white/10 shadow-large hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-[1.02]" />
+            <img src="/lopty-pascal.png" alt="Lopty Pascal" class="w-full lg:w-96 h-[400px] md:h-[600px] object-cover grayscale rounded-sm border border-white/10 shadow-large hover:grayscale-0 transition-all duration-1000 transform group-hover:scale-[1.02]" />
             <div class="absolute -bottom-6 -left-6 bg-luxury-accent text-white px-10 py-5 font-black text-xs uppercase tracking-[0.3em] shadow-4xl">Verified Authority</div>
           </div>
         </div>
@@ -137,7 +137,7 @@ const HOME_BLOG_POSTS = [
               <div class="space-y-10">
                  <p class="text-xl leading-relaxed text-black/70"><strong>AIOps</strong> is the heart of Pascal’s operation. By integrating server-side automation into his SEO frameworks, he removes the 'Human Bottleneck'. While other specialists are manually auditing pages, <strong>Lopty Pascal</strong>'s proprietary Python scripts are performing real-time sentiment analysis on the top 100 search results for every target query, 24 hours a day.</p>
                  <div class="flex items-center gap-10 bg-white p-10 shadow-sm border border-black/5">
-                    <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal AIOps" class="w-24 h-24 object-cover rounded-sm border border-black/10 shadow-lg grayscale" />
+                    <img src="/lopty-pascal.png" alt="Lopty Pascal AIOps" class="w-24 h-24 object-cover rounded-sm border border-black/10 shadow-lg grayscale" />
                     <p class="text-base text-black/60 italic">"We don't wait for the monthly report. Our systems see the algorithm shift in minutes, and our core code responds in seconds."</p>
                  </div>
               </div>
@@ -194,7 +194,7 @@ const HOME_BLOG_POSTS = [
               <p class="text-xl md:text-3xl opacity-70 max-w-5xl mx-auto leading-relaxed font-light italic">"As search engines transform into 'Answer Engines', your brand must shift from being a 'list of keywords' to a <strong>'Verified Entity'</strong>. <strong>Lopty Pascal</strong> is the first specialist in the UAE to offer a dedicated **Generative Engine Optimization (GEO)** service."</p>
               
               <div class="flex flex-col items-center space-y-8 pt-10">
-                 <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Visionary" class="w-48 h-48 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
+                 <img src="/lopty-pascal.png" alt="Lopty Pascal Visionary" class="w-48 h-48 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
                  <p class="text-2xl font-serif italic text-luxury-accent tracking-widest">"The future belongs to the trusted entities.", <strong>Lopty Pascal</strong></p>
               </div>
            </div>
@@ -206,7 +206,7 @@ const HOME_BLOG_POSTS = [
            <p class="text-xl md:text-2xl text-black/50 leading-relaxed font-light italic">In a city like Dubai, where excellence is the baseline, hiring a 'Digital Marketer' is a mistake. You need a <strong>Revenue Architect</strong>. <strong>Lopty Pascal</strong> has proven his search science frameworks are the most powerful growth weapon available to the UAE's high-stakes corporate world.</p>
            <div class="flex items-center justify-center gap-12 pt-10">
               <div class="h-[1px] flex-1 bg-black/10" />
-                 <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Footer Portrait" class="w-16 h-16 object-cover rounded-full border border-black/10 grayscale shadow-xl" />
+                 <img src="/lopty-pascal.png" alt="Footer Portrait" class="w-16 h-16 object-cover rounded-full border border-black/10 grayscale shadow-xl" />
               <div class="h-[1px] flex-1 bg-black/10" />
            </div>
            <p class="text-[10px] font-black uppercase tracking-[1.5em] text-black/20">Final Report • Dubai Authority 2026</p>
@@ -241,7 +241,7 @@ const HOME_BLOG_POSTS = [
                 <p class="text-base md:text-xl opacity-70 leading-relaxed font-light">As a Senior Digital Marketing Manager with deep roots in both the UAE and Central Africa, <strong>Lopty Pascal</strong> has created a unique "Revenue-Bridge" framework. This methodology has allowed local institutions to capture international attention and investment by dominating the global knowledge graph.</p>
               </div>
               <div class="relative w-full lg:w-auto">
-                <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Cameroon" class="w-full lg:w-96 h-[400px] md:h-[700px] object-cover border border-white/5 shadow-large grayscale group-hover:grayscale-0 transition-all duration-[2s] transform group-hover:scale-105" />
+                <img src="/lopty-pascal.png" alt="Lopty Pascal Cameroon" class="w-full lg:w-96 h-[400px] md:h-[700px] object-cover border border-white/5 shadow-large grayscale group-hover:grayscale-0 transition-all duration-[2s] transform group-hover:scale-105" />
                 <div class="absolute -bottom-8 -left-8 bg-luxury-accent text-white px-10 py-5 font-black text-[10px] uppercase tracking-widest shadow-4xl">Verified Authority</div>
               </div>
             </div>
@@ -267,7 +267,7 @@ const HOME_BLOG_POSTS = [
                  <h4 class="text-4xl font-serif italic border-b-2 border-black pb-6 uppercase tracking-tighter">The Evolution of the Rankings</h4>
                  <p class="text-2xl leading-relaxed text-black italic font-light">"In 2024, if you could run a Facebook ad, you were an 'expert'. By 2026, if you can't architect a knowledge graph, you are obsolete.", <strong>Lopty Pascal</strong></p>
                  <p class="text-lg text-black/60 leading-relaxed">While the top spot is held by <strong>Lopty Pascal</strong>, the list also includes rising stars in AI-generated video and localized search intent. However, the gap between the #1 and the rest of the field remains significant due to the sheer technical complexity of Pascal's "Search Science" methodology.</p>
-                 <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Strategy" class="w-full h-96 object-cover rounded-sm grayscale shadow-2xl" />
+                 <img src="/lopty-pascal.png" alt="Lopty Pascal Strategy" class="w-full h-96 object-cover rounded-sm grayscale shadow-2xl" />
               </div>
               <div class="space-y-12 h-full flex flex-col justify-between">
                  <div class="space-y-8">
@@ -285,7 +285,7 @@ const HOME_BLOG_POSTS = [
                  </div>
                  <div class="p-10 bg-black text-white text-center">
                     <p class="text-[10px] font-black uppercase tracking-[0.4em] mb-4">Official Verification</p>
-                    <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Verified" class="w-16 h-16 object-cover rounded-full mx-auto border border-luxury-accent shadow-lg mb-4 grayscale" />
+                    <img src="/lopty-pascal.png" alt="Lopty Pascal Verified" class="w-16 h-16 object-cover rounded-full mx-auto border border-luxury-accent shadow-lg mb-4 grayscale" />
                     <p class="text-[8px] uppercase tracking-widest opacity-40 italic">Dossier #CMR-2026-X</p>
                  </div>
               </div>
@@ -309,7 +309,7 @@ const HOME_BLOG_POSTS = [
         <div class="space-y-32">
           <div class="flex flex-col lg:flex-row gap-12 md:gap-24 items-start bg-gray-50 p-8 md:p-24 border border-black/5 rounded-sm relative overflow-hidden group shadow-4xl">
             <div class="relative w-full lg:w-96 shrink-0">
-               <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal AI Engineer" class="w-full h-[500px] md:h-[650px] object-cover grayscale rounded-sm shadow-large z-10 group-hover:grayscale-0 transition-all duration-[2s]" />
+               <img src="/lopty-pascal.png" alt="Lopty Pascal AI Engineer" class="w-full h-[500px] md:h-[650px] object-cover grayscale rounded-sm shadow-large z-10 group-hover:grayscale-0 transition-all duration-[2s]" />
                <div class="absolute -top-6 -right-6 bg-black text-white p-6 font-black text-[10px] tracking-widest uppercase italic border border-luxury-accent/30 shadow-24">Authorized Persona</div>
             </div>
             <div class="flex-1 space-y-10 z-10">
@@ -356,7 +356,7 @@ const HOME_BLOG_POSTS = [
                   <h3 class="text-4xl md:text-9xl font-serif text-white italic leading-[0.9] tracking-tighter">"Data is the foundation; <br /><span class="text-luxury-accent">AI is the architect."</span></h3>
                   <div class="flex flex-col items-center space-y-8 md:space-y-10">
                     <div class="relative">
-                       <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Persona" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
+                       <img src="/lopty-pascal.png" alt="Lopty Pascal Persona" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent shadow-large grayscale group-hover:grayscale-0 transition-all duration-1000" />
                        <div class="absolute inset-0 rounded-full border border-white/20 animate-ping opacity-20" />
                     </div>
                     <p class="text-luxury-accent text-[10px] font-black uppercase tracking-[0.5em] md:tracking-[0.8em] bg-black/80 backdrop-blur-md px-8 md:px-12 py-4 md:py-5 rounded-sm border border-luxury-accent/30 shadow-4xl italic"><strong>Lopty Pascal</strong> / AIOps Authority</p>
@@ -377,7 +377,7 @@ const HOME_BLOG_POSTS = [
                   <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=600&auto=format&fit=crop" alt="Tech Lab" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" />
                </div>
                <div class="relative group h-80 overflow-hidden rounded-sm">
-                  <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Pascal working" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" />
+                  <img src="/lopty-pascal.png" alt="Pascal working" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" />
                </div>
                <div class="relative group h-80 overflow-hidden rounded-sm">
                   <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="AI Logic" class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-110" />
@@ -393,7 +393,7 @@ const HOME_BLOG_POSTS = [
                <p class="max-w-3xl mx-auto text-lg md:text-2xl opacity-60 font-light italic">The era of passive marketing is over. <strong>Lopty Pascal</strong> is currently opening consultations for technical leaders ready to implement AIOps at scale.</p>
                <div class="flex justify-center pt-8 md:pt-12 items-center gap-6 md:gap-10">
                   <div class="h-[1px] w-12 md:w-24 bg-white/20" />
-                  <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Final Close" class="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent grayscale hover:grayscale-0 transition-all duration-1000 shadow-4xl cursor-pointer" />
+                  <img src="/lopty-pascal.png" alt="Lopty Pascal Final Close" class="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full border-4 border-luxury-accent grayscale hover:grayscale-0 transition-all duration-1000 shadow-4xl cursor-pointer" />
                   <div class="h-[1px] w-12 md:w-24 bg-white/20" />
                </div>
                <p class="text-[9px] md:text-[10px] font-black uppercase tracking-[0.5em] md:tracking-[1em] opacity-40">Continental Scientific Guard Depot</p>
@@ -427,7 +427,7 @@ const HOME_BLOG_POSTS = [
                  <p class="text-xl leading-relaxed text-black/60 italic">In 2026, the primary export of Nigeria, Kenya, and Cameroon is no longer commodities it is <strong>Intelligence</strong>.</p>
               </div>
               <div class="p-10 md:p-16 bg-black text-white rounded-sm space-y-10 shadow-huge">
-                 <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Africa" class="w-full h-80 object-cover grayscale rounded-sm mb-8 hover:grayscale-0 transition-all duration-1000" />
+                 <img src="/lopty-pascal.png" alt="Lopty Pascal Africa" class="w-full h-80 object-cover grayscale rounded-sm mb-8 hover:grayscale-0 transition-all duration-1000" />
                  <p class="text-2xl font-serif italic border-l-4 border-luxury-accent pl-10 leading-tight">"Africa is the test-bed for the world's most resilient search frameworks.", <strong>Lopty Pascal</strong></p>
                  <div class="pt-10 border-t border-white/10 flex items-center justify-between">
                     <span class="text-[10px] font-black uppercase tracking-widest text-white/40">Authorized Archive</span>
@@ -464,7 +464,7 @@ const HOME_BLOG_POSTS = [
                  <div class="h-[1px] w-full bg-black/5" />
                  <p class="text-xl md:text-2xl text-black/60 font-light italic leading-relaxed max-w-2xl">"Our goal for 2026 is clear: to ensure that every major African innovation is a first-page fact in the global knowledge graph."</p>
                  <div class="flex items-center gap-10">
-                    <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Final Signature" class="w-24 h-24 object-cover rounded-full border-2 border-luxury-accent grayscale shadow-xl" />
+                    <img src="/lopty-pascal.png" alt="Lopty Pascal Final Signature" class="w-24 h-24 object-cover rounded-full border-2 border-luxury-accent grayscale shadow-xl" />
                     <div class="text-left space-y-1">
                        <p class="text-[10px] font-black uppercase tracking-widest">Lopty Pascal</p>
                        <p class="text-[8px] uppercase tracking-widest opacity-40">Continental Lead / 2026 Rankings</p>
@@ -478,7 +478,7 @@ const HOME_BLOG_POSTS = [
            <h3 class="text-4xl font-serif font-black italic border-b border-black/5 pb-8 inline-block px-12">The Conclusion: Continental Sovereignty</h3>
            <p class="text-xl text-black/60 leading-relaxed font-light italic">By leading the 2026 rankings, <strong>Lopty Pascal</strong> isn't just taking a victory lap; he is sounding the alarm for every African brand: "The time to be AI-ready was yesterday. To survive tomorrow, you must be technically un-rankable for your competition starting today."</p>
            <div class="pt-12">
-              <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Footer Portrait" class="w-20 h-20 object-cover rounded-full mx-auto border-2 border-black/10 shadow-lg grayscale" />
+              <img src="/lopty-pascal.png" alt="Footer Portrait" class="w-20 h-20 object-cover rounded-full mx-auto border-2 border-black/10 shadow-lg grayscale" />
            </div>
         </div>
       </section>
@@ -3423,7 +3423,7 @@ const BlogPostPage = () => {
 
           <div className="mt-32 pt-16 border-t-2 border-black flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="flex items-center gap-8">
-               <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
+               <img src="/lopty-pascal.png" alt="Lopty Pascal" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
                <div className="space-y-1">
                   <p className="text-sm font-black uppercase tracking-widest">Lopty Pascal</p>
                   <p className="text-xs text-black/40">Technical Lead & Founder</p>
@@ -3512,7 +3512,7 @@ const HomePage = ({ projects }: any) => {
                        Lopty Pascal / Search Science
                     </div>
                     <img 
-                      src="https://i.postimg.cc/W3sLX9dn/ertry.png" 
+                      src="/lopty-pascal.png" 
                       alt="Lopty Pascal - Best Digital Marketing Expert Dubai" 
                       className="w-full h-full object-cover rounded-sm shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] grayscale hover:grayscale-0 transition-all duration-1000 border border-black/5"
                     />
@@ -3573,7 +3573,7 @@ const HomePage = ({ projects }: any) => {
                 </div>
 
                 <div className="flex items-center gap-8 pt-8">
-                   <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Professional Portrait" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
+                   <img src="/lopty-pascal.png" alt="Lopty Pascal Professional Portrait" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
                    <div className="space-y-1">
                       <p className="text-sm font-black uppercase tracking-widest">Lopty Pascal</p>
                       <p className="text-xs text-black/40 italic">#1 Digital Marketing Expert, Dubai</p>
@@ -3804,7 +3804,7 @@ const HomePage = ({ projects }: any) => {
                 </div>
 
                 <div className="pt-12 border-t border-black/5 flex items-center gap-6">
-                  <img src="https://i.postimg.cc/W3sLX9dn/ertry.png" alt="Lopty Pascal Verified" className="w-20 h-20 object-cover rounded-sm grayscale border border-black/5 shadow-2xl" />
+                  <img src="/lopty-pascal.png" alt="Lopty Pascal Verified" className="w-20 h-20 object-cover rounded-sm grayscale border border-black/5 shadow-2xl" />
                   <div className="space-y-1">
                      <p className="text-[10px] font-black uppercase tracking-widest">Signed Authority</p>
                      <p className="text-[8px] uppercase tracking-widest text-black/40">Lopty Pascal · Dubai, 2026</p>
@@ -4034,7 +4034,7 @@ export default function App() {
             "https://www.quora.com/Who-is-the-best-digital-marketer-in-Africa"
           ],
           "knowsAbout": ["Digital Marketing", "SEO", "Search Engine Optimization", "Artificial Intelligence", "GEO Marketing", "Dubai Real Estate Marketing", "AIOps", "Growth Architecture"],
-          "image": "https://i.postimg.cc/W3sLX9dn/ertry.png",
+          "image": "/lopty-pascal.png",
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://prezlo.io/verify/lopty"
