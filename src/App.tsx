@@ -2949,12 +2949,14 @@ const ElegantNavbar = () => {
               {link.name}
             </button>
           ))}
-          <button 
-            onClick={() => handleLinkClick('/#contact')}
-            className="group flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-luxury-accent cursor-pointer bg-transparent border-none outline-none"
+          <a 
+            href="https://calendly.com/loptymobile/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 px-5 py-2.5 bg-luxury-accent text-white text-[11px] font-black uppercase tracking-[0.2em] rounded-sm hover:-translate-y-0.5 transition-all shadow-md hover:shadow-lg"
           >
-            Connect <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+            Book a Call <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+          </a>
         </div>
 
         <button className="md:hidden text-black" onClick={() => setIsOpen(!isOpen)}>
@@ -2980,6 +2982,14 @@ const ElegantNavbar = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href="https://calendly.com/loptymobile/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center justify-center gap-2 px-8 py-4 bg-luxury-accent text-white text-[12px] font-black uppercase tracking-[0.25em] rounded-sm hover:opacity-90 transition-all"
+            >
+              Book a 30-Min Call <ArrowRight size={14} />
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -3488,15 +3498,14 @@ const HomePage = ({ projects }: any) => {
                   >
                     Performance Archives
                   </button>
-                  <button 
-                    onClick={() => {
-                      const el = document.getElementById('audit');
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                    className="w-full sm:w-auto px-10 py-5 bg-luxury-accent text-white text-[11px] font-black uppercase tracking-[0.3em] rounded-sm hover:-translate-y-1 transition-all shadow-2xl"
+                  <a
+                    href="https://calendly.com/loptymobile/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto px-10 py-5 bg-luxury-accent text-white text-[11px] font-black uppercase tracking-[0.3em] rounded-sm hover:-translate-y-1 transition-all shadow-2xl text-center"
                   >
-                    Free Performance Audit
-                  </button>
+                    Book a 30-Min Call
+                  </a>
                 </div>
               </motion.div>
 
