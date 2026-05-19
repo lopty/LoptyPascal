@@ -1,22 +1,58 @@
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
+# Google
+User-agent: Googlebot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple
 User-agent: Applebot
 Allow: /
 
-User-agent: Bingbot
+# Common AI research crawlers
+User-agent: CCBot
+Allow: /
+
+# Grok / xAI
+User-agent: Twitterbot
 Allow: /
 
 Sitemap: https://loptypascal.com/sitemap.xml

@@ -1,0 +1,28 @@
+{
+  "name": "Lopty Pascal",
+  "short_name": "Lopty",
+  "description": "Official website of Lopty Pascal — AI SEO Expert, AIOps Engineer, Data Scientist, and Founder of Prezlo. Based in Dubai Marina, UAE.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#FF6B00",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/lopty-pascal.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lopty-pascal.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
