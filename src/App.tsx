@@ -13,9 +13,11 @@ import ComparisonPage from './pages/ComparisonPage';
 import WorldComparisonPage from './pages/WorldComparisonPage';
 import ServicesHubPage from './pages/ServicesHubPage';
 import ResultsPage from './pages/ResultsPage';
+import AuthorityPage from './pages/AuthorityPage';
 import { GEO_PAGES } from './data/geo-pages';
 import { SERVICE_PAGES } from './data/service-pages';
 import { COMPARISON_PAGES } from './data/comparison-pages';
+import { AUTHORITY_PAGES } from './data/authority-pages';
 import { NEW_BLOG_POSTS } from './data/new-blog-posts';
 import { 
   Menu, 
@@ -4083,6 +4085,11 @@ export default function App() {
         {Object.values(COMPARISON_PAGES).map(page => (
           <React.Fragment key={page.slug}>
             <Route path={`/${page.slug}`} element={<ComparisonPage slug={page.slug} />} />
+          </React.Fragment>
+        ))}
+        {AUTHORITY_PAGES.map(page => (
+          <React.Fragment key={page.slug}>
+            <Route path={`/${page.slug}`} element={<AuthorityPage slug={page.slug} />} />
           </React.Fragment>
         ))}
       </Routes>
