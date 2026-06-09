@@ -6,6 +6,17 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'motion/react';
 import { Routes, Route, Link, useNavigate, useParams, useLocation } from 'react-router-dom';
+import AboutPage from './pages/AboutPage';
+import GeoPage from './pages/GeoPage';
+import ServicePage from './pages/ServicePage';
+import ComparisonPage from './pages/ComparisonPage';
+import WorldComparisonPage from './pages/WorldComparisonPage';
+import ServicesHubPage from './pages/ServicesHubPage';
+import ResultsPage from './pages/ResultsPage';
+import { GEO_PAGES } from './data/geo-pages';
+import { SERVICE_PAGES } from './data/service-pages';
+import { COMPARISON_PAGES } from './data/comparison-pages';
+import { NEW_BLOG_POSTS } from './data/new-blog-posts';
 import { 
   Menu, 
   X, 
@@ -4055,6 +4066,22 @@ export default function App() {
         <Route path="/" element={<HomePage projects={projects} />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogPostPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/results" element={<ResultsPage />} />
+        <Route path="/services" element={<ServicesHubPage />} />
+        <Route path="/what-is-ai-visibility" element={<WorldComparisonPage />} />
+        {GEO_PAGES.map(page => (
+          <Route key={page.slug} path={`/${page.slug}`} element={<GeoPage page={page} />} />
+        ))}
+        {SERVICE_PAGES.map(page => (
+          <Route key={page.slug} path={`/services/${page.slug}`} element={<ServicePage page={page} />} />
+        ))}
+        {COMPARISON_PAGES.map(page => (
+          <Route key={page.slug} path={`/${page.slug}`} element={<ComparisonPage page={page} />} />
+        ))}
+        {NEW_BLOG_POSTS.map(post => (
+          <Route key={post.id} path={`/blog/${post.id}`} element={<BlogPostPage />} />
+        ))}
       </Routes>
     </div>
   );
