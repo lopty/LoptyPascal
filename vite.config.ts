@@ -13,6 +13,7 @@ export default defineConfig(({mode}) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+        '@assets': path.resolve(__dirname, 'attached_assets'),
       },
     },
     server: {
@@ -20,6 +21,10 @@ export default defineConfig(({mode}) => {
       port: 5000,
       allowedHosts: true,
       hmr: process.env.DISABLE_HMR !== 'true',
+      headers: {
+        'Cache-Control': 'no-store, no-cache, must-revalidate',
+        'Pragma': 'no-cache',
+      },
     },
   };
 });
