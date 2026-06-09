@@ -4070,17 +4070,20 @@ export default function App() {
         <Route path="/results" element={<ResultsPage />} />
         <Route path="/services" element={<ServicesHubPage />} />
         <Route path="/what-is-ai-visibility" element={<WorldComparisonPage />} />
-        {GEO_PAGES.map(page => (
-          <Route key={page.slug} path={`/${page.slug}`} element={<GeoPage page={page} />} />
+        {Object.values(GEO_PAGES).map(page => (
+          <React.Fragment key={page.slug}>
+            <Route path={`/${page.slug}`} element={<GeoPage slug={page.slug} />} />
+          </React.Fragment>
         ))}
-        {SERVICE_PAGES.map(page => (
-          <Route key={page.slug} path={`/services/${page.slug}`} element={<ServicePage page={page} />} />
+        {Object.values(SERVICE_PAGES).map(page => (
+          <React.Fragment key={page.slug}>
+            <Route path={`/services/${page.slug}`} element={<ServicePage slug={page.slug} />} />
+          </React.Fragment>
         ))}
-        {COMPARISON_PAGES.map(page => (
-          <Route key={page.slug} path={`/${page.slug}`} element={<ComparisonPage page={page} />} />
-        ))}
-        {NEW_BLOG_POSTS.map(post => (
-          <Route key={post.id} path={`/blog/${post.id}`} element={<BlogPostPage />} />
+        {Object.values(COMPARISON_PAGES).map(page => (
+          <React.Fragment key={page.slug}>
+            <Route path={`/${page.slug}`} element={<ComparisonPage slug={page.slug} />} />
+          </React.Fragment>
         ))}
       </Routes>
     </div>
