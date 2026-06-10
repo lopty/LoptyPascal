@@ -76,7 +76,7 @@ export default function AuthorityPage({ slug }: Props) {
         {/* CTA */}
         <section className="bg-black text-white p-12 md:p-16 mb-16">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-white/30 mb-6">Get Started</p>
-          <h2 className="text-3xl md:text-4xl font-serif italic mb-8">{page.ctaText}</h2>
+          <h2 className="text-3xl md:text-4xl font-serif italic mb-8 text-white">{page.ctaText}</h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="https://calendly.com/loptymobile/30min"
