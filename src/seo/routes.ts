@@ -124,7 +124,7 @@ export const seoRoutes: SeoRoute[] = [
       url: `${BASE}/about`,
       mainEntity: {
         ...personSchema,
-        description: 'Born in Cameroon. Educated at Bishop Rogan College seminary in Buea. Built Kamer Browser at 16. Co-founded Phenomenal Studios. Founded Lopty Mobile incubator. Worked with Google Poland. Co-founded Prezlo with Neha Jakhar in 2024. Based in Dubai.',
+        description: 'Born in Cameroon. Educated at Bishop Rogan College seminary in Buea. Built Kamer Browser at 16. Co-founded Phenomenal Studios. Founded Lopty Mobile incubator. Worked with Google Poland. Co-founded Prezlo with Neha Jakhar in March 2026. Based in Dubai.',
         alumniOf: { '@type': 'EducationalOrganization', name: 'Bishop Rogan College', address: { '@type': 'PostalAddress', addressLocality: 'Buea', addressCountry: 'CM' } },
       },
     },

@@ -5,7 +5,7 @@ export const CLUSTER6_PAGES: AuthorityPage[] = [
     slug: 'prezlo-ai-agency-dubai',
     h1: 'Prezlo: The AI Visibility Platform',
     subtitle: 'The global platform I co-founded to help professionals and brands get recommended by AI.',
-    intro: 'Prezlo is a global AI visibility platform co-founded by Lopty Pascal and Neha Jakhar in 2024. It helps professionals and brands get recommended by ChatGPT, Claude, Perplexity, Grok, Meta AI, and 12 or more AI systems through smarter authority signals, verified profiles, and daily monitoring.',
+    intro: 'Prezlo is a global AI visibility platform co-founded by Lopty Pascal and Neha Jakhar in March 2026. It helps professionals and brands get recommended by ChatGPT, Claude, Perplexity, Grok, Meta AI, and 12 or more AI systems through smarter authority signals, verified profiles, and daily monitoring.',
     ctaText: 'See how Prezlo can build your AI visibility.',
     sections: [
       {

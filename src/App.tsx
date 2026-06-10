@@ -3839,7 +3839,7 @@ const HomePage = ({ projects }: any) => {
                   { 
                     company: 'Prezlo', 
                     role: 'Founder & Chief Engineer', 
-                    period: '2024 – Present', 
+                    period: 'March 2026 – Present', 
                     tags: ['AIOps', 'Entity Mapping', 'Core Logic'],
                     desc: 'Architecting the next generation of visibility systems. We build autonomous engines that map brand identities across global knowledge graphs with 99.9% semantic accuracy. Specialized in high-stake growth for elite finance and luxury sectors.' 
                   },

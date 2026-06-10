@@ -69,7 +69,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
       'Entity profile optimization based on monitoring data',
     ],
     faq: [
-      { q: 'What is Prezlo and how does it measure AI citations?', a: "Prezlo is the AI Visibility Platform that Lopty Pascal co-founded with Neha Jakhar in 2024. It monitors how often and accurately AI search systems recommend a professional or brand. It queries ten AI systems regularly with defined commercial queries and tracks the results over time." },
+      { q: 'What is Prezlo and how does it measure AI citations?', a: "Prezlo is the AI Visibility Platform that Lopty Pascal co-founded with Neha Jakhar in March 2026. It monitors how often and accurately AI search systems recommend a professional or brand. It queries ten AI systems regularly with defined commercial queries and tracks the results over time." },
       { q: 'Can I use this service alongside traditional SEO?', a: "Yes and it is recommended. AI visibility and traditional search rankings are complementary. Brands with strong entity infrastructure typically see improvements in both simultaneously because the signals that AI systems weight overlap significantly with what Google's Knowledge Graph values." },
     ],
     relatedPages: [
