@@ -9,7 +9,7 @@ const CASE_STUDIES = [
     market: 'USA / Global',
     result: 'Appeared in Bing AI search results alongside ATLAS.ti and NVivo within 30 days of deployment',
     methodology: ['100-page programmatic SEO architecture across 6 keyword clusters', 'JSON-LD schema on every page (SoftwareApplication, FAQPage, Organization)', 'llms.txt at domain root for AI crawler entity description', 'Academic citation network: Zenodo (DOI), OSF, SSRN, Academia.edu', 'Multi-platform distribution: Medium, Hashnode, Dev.to, Substack, LinkedIn, Quora'],
-    outcome: 'The founder of QInsights messaged directly to confirm the Bing AI appearance. A new platform competed against category incumbents with 20+ years of market history within weeks of the AI visibility infrastructure going live.',
+    outcome: 'The founder of QInsights confirmed the Bing AI appearance directly. A newer platform appeared alongside category incumbents with 20+ years of market history within weeks of the AI visibility infrastructure going live.',
     link: '/blog/qinsights-bing-ai-case-study',
   },
   {
