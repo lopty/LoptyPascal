@@ -3480,7 +3480,7 @@ const HomePage = ({ projects }: any) => {
                 <div className="inline-flex items-center gap-3 px-4 py-2 bg-black/5 rounded-full mb-10">
                   <div className="w-2 h-2 bg-luxury-accent rounded-full animate-pulse" />
                   <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/80">
-                     #1 Digital Marketing Expert in Dubai, UAE
+                     AI Visibility & Search Engineering · Dubai, UAE
                   </span>
                 </div>
                 
@@ -3497,7 +3497,7 @@ const HomePage = ({ projects }: any) => {
                     </p>
                   </div>
                   <p className="text-lg md:text-xl text-black/60 font-light leading-relaxed max-w-xl">
-                    Architecting <span className="text-black font-semibold italic">high-conversion visibility</span> for global luxury brands. Generating <span className="text-luxury-accent font-serif font-bold">$26M+</span> through predictive AI SEO frameworks.
+                    I build <span className="text-black font-semibold italic">AI search and Google visibility</span> systems for luxury and enterprise brands. Client work to date has driven a documented <span className="text-luxury-accent font-serif font-bold">$26M+</span> in revenue.
                   </p>
                 </div>
 
@@ -3535,12 +3535,12 @@ const HomePage = ({ projects }: any) => {
                     </div>
                     <img 
                       src="/lopty-pascal.png" 
-                      alt="Lopty Pascal - Best Digital Marketing Expert Dubai" 
+                      alt="Lopty Pascal, AI visibility engineer, Dubai" 
                       className="w-full h-full object-cover rounded-sm shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] grayscale hover:grayscale-0 transition-all duration-1000 border border-black/5"
                     />
                     <div className="absolute -bottom-4 md:-bottom-8 left-0 md:-left-8 bg-black p-4 md:p-8 shadow-2xl border border-white/5">
                        <p className="text-luxury-accent font-serif italic text-2xl md:text-4xl mb-1 md:mb-2 text-luxury-accent">AEO/GEO</p>
-                       <p className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-white/50">Verified AI Authority</p>
+                       <p className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-white/50">AI Search Optimization</p>
                     </div>
                 </div>
               </motion.div>
@@ -3556,9 +3556,9 @@ const HomePage = ({ projects }: any) => {
         <section id="audit" className="py-12 md:py-20 bg-luxury-accent text-white">
           <div className="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="max-w-2xl">
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/60 mb-4 block">Limited Opportunity</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/60 mb-4 block">Free Audit</span>
               <h2 className="text-3xl md:text-5xl font-serif font-bold italic leading-tight mb-4">Get Your Free Technical & AI-Readiness Audit</h2>
-              <p className="text-white/80 text-base md:text-lg">Discover the invisible gaps costing you millions in search and AI visibility. Lopty Pascal provides a detailed roadmap for market dominance.</p>
+              <p className="text-white/80 text-base md:text-lg">See where your site is losing visibility across Google and AI search, with a prioritized roadmap to fix it.</p>
             </div>
             <a 
               href={`https://wa.me/${WHATSAPP_PHONE.replace('+', '')}?text=Hi%20Lopty,%20I'd%20like%20to%20request%20a%20free%20Performance%20and%20AI%20Readiness%20Audit.`}
@@ -3576,20 +3576,20 @@ const HomePage = ({ projects }: any) => {
             <div className="grid lg:grid-cols-2 gap-20 lg:gap-32 items-center">
               <div className="relative space-y-12">
                 <div className="space-y-6">
-                   <span className="text-[10px] font-black uppercase tracking-[0.5em] text-luxury-accent block">The Authority Persona</span>
+                   <span className="text-[10px] font-black uppercase tracking-[0.5em] text-luxury-accent block">Profile</span>
                    <h2 className="text-6xl md:text-[8rem] font-serif font-black text-black leading-none italic lowercase tracking-tighter">Lopty <br /> <span className="not-italic text-black/5">Pascal</span></h2>
                 </div>
                 
                 <div className="space-y-8 relative z-10">
                   <p className="text-3xl md:text-5xl font-serif text-black leading-tight italic">
-                    "In the era of AI, <span className="text-luxury-accent not-italic font-sans font-black uppercase tracking-tighter">Your Identity</span> is your only un-hackable moat."
+                    "In AI search, the brands that get cited are the ones the models <span className="text-luxury-accent not-italic font-sans font-black uppercase tracking-tighter">understand clearly</span>."
                   </p>
                   <div className="text-lg md:text-xl text-black/60 leading-relaxed space-y-8 border-l-4 border-luxury-accent pl-12">
                     <p>
-                      <strong>Lopty Pascal</strong> is a Dubai-based Digital Marketing Expert & AIOps Engineer. He has pioneered the integration of behavioral data science into organic visibility frameworks, specifically for the high-end UAE luxury market.
+                      <strong>Lopty Pascal</strong> is a Dubai-based digital marketing and AIOps engineer. He works on entity SEO and AI search visibility, with a focus on the UAE luxury and enterprise market.
                     </p>
                     <p>
-                      As the founder of <span className="text-black font-bold">Prezlo</span>, his focus is ensuring that global elite brands are fundamentally <span className="italic text-black underline decoration-luxury-accent underline-offset-8">trusted</span> by the world’s most advanced AI language models.
+                      As the founder of <span className="text-black font-bold">Prezlo</span>, his focus is helping brands be recognized and cited by AI language models like <span className="italic text-black underline decoration-luxury-accent underline-offset-8">ChatGPT, Gemini, and Perplexity</span>.
                     </p>
                   </div>
                 </div>
@@ -3598,7 +3598,7 @@ const HomePage = ({ projects }: any) => {
                    <img src="/lopty-pascal.png" alt="Lopty Pascal Professional Portrait" className="w-24 h-24 object-cover rounded-full grayscale border-2 border-luxury-accent shadow-2xl" />
                    <div className="space-y-1">
                       <p className="text-sm font-black uppercase tracking-widest">Lopty Pascal</p>
-                      <p className="text-xs text-black/40 italic">#1 Digital Marketing Expert, Dubai</p>
+                      <p className="text-xs text-black/40 italic">Founder of Prezlo · Dubai</p>
                    </div>
                 </div>
               </div>
@@ -3616,9 +3616,9 @@ const HomePage = ({ projects }: any) => {
                      <p className="text-sm text-white/60 leading-relaxed font-light">Documented revenue surplus generated for corporate partners.</p>
                   </div>
                   <div className="bg-gray-50 p-8 md:p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm">
-                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">100%</div>
-                     <h4 className="text-[11px] font-black uppercase tracking-widest text-black/40 mb-4">KPI Scaling</h4>
-                     <p className="text-sm text-black/60 leading-relaxed font-light">Successful implementation rate for high-stake technical overhauls.</p>
+                     <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">Global</div>
+                     <h4 className="text-[11px] font-black uppercase tracking-widest text-black/40 mb-4">Client Reach</h4>
+                     <p className="text-sm text-black/60 leading-relaxed font-light">Work spanning the UAE, Africa, Europe, the US, and Japan.</p>
                   </div>
                   <div className="bg-gray-50 p-8 md:p-12 border border-black/5 rounded-sm shadow-sm hover:shadow-2xl hover:border-luxury-accent transition-all duration-700 bg-white/40 backdrop-blur-sm transform translate-y-6 sm:translate-y-12">
                      <div className="text-5xl md:text-6xl font-serif italic text-luxury-accent mb-6 font-black">UAE</div>
@@ -3721,14 +3721,14 @@ const HomePage = ({ projects }: any) => {
         {/* EXPERTISE */}
         <section id="expertise" className="py-16 md:py-24 px-6 bg-white">
           <div className="max-w-6xl mx-auto">
-            <SectionHeader title="Core Competencies" subtitle="Market Authority" centered />
+            <SectionHeader title="Core Competencies" subtitle="What I Do" centered />
             <div className="mt-8 md:mt-12">
               {[
                 { title: 'AI & AEO Strategy', description: 'Advanced search optimization for AI language models like ChatGPT and Perplexity.' },
                 { title: 'Technical SEO Dubai', description: 'Hyperspecific local SEO and entity mapping for the UAE luxury market.' },
                 { title: 'AIOps Automation', description: 'Building autonomous marketing pipelines that scale revenue without overhead.' },
                 { title: 'Performance Marketing', description: 'High-ROAS Google and Meta Ads campaigns designed for measurable revenue generation.' },
-                { title: 'Software Mastery', description: 'Architecting growth-oriented platforms and visibility systems for global elite partners.' }
+                { title: 'Software Mastery', description: 'Architecting growth-oriented platforms and visibility systems for growth-focused brands.' }
               ].map((item, idx) => (
                 <ExpertiseBlock key={idx} index={idx} {...item} />
               ))}
@@ -3765,10 +3765,10 @@ const HomePage = ({ projects }: any) => {
            <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                  <div>
-                    <span className="text-[10px] font-black uppercase tracking-[0.4em] text-luxury-accent mb-4 block">Proven Authority</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.4em] text-luxury-accent mb-4 block">Results</span>
                     <h2 className="text-3xl md:text-5xl font-serif font-bold italic mb-8 leading-tight text-black">The 26 Million <br className="hidden md:block" /> Dollar Delta</h2>
                     <p className="text-black/60 text-base md:text-lg font-sans leading-relaxed mb-10">
-                      My approach is built on a simple premise: <span className="text-black italic font-semibold">Technical Superiority = Market Dominance</span>.
+                      My approach is built on a simple premise: <span className="text-black italic font-semibold">technical quality compounds into measurable revenue</span>.
                     </p>
                     <div className="space-y-6">
                        {[
@@ -3816,7 +3816,7 @@ const HomePage = ({ projects }: any) => {
                 
                 <div className="p-12 bg-black text-white rounded-sm shadow-4xl relative overflow-hidden group">
                    <div className="relative z-10">
-                      <p className="text-[10px] font-black uppercase tracking-widest text-luxury-accent mb-6 border-b border-luxury-accent/20 pb-4 inline-block">Official Verification</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-luxury-accent mb-6 border-b border-luxury-accent/20 pb-4 inline-block">Verification</p>
                       <h4 className="text-3xl font-serif italic mb-8">Download Technical Summary</h4>
                       <a href="#contact" className="group/btn flex items-center gap-6 text-[12px] font-black uppercase tracking-[0.3em] text-white hover:text-luxury-accent transition-colors">
                          Full Dossier PDF <ArrowRight size={20} className="group-hover/btn:translate-x-2 transition-transform text-luxury-accent" />
@@ -3828,7 +3828,7 @@ const HomePage = ({ projects }: any) => {
                 <div className="pt-12 border-t border-black/5 flex items-center gap-6">
                   <img src="/lopty-pascal.png" alt="Lopty Pascal Verified" className="w-20 h-20 object-cover rounded-sm grayscale border border-black/5 shadow-2xl" />
                   <div className="space-y-1">
-                     <p className="text-[10px] font-black uppercase tracking-widest">Signed Authority</p>
+                     <p className="text-[10px] font-black uppercase tracking-widest">Lopty Pascal</p>
                      <p className="text-[8px] uppercase tracking-widest text-black/40">Lopty Pascal · Dubai, 2026</p>
                   </div>
                 </div>
@@ -3841,14 +3841,14 @@ const HomePage = ({ projects }: any) => {
                     role: 'Founder & Chief Engineer', 
                     period: 'March 2026 – Present', 
                     tags: ['AIOps', 'Entity Mapping', 'Core Logic'],
-                    desc: 'Architecting the next generation of visibility systems. We build autonomous engines that map brand identities across global knowledge graphs with 99.9% semantic accuracy. Specialized in high-stake growth for elite finance and luxury sectors.' 
+                    desc: 'Building AI visibility infrastructure that maps brand identities across search and AI knowledge graphs. Focused on entity verification and citation for finance, luxury, and enterprise clients.' 
                   },
                   { 
                     company: 'Al Basel Group', 
                     role: 'Senior Marketing Manager', 
                     period: 'Dubai, UAE', 
                     tags: ['Luxury Real Estate', 'High-NW Leads'],
-                    desc: 'Commanding multi-million dollar performance budgets. Successfully increased organic wealth-intent leads for ultra-luxury off-plan assets in Dubai Marina and the Palm Jumeirah by 400% through technical SEO surgery.' 
+                    desc: 'Managed multi-million-dirham performance budgets and grew organic wealth-intent leads for luxury off-plan assets in Dubai Marina and Palm Jumeirah by 400% through technical SEO.' 
                   },
                   { 
                     company: 'Tecworq', 
@@ -3862,7 +3862,7 @@ const HomePage = ({ projects }: any) => {
                     role: 'SEO & Search Apprentice', 
                     period: 'Global Hub', 
                     tags: ['Algorithm Lab', 'Trust Signals'],
-                    desc: 'Deep immersion into the organic visibility heuristics of the world\'s largest search ecosystem. Specialized research into conversational intent modeling for bilingual markets (English/Arabic/French).' 
+                    desc: 'Search and SEO research collaboration focused on organic visibility and conversational intent modeling for bilingual markets (English, Arabic, French).' 
                   }
                 ].map((item, idx) => (
                   <motion.div 
@@ -3926,7 +3926,7 @@ const HomePage = ({ projects }: any) => {
              >
                 <SectionHeader title="Let's Scale" subtitle="Inquiry" centered />
                 <p className="text-xl md:text-4xl font-serif italic mb-12 md:mb-16 max-w-2xl mx-auto px-4 text-black">
-                  Ready to architect the <span className="text-luxury-accent">future of your visibility</span> in search and AI ecosystems?
+                  Want to improve how your brand shows up in <span className="text-luxury-accent">Google and AI search</span>?
                 </p>
                 <div className="flex flex-col items-center gap-8 md:gap-16">
                   <div className="flex gap-10 md:gap-16 mt-8">
@@ -3950,7 +3950,7 @@ const HomePage = ({ projects }: any) => {
             <div className="flex flex-wrap justify-center gap-8 md:gap-12">
               <span className="italic hover:text-black transition-colors cursor-default">Founder of Prezlo</span>
               <span className="hover:text-black transition-colors cursor-default">AIOps Engineer</span>
-              <span className="hover:text-black transition-colors cursor-default">SEO Authority</span>
+              <span className="hover:text-black transition-colors cursor-default">AI Search & SEO</span>
             </div>
           </div>
         </footer>
@@ -4035,7 +4035,7 @@ export default function App() {
           "@type": "Person",
           "name": "Lopty Pascal",
           "alternateName": "Lopty Pascal Official",
-          "description": "Lopty Pascal is a world-class Digital Marketing Expert, Founder, and AI SEO Authority based in Dubai Marina. Specializing in AIOps, GEO (Generative Engine Optimization), and Hyper-Local SEO for Dubai luxury markets.",
+          "description": "Lopty Pascal is a digital marketing and AI search specialist and founder based in Dubai Marina, focused on AIOps, GEO (Generative Engine Optimization), and technical SEO for the UAE market.",
           "jobTitle": ["Founder & CEO", "Digital Marketing Expert", "AI SEO Expert", "AIOps Engineer", "Data Scientist"],
           "telephone": CONTACT_PHONE,
           "address": {
