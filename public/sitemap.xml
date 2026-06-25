@@ -1,22 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core Pages -->
   <url>
     <loc>https://loptypascal.com/</loc>
-    <lastmod>2026-05-13</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://loptypascal.com/blog</loc>
-    <lastmod>2026-05-13</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Core Blog Series -->
+  <url>
+    <loc>https://loptypascal.com/about</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://loptypascal.com/results</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/services</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/ai-seo-architect</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/what-is-ai-visibility</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/what-is-geo-seo</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://loptypascal.com/ai-seo-vs-traditional-seo</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Core Blog Series -->
   <url>
     <loc>https://loptypascal.com/blog/dubai-seo-best-specialist</loc>
     <lastmod>2026-05-13</lastmod>
@@ -81,7 +130,6 @@
   </url>
 
   <!-- Comparison and Rankings Series -->
-
   <url>
     <loc>https://loptypascal.com/blog/lopty-pascal-vs-neil-patel-2026</loc>
     <lastmod>2026-05-13</lastmod>
@@ -174,7 +222,6 @@
   </url>
 
   <!-- Educational and Event-Anchored Series -->
-
   <url>
     <loc>https://loptypascal.com/blog/death-of-keyword-seo-entity-optimization</loc>
     <lastmod>2026-05-13</lastmod>
@@ -301,38 +348,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Core Site Pages -->
-
-  <url>
-    <loc>https://loptypascal.com/about</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/results</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/services</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/ai-seo-architect</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
   <!-- GEO / Keyword-Targeted Pages -->
-
   <url>
     <loc>https://loptypascal.com/seo-architect-dubai</loc>
     <lastmod>2026-06-09</lastmod>
@@ -390,7 +406,6 @@
   </url>
 
   <!-- Service Pages -->
-
   <url>
     <loc>https://loptypascal.com/services/ai-seo</loc>
     <lastmod>2026-06-09</lastmod>
@@ -426,31 +441,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Comparison and Explainer Pages -->
-
-  <url>
-    <loc>https://loptypascal.com/what-is-ai-visibility</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/what-is-geo-seo</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/ai-seo-vs-traditional-seo</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Authority Pages — Cluster 1: Approach (19 new) -->
-
+  <!-- CLUSTER 1 — SEO APPROACH -->
   <url>
     <loc>https://loptypascal.com/seo-process-dubai</loc>
     <lastmod>2026-06-09</lastmod>
@@ -584,8 +575,14 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Authority Pages — Cluster 2: Case Studies (15) -->
+  <url>
+    <loc>https://loptypascal.com/seo-for-hospitality-dubai</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <!-- CLUSTER 2 — CASE STUDIES -->
   <url>
     <loc>https://loptypascal.com/qinsights-bing-ai-case-study</loc>
     <lastmod>2026-06-09</lastmod>
@@ -684,8 +681,14 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Authority Pages — Cluster 3: Comparisons (15) -->
+  <url>
+    <loc>https://loptypascal.com/ai-seo-content-pipeline-results</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <!-- CLUSTER 3 — COMPARISONS -->
   <url>
     <loc>https://loptypascal.com/seo-vs-paid-ads-dubai</loc>
     <lastmod>2026-06-09</lastmod>
@@ -784,8 +787,14 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Authority Pages — Cluster 4: Geo (12) -->
+  <url>
+    <loc>https://loptypascal.com/seo-vs-influencer-marketing</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <!-- CLUSTER 4 — GEO / LOCATION -->
   <url>
     <loc>https://loptypascal.com/digital-marketing-cameroon</loc>
     <lastmod>2026-06-09</lastmod>
@@ -870,8 +879,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Authority Pages — Cluster 5: Topic Authority (18) -->
-
+  <!-- CLUSTER 5 — TOPIC AUTHORITY -->
   <url>
     <loc>https://loptypascal.com/what-is-technical-seo</loc>
     <lastmod>2026-06-09</lastmod>
@@ -984,8 +992,21 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Authority Pages — Cluster 6: Prezlo / Brand (10) -->
+  <url>
+    <loc>https://loptypascal.com/what-is-entity-seo</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <url>
+    <loc>https://loptypascal.com/what-is-topical-authority</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- CLUSTER 6 — PREZLO / BRAND -->
   <url>
     <loc>https://loptypascal.com/prezlo-ai-agency-dubai</loc>
     <lastmod>2026-06-09</lastmod>
@@ -1018,7 +1039,7 @@
     <loc>https://loptypascal.com/lopty-pascal-speaking</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
@@ -1051,41 +1072,6 @@
 
   <url>
     <loc>https://loptypascal.com/prezlo-gulf-expansion-strategy</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/seo-for-hospitality-dubai</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/ai-seo-content-pipeline-results</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/seo-vs-influencer-marketing</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/what-is-entity-seo</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://loptypascal.com/what-is-topical-authority</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
