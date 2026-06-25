@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const SERVICES = [
-  { slug: 'ai-seo', title: 'AI SEO', desc: 'Entity architecture, Knowledge Graph nodes, and AIOps pipelines that engineer your brand as the definitive AI-recommended answer.', href: '/services/ai-seo' },
-  { slug: 'ai-visibility', title: 'AI Visibility Monitoring', desc: 'Prezlo-powered monitoring across 10 AI systems. Real-time citation frequency data and systematic interventions.', href: '/services/ai-visibility' },
-  { slug: 'programmatic-seo', title: 'Programmatic SEO', desc: '100+ keyword-targeted pages, URL cluster architecture, entity schema at scale. The same system that made QInsights rank in Bing AI.', href: '/services/programmatic-seo' },
-  { slug: 'geo-optimization', title: 'GEO Optimization', desc: 'Generative Engine Optimization: content, citation, and entity infrastructure that makes your brand appear in AI-generated answers.', href: '/services/geo-optimization' },
-  { slug: 'seo-audit-dubai', title: 'Free SEO Audit Dubai', desc: 'A manually curated AI-Readiness Audit covering entity mapping, technical health, AI citation gap analysis, and revenue conversion architecture.', href: '/services/seo-audit-dubai' },
+  { slug: 'ai-seo', title: 'AI SEO', desc: 'Entity architecture, Knowledge Graph nodes, and monitoring pipelines aimed at making your brand a consistent, recommended answer in AI search.', href: '/services/ai-seo' },
+  { slug: 'ai-visibility', title: 'AI Visibility Monitoring', desc: 'Prezlo-powered monitoring across 10 AI systems, with citation frequency data tracked over time.', href: '/services/ai-visibility' },
+  { slug: 'programmatic-seo', title: 'Programmatic SEO', desc: '100+ keyword-targeted pages, URL cluster architecture, entity schema at scale, built using the same approach documented in the QInsights Bing AI case study.', href: '/services/programmatic-seo' },
+  { slug: 'geo-optimization', title: 'GEO Optimization', desc: 'Generative Engine Optimization: content, citation, and entity infrastructure aimed at AI-generated answers, not just results pages.', href: '/services/geo-optimization' },
+  { slug: 'seo-audit-dubai', title: 'Free SEO Audit Dubai', desc: 'A hands-on AI-Readiness Audit covering entity mapping, technical health, AI citation gap analysis, and revenue conversion architecture.', href: '/services/seo-audit-dubai' },
 ];
 
 export default function ServicesHubPage() {
