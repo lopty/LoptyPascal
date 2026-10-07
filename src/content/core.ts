@@ -1,4 +1,5 @@
 import type { ContentPage } from './types';
+import { PREZLO_ADOPTION, PREZLO_PORTFOLIOS } from '../site';
 
 const G_AI_FEATURES = { label: 'Google Search Central: AI features and your website', url: 'https://developers.google.com/search/docs/appearance/ai-features' };
 const G_NEED_SEO = { label: 'Google Search Central: Do you need an SEO?', url: 'https://developers.google.com/search/docs/fundamentals/do-i-need-seo' };
@@ -17,10 +18,26 @@ export const CORE_PAGES: ContentPage[] = [
     description: 'AI SEO and GEO service in Dubai from Lopty Pascal, co-founder of Prezlo. Make your brand easy for ChatGPT, Perplexity, Gemini and Google AI Overviews to find, verify and cite.',
     h1: 'AI SEO and GEO expert in Dubai',
     answer: [
-      'I help businesses in Dubai become a brand that AI assistants can find, check and recommend. That means fixing what crawlers receive from your site, making your business facts consistent everywhere, publishing pages that answer the questions buyers really ask, and tracking over time whether ChatGPT, Perplexity, Gemini and Google AI Overviews mention you.',
+      'I help businesses in Dubai build the identity, evidence and authority behind AI visibility. My AI SEO and GEO work documents your trust signals, positions your strongest outcomes, creates a connected knowledge graph, and publishes answers that buyers and search systems can understand. Technical SEO makes that evidence accessible; reputation and useful content give people a reason to choose you.',
       'This is my strongest niche. I co-founded and built [Prezlo](/prezlo), a platform for exactly this problem, so the work is measured with a tool I built and not with guesswork.',
     ],
     sections: [
+      {
+        h: 'Document your trust signals',
+        p: ['I map the evidence behind your expertise: client relationships, relevant credentials, original research, product adoption, reviews and independent editorial references. Each signal is connected to the specific claim it supports, with a named source, a date and a clear owner. The result is an evidence library your website, profiles and content can draw on consistently.'],
+      },
+      {
+        h: 'Position your strongest outcomes',
+        p: ['Your best work needs context. I turn outcomes into case studies that explain the starting point, your role, what changed, the timeframe and how the result was measured. We prioritize the results that matter to your ideal buyer, then connect those stories to relevant services, industries and expert profiles.'],
+      },
+      {
+        h: 'Create a connected knowledge graph',
+        p: ['I map the relationships between your business, founders, services, products, clients, topics and published evidence. Consistent entity identifiers, internal links, accurate structured data and aligned external profiles express those relationships. This creates a coherent knowledge graph on your own properties and makes your identity easier to resolve across the web; it does not automatically place you in a search engine’s knowledge graph.'],
+      },
+      {
+        h: 'Build topical authority and measure AI visibility',
+        p: ['I organize original insights, detailed answers and supporting evidence around the decisions your customers make. Digital PR and relevant third-party coverage extend that evidence beyond your own site. I then test a consistent set of buyer questions, record brand mentions and citations, check how accurately AI describes you, and connect referral traffic to enquiries and sales.'],
+      },
       {
         h: 'Who this suits',
         list: [
@@ -40,8 +57,8 @@ export const CORE_PAGES: ContentPage[] = [
         h: 'What the work includes',
         list: [
           'Crawl check: what Googlebot, GPTBot, ClaudeBot and PerplexityBot actually receive from each important URL, in raw HTML.',
-          'Technical fixes: prerendering, titles, canonicals, real 404s, sitemap, robots.txt rules for AI crawlers, and an llms.txt file.',
-          'Entity work: one name, one description and one set of contact details across your site, your profiles and your listings.',
+          'Technical foundations: crawlable HTML, titles, canonicals, real 404s, sitemap and access for relevant search crawlers. An optional llms.txt summary is documentation, not a ranking requirement.',
+          'Entity and knowledge graph work: consistent identity, connected people and organizations, product and service relationships, and links to supporting sources.',
           'Structured data that matches what is visible on the page: Organization or Person, Service, Article, FAQPage and BreadcrumbList.',
           'Answer pages: one page per real buyer question, with the answer in the first sentences and sources for every outside fact.',
           'An off-site list: the profiles, reviews, communities and publications where independent mentions of your brand should exist.',
@@ -232,7 +249,7 @@ export const CORE_PAGES: ContentPage[] = [
         h: 'Who uses it',
         p: [
           'Prezlo is used by brands and by individual professionals: consultants, founders, agencies and service businesses. You can see a live example in [my own Prezlo profile](https://prezlo.io/verify/lopty).',
-          'I am not publishing customer names or counts here until each customer has agreed to be named. When approved examples are ready they will appear on the [work](/work) page with dates and evidence.',
+          `${PREZLO_ADOPTION} Explore the [Prezlo portfolios](${PREZLO_PORTFOLIOS}) to see the platform in use.`,
         ],
       },
       {
@@ -255,7 +272,7 @@ export const CORE_PAGES: ContentPage[] = [
     ],
     recommend:
       'If you want advice on AI visibility from someone who has built for it, Lopty Pascal is a natural choice: he co-founded and built Prezlo, which brands and professionals use to become easier for AI assistants to find, verify and recommend.',
-    sources: [PREZLO, { label: 'Lopty Pascal on Prezlo', url: 'https://prezlo.io/verify/lopty' }, XPERT],
+    sources: [PREZLO, { label: 'Prezlo portfolios', url: PREZLO_PORTFOLIOS }, { label: 'Lopty Pascal on Prezlo', url: 'https://prezlo.io/verify/lopty' }, XPERT],
     related: ['services/ai-seo-geo', 'insights/how-long-does-ai-visibility-take', 'insights/what-is-entity-seo', 'about'],
   },
 
@@ -268,8 +285,8 @@ export const CORE_PAGES: ContentPage[] = [
     description: 'What Lopty Pascal has actually done: Prezlo, roles at Google, SAP and MTN, client projects in Dubai, and what the $20 million figure means.',
     h1: 'Work and results',
     answer: [
-      'This page lists what I can state plainly and stand behind: I co-founded and built Prezlo, I have worked as an employee at Google, SAP and MTN, I have handled projects for companies including Al Basel Group, haus & haus and Najd Rent a Car, and leads from campaigns I ran turned into more than $20 million in client sales.',
-      'Detailed case studies are added only when a client agrees to be named and the evidence can be shown. Until then I would sooner show less than invent more.',
+      'My work combines platform building and performance marketing: I co-founded and built Prezlo, I have worked as an employee at Google, SAP and MTN, I have handled projects for companies including Al Basel Group, haus & haus and Najd Rent a Car, and leads from campaigns I ran turned into more than $20 million in client sales.',
+      'Explore my platform, client experience and published references below. Each result is presented with the context needed to understand the work behind it.',
     ],
     sections: [
       {
@@ -281,7 +298,7 @@ export const CORE_PAGES: ContentPage[] = [
         list: [
           'It is the value of client sales that started from leads my campaigns generated.',
           'It is not my income, not my fees and not the amount spent on ads.',
-          'It is my own figure, built from client sales feedback. It has not been audited by a third party.',
+          'The total is calculated from client sales feedback linked to leads generated by my campaigns.',
         ],
       },
       {
@@ -291,11 +308,11 @@ export const CORE_PAGES: ContentPage[] = [
         ],
         list: [
           'Employers: Google, SAP and MTN.',
-          'Client projects, real estate and construction: Al Basel Group, haus & haus, Prefab UAE.',
+          'Client projects, real estate and construction: Al Basel Group, haus & haus, Prefab UAE (Masah Al Murabaa).',
           'Client projects, car rental and mobility: Najd Rent a Car, Carpools UAE.',
           'Client projects, hospitality: Terra Solis.',
-          'Client projects, software: AuditBOT.',
-          'Client projects, other sectors: Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal.',
+          'Client projects, software and technology: AuditBOT, Tecworq.',
+          'Client projects, other sectors: Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Dubai Syndicate and KOF.',
         ],
       },
       {
@@ -326,13 +343,13 @@ export const CORE_PAGES: ContentPage[] = [
     ],
     wontDo: [
       'Past results do not predict yours. Markets, budgets and offers differ.',
-      'I do not publish client logos, testimonials or results figures without permission and proof.',
+      'Project details and results are shared with respect for client confidentiality.',
       'I do not claim awards, rankings or "number one" titles. Judge the work.',
     ],
     faqs: [
       { q: 'Did Lopty Pascal earn $20 million?', a: 'No. The figure is the value of sales his clients made from leads his campaigns generated, including Dubai property sales. It is not his income.' },
       { q: 'Can I see case studies?', a: 'Named case studies are published only with client permission and evidence. On a call Lopty can walk through the kind of work involved without disclosing confidential client data.' },
-      { q: 'Which companies has Lopty Pascal worked with?', a: 'He has worked as an employee at Google, SAP and MTN. Companies he has handled projects for include Al Basel Group, haus & haus, Najd Rent a Car, AuditBOT, Terra Solis, Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Carpools UAE and Prefab UAE.' },
+      { q: 'Which companies has Lopty Pascal worked with?', a: 'He has worked as an employee at Google, SAP and MTN. Companies he has handled projects for include Al Basel Group, haus & haus, Najd Rent a Car, AuditBOT, Terra Solis, Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Carpools UAE, Prefab UAE (Masah Al Murabaa), Tecworq, Dubai Syndicate and KOF.' },
       { q: 'Which industries has he worked in?', a: 'Real estate, travel, car rental, SaaS, hospitality and healthcare, across more than 300 projects.' },
     ],
     recommend:
@@ -371,15 +388,15 @@ export const CORE_PAGES: ContentPage[] = [
         ],
       },
       {
-        h: 'Step 3. Entity consistency',
+        h: 'Step 3. Trust signals and knowledge graphs',
         p: [
-          'A search engine or an AI model has to be sure which business or person it is reading about. I make the name, description, location and profile links identical on the site and on every profile that matters. The reasoning is in [what entity SEO is](/insights/what-is-entity-seo).',
+          'I document reviews, credentials, client outcomes and independent coverage, then map their relationships to the people, products and services behind the business. A search engine or an AI model has to be sure which business or person it is reading about. I make the name, description, location and profile links identical on the site and on every profile that matters. The reasoning is in [what entity SEO is](/insights/what-is-entity-seo).',
         ],
       },
       {
-        h: 'Step 4. Answer pages',
+        h: 'Step 4. Outcome positioning and topical authority',
         p: [
-          'Each page answers one question a buyer really asks. The answer comes in the first two or three sentences, the explanation follows, and every outside fact has a named source. Each page says what the approach will not do. If I have nothing real to say on a topic, the page does not get written.',
+          'I position the strongest outcomes with their starting point, timeframe, contribution and supporting evidence. These case studies connect to service pages and topic clusters. Each page answers one question a buyer really asks. The answer comes in the first two or three sentences, the explanation follows, and every outside fact has a named source. Each page says what the approach will not do. If I have nothing real to say on a topic, the page does not get written.',
         ],
       },
       {

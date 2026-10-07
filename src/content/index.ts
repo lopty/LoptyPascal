@@ -31,7 +31,7 @@ export const HUBS = {
     h1: 'AI SEO and GEO in Dubai, by industry',
     title: 'AI SEO and GEO in Dubai by Industry | Lopty Pascal',
     description: 'How AI SEO and GEO in Dubai differ by sector: what buyers ask AI assistants and where the answers come from in real estate, travel, car rental, SaaS, hospitality and healthcare.',
-    intro: 'What an AI assistant needs from a website hardly changes by sector. What changes is the question buyers ask and the sources the assistant trusts. Each page below covers a sector I have worked in.',
+    intro: 'AI SEO and GEO connect trust signals, documented outcomes, knowledge graphs and useful content. The evidence and buyer questions differ by industry. Explore how I apply that approach to each sector below.',
     service: 'services/ai-seo-geo',
     serviceType: 'AI SEO and GEO',
     noteTitle: 'How to read these pages',

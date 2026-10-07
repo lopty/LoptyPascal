@@ -15,16 +15,18 @@ function Byline() {
 
 export function ServicesHub() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+    <div className="section-shell hub-page service-hub">
       <Breadcrumbs trail={[{ label: 'Home', to: '/' }, { label: 'Services' }]} />
-      <h1 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-5xl">Services: AI SEO and GEO, digital marketing specialist, digital marketing consultant</h1>
+      <p className="eyebrow hub-eyebrow">STRATEGY. EXECUTION. GROWTH.</p>
+      <h1 className="hub-title">Three ways to move<br /><span>your business forward.</span></h1>
       <Byline />
-      <p className="mt-8 border-l-4 border-luxury-accent pl-5 text-lg leading-relaxed">
+      <p className="hub-intro">
         I offer three services from Dubai. AI SEO and GEO is my strongest niche. The other two cover digital marketing more widely: one where I run the work, one where I advise and review.
       </p>
-      <div className="mt-10 space-y-6">
-        {SERVICES.map(s => (
-          <Link key={s.slug} to={`/${s.slug}`} className="card block">
+      <div className="hub-service-grid">
+        {SERVICES.map((s, i) => (
+          <Link key={s.slug} to={`/${s.slug}`} className="service-card">
+            <div className="service-top"><span className="service-icon" aria-hidden="true">{['◎', '↗', '⌘'][i]}</span><span className="service-number">0{i + 1}</span></div>
             <h2 className="font-serif text-2xl font-bold">{s.navLabel}</h2>
             <p className="mt-2 leading-relaxed text-black/70">{s.description}</p>
             <span className="mt-4 inline-block text-sm font-semibold text-luxury-accent">Read about {s.navLabel.toLowerCase()}</span>
@@ -77,14 +79,15 @@ export function InsightsHub() {
 export function IndustryHub({ hub }: { hub: HubSlug }) {
   const h = HUBS[hub];
   return (
-    <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+    <div className="section-shell hub-page industry-hub">
       <Breadcrumbs trail={[{ label: 'Home', to: '/' }, { label: h.crumb }]} />
-      <h1 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-5xl">{h.h1}</h1>
+      <p className="eyebrow hub-eyebrow">YOUR MARKET. YOUR CUSTOMERS. YOUR NEXT MOVE.</p>
+      <h1 className="hub-title">{h.h1}</h1>
       <Byline />
-      <p className="mt-8 border-l-4 border-luxury-accent pl-5 text-lg leading-relaxed">
+      <p className="hub-intro">
         {h.intro}
       </p>
-      <ul className="mt-10 divide-y divide-black/10 border-y border-black/10">
+      <ul className="industry-card-grid">
         {industriesIn(hub).map(p => (
           <li key={p.slug} className="py-4">
             <Link to={`/${p.slug}`} className="text-link text-lg">{p.h1}</Link>

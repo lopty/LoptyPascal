@@ -54,7 +54,7 @@ export const GEO_INSIGHTS: ContentPage[] = [
       {
         h: 'My view',
         p: [
-          'This part is opinion. I think the important change is that we are moving from optimizing pages to optimizing entities. If an AI agent is the interface, then identity and trust decide what gets surfaced, together with structure and ranking signals. That is the idea I built [Prezlo](/prezlo) around.',
+          'My approach brings together documented trust signals, clearly positioned outcomes, knowledge graphs and original expertise. The important change is the move from optimizing isolated pages to connecting entities and the evidence behind them. If an AI agent is the interface, then identity and trust decide what gets surfaced, together with structure and ranking signals. That is the idea I built [Prezlo](/prezlo) around.',
         ],
       },
     ],

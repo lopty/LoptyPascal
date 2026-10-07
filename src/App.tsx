@@ -1,6 +1,7 @@
 import { Fragment, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { HeadSync } from './seo/HeadSync';
 import ContentTemplate from './components/ContentTemplate';
 import { HUB_SLUGS, PAGES } from './content';
 import Home from './views/Home';
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <Layout>
       <ScrollToTop />
+      <HeadSync />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesHub />} />

@@ -1,184 +1,51 @@
 import { Link } from 'react-router-dom';
-import { HUBS, HUB_SLUGS, INSIGHTS, SERVICES, industriesIn } from '../content';
-import { CLIENTS, CONTACT, EMPLOYERS, MENTIONS, NAME, REVIEWED, REVIEWED_LABEL } from '../site';
+import { INSIGHTS, SERVICES } from '../content';
+import { CLIENTS, CONTACT, EMPLOYERS, MENTIONS, NAME, PREZLO_URL, PREZLO_PORTFOLIOS, REVIEWED, REVIEWED_LABEL } from '../site';
 import { NextStep } from '../components/Layout';
 
 export const HOME_FAQS = [
-  {
-    q: 'Who is Lopty Pascal?',
-    a: 'Lopty Pascal is a digital marketing expert in Dubai with 10 years of experience and more than 300 projects. His specialism is AI SEO and GEO, and he is the co-founder and builder of Prezlo, an AI visibility platform.',
-  },
-  {
-    q: 'What does Lopty Pascal do?',
-    a: 'He offers three services: AI SEO and GEO, hands-on digital marketing as a specialist, and independent advice as a digital marketing consultant.',
-  },
-  {
-    q: 'What is Prezlo?',
-    a: 'Prezlo is a platform that makes businesses and professionals easier for AI assistants to find, verify and recommend. Lopty co-founded and built it.',
-  },
-  {
-    q: 'Does he promise rankings or AI recommendations?',
-    a: 'No. Nobody controls search results or AI answers. He commits to the work, the method and honest reporting.',
-  },
+  { q: 'Who is Lopty Pascal?', a: 'Lopty Pascal is a senior digital marketing expert and consultant in Dubai with 10 years of experience and more than 300 projects. His specialism is AI SEO and GEO, and he is the co-founder and builder of Prezlo, an AI visibility platform.' },
+  { q: 'What does Lopty Pascal do?', a: 'He offers three services: AI SEO and GEO, hands-on digital marketing as a specialist, and independent advice as a digital marketing consultant.' },
+  { q: 'What is Prezlo?', a: 'Prezlo is a platform that makes businesses and professionals easier for AI assistants to find, verify and recommend. Lopty co-founded and built it.' },
+  { q: 'Does he promise rankings or AI recommendations?', a: 'No. Nobody controls search results or AI answers. He commits to the work, the method and honest reporting.' },
 ];
-
-const TEASERS: Record<string, string> = {
-  'services/ai-seo-geo': 'Get found, verified and cited by AI assistants and AI search. My strongest niche.',
-  'services/digital-marketing-specialist': 'Hands-on Google Ads, paid campaigns, SEO and tracking, judged on sales.',
-  'services/digital-marketing-consultant': 'An independent audit, a ranked plan, and review of your team or agency.',
+const serviceCopy = [
+  { icon: '◎', title: 'Be found in the next era of search.', copy: 'Document your trust signals, position your strongest outcomes, and connect your expertise through knowledge graphs.', tags: 'AI SEO / GEO / Organic search' },
+  { icon: '↗', title: 'Turn attention into business.', copy: 'Hands-on paid campaigns, landing pages and conversion tracking, connected to qualified leads and sales.', tags: 'Google Ads / Performance / Tracking' },
+  { icon: '⌘', title: 'Find your clearest way forward.', copy: 'An independent look at your marketing, a focused plan, and practical direction for your team or agency.', tags: 'Audits / Strategy / Advisory' },
+];
+const selectedInsights = ['insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/seo-vs-google-ads-dubai'];
+const brandLogos: Record<string, { src: string; className?: string }> = {
+  'Al Basel Group': { src: '/logos/al-basel.png' },
+  'haus & haus': { src: '/logos/haus-and-haus.svg', className: 'haus-logo' },
+  'Terra Solis': { src: '/logos/terra-solis.svg', className: 'terra-logo' },
 };
-
-const FEATURED = [
-  'insights/what-is-geo',
-  'insights/how-to-get-recommended-by-chatgpt',
-  'insights/how-long-does-ai-visibility-take',
-  'insights/what-is-ai-seo',
-  'insights/how-to-choose-a-digital-marketing-consultant-dubai',
-  'insights/seo-vs-google-ads-dubai',
-];
-
+const featuredBrands = ['Google', 'MTN', 'Al Basel Group', 'haus & haus', 'Tecworq', 'Prefab UAE (Masah Al Murabaa)', 'Dubai Syndicate', 'Jeffaro', 'Lark Group', 'KOF', 'Accurate Power Group', 'Terra Solis', 'AuditBOT', 'Najd Rent a Car'];
 export default function Home() {
-  const featured = FEATURED.map(slug => INSIGHTS.find(p => p.slug === slug)!);
-  return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6">
-      <section className="grid items-center gap-10 py-12 md:grid-cols-[3fr_2fr] md:py-20">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-luxury-accent">Digital marketing expert · Dubai</p>
-          <h1 className="mt-3 font-serif text-4xl font-bold leading-tight sm:text-6xl">
-            {NAME}: AI SEO, GEO and digital marketing in Dubai
-          </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-black/75">
-            I help businesses get found on Google and recommended by AI assistants such as ChatGPT, Perplexity and Gemini. I co-founded and built{' '}
-            <Link to="/prezlo" className="text-link">Prezlo</Link>, the platform brands and professionals use to be found, verified and recommended by AI.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href={CONTACT.whatsapp} rel="noopener" className="btn-primary">Message on WhatsApp</a>
-            <Link to="/services" className="btn-secondary">See services</Link>
-          </div>
-        </div>
-        <div className="mx-auto w-full max-w-xs md:max-w-sm">
-          <img
-            src="/lopty-pascal.webp"
-            srcSet="/lopty-pascal-320.webp 320w, /lopty-pascal.webp 640w"
-            sizes="(min-width: 768px) 384px, 320px"
-            width={640}
-            height={747}
-            alt="Portrait of Lopty Pascal, digital marketing expert in Dubai and co-founder of Prezlo"
-            className="h-auto w-full rounded-lg"
-          />
-        </div>
-      </section>
-
-      <section aria-labelledby="proof" className="border-y border-black/10 py-10">
-        <h2 id="proof" className="sr-only">Why work with Lopty</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div>
-            <h3 className="font-serif text-xl font-bold">Built Prezlo</h3>
-            <p className="mt-2 text-black/70">
-              I did not only study AI visibility. I co-founded and built a product for it, used by brands and individual professionals. <Link to="/prezlo" className="text-link">About Prezlo</Link>
-            </p>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl font-bold">10 years, 300+ projects</h3>
-            <p className="mt-2 text-black/70">
-              Leads from campaigns I ran across Google Ads, paid channels and SEO became more than $20 million in client sales. <Link to="/work" className="text-link">What that figure means</Link>
-            </p>
-          </div>
-          <div>
-            <h3 className="font-serif text-xl font-bold">Referenced by industry publications</h3>
-            <p className="mt-2 text-black/70">
-              When JC Chouinard and Xpert.Digital covered Google Search Central Live Toronto, both used my analysis of the shift from pages to entities as an expert reference. <Link to="/about" className="text-link">About me</Link>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="clients" className="border-b border-black/10 py-10">
-        <h2 id="clients" className="sr-only">Where Lopty has worked</h2>
-        <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
-          <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-black/50">Worked at</h3>
-            <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-3 font-serif text-xl text-black/85">
-              {EMPLOYERS.map(c => <li key={c}>{c}</li>)}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-black/50">Client projects</h3>
-            <ul className="mt-4 flex flex-wrap gap-x-8 gap-y-3 font-serif text-lg text-black/80">
-              {CLIENTS.map(c => <li key={c}>{c}</li>)}
-            </ul>
-          </div>
-        </div>
-        <p className="mt-5 text-sm text-black/60">Names only. <Link to="/work" className="text-link">See how I describe my work and results</Link>.</p>
-      </section>
-
-      <section aria-labelledby="services" className="py-14">
-        <h2 id="services" className="font-serif text-3xl font-bold">Three services</h2>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {SERVICES.map(s => (
-            <Link key={s.slug} to={`/${s.slug}`} className="card">
-              <h3 className="font-serif text-xl font-bold">{s.navLabel}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-black/70">{TEASERS[s.slug]}</p>
-              <span className="mt-4 inline-block text-sm font-semibold text-luxury-accent">Read more</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {HUB_SLUGS.map(hub => (
-        <section key={hub} aria-labelledby={hub} className="border-t border-black/10 py-14">
-          <h2 id={hub} className="font-serif text-3xl font-bold">{HUBS[hub].h1}</h2>
-          <ul className="mt-6 flex flex-wrap gap-3">
-            {industriesIn(hub).map(p => (
-              <li key={p.slug}><Link to={`/${p.slug}`} className="btn-secondary">{p.navLabel}</Link></li>
-            ))}
-          </ul>
-          <p className="mt-6"><Link to={`/${hub}`} className="font-semibold text-luxury-accent">{HUBS[hub].crumb}: how the approach changes by sector</Link></p>
-        </section>
-      ))}
-
-      <section aria-labelledby="mentions" className="border-t border-black/10 py-14">
-        <h2 id="mentions" className="font-serif text-3xl font-bold">Where my work has been referenced</h2>
-        <ul className="mt-6 space-y-6">
-          {MENTIONS.map(m => (
-            <li key={m.url}>
-              <p className="text-black/80">{m.summary}</p>
-              <p className="mt-1 text-sm text-black/60">
-                <a href={m.url} rel="noopener" className="text-link">{m.publisher}: {m.title}</a>, published {m.published}.
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="questions" className="border-t border-black/10 py-14">
-        <h2 id="questions" className="font-serif text-3xl font-bold">Questions buyers ask, answered</h2>
-        <ul className="mt-6 grid gap-x-10 gap-y-4 md:grid-cols-2">
-          {featured.map(p => (
-            <li key={p.slug}>
-              <Link to={`/${p.slug}`} className="text-link text-lg">{p.h1}</Link>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6"><Link to="/insights" className="font-semibold text-luxury-accent">All insights</Link></p>
-      </section>
-
-      <section aria-labelledby="home-faq" className="border-t border-black/10 py-14">
-        <h2 id="home-faq" className="font-serif text-3xl font-bold">Frequently asked questions</h2>
-        <dl className="faq mt-6 max-w-3xl">
-          {HOME_FAQS.map(f => (
-            <div key={f.q}>
-              <dt>{f.q}</dt>
-              <dd>{f.a}</dd>
-            </div>
-          ))}
-        </dl>
-        <p className="mt-8 text-sm text-black/60">
-          Last reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time> by <Link to="/about" className="text-link">{NAME}</Link>.
-        </p>
-      </section>
-
-      <div className="pb-4"><NextStep /></div>
-    </div>
-  );
+  return <div className="home">
+    <section className="hero section-shell">
+      <div className="hero-copy">
+        <p className="eyebrow"><span className="status-dot" /> DUBAI, UAE · WORKING WORLDWIDE</p>
+        <p className="hero-role">Senior digital marketing<br className="role-break" /> expert &amp; consultant</p>
+        <h1>I help brands<br />get found.<br /><span>And chosen.</span></h1>
+        <div className="hero-description"><p className="hero-specialty">Expert in AI SEO / GEO</p><p>I turn your expertise into visibility,<br className="desktop-break" /> trust, and opportunities to grow.</p></div>
+        <div className="hero-actions"><a className="btn-primary" href={CONTACT.calendly}>Let’s talk about your growth <span aria-hidden="true">↗</span></a><Link className="btn-secondary" to="/work">Explore my work <span aria-hidden="true">↓</span></Link></div>
+        <p className="hero-founder">CO-FOUNDER & BUILDER OF <Link to="/prezlo">prezlo<span>↗</span></Link></p>
+      </div>
+      <div className="hero-visual">
+        <div className="portrait-frame"><span className="portrait-note">STRATEGY. EXECUTION. REAL PEOPLE.</span><img src="/lopty-pascal.webp" srcSet="/lopty-pascal-320.webp 320w, /lopty-pascal.webp 640w" sizes="(min-width: 900px) 460px, 90vw" width="640" height="747" alt="Lopty Pascal, digital marketing consultant and co-founder of Prezlo" fetchPriority="high" /></div>
+        <div className="portrait-label"><span className="portrait-mark">↗</span><div><strong>A marketer. A builder.</strong><span>Making visibility work for business.</span></div></div>
+      </div>
+    </section>
+    <div className="trust-reference-strip section-shell"><span className="eyebrow">MY ENTITY SEO PERSPECTIVE, REFERENCED BY</span>{MENTIONS.map(m => <a key={m.url} href={m.url} rel="noopener">{m.publisher} <span aria-hidden="true">↗</span></a>)}</div>
+    <section className="client-section section-shell" aria-labelledby="clients-heading"><div className="strip-heading"><p id="clients-heading" className="eyebrow">BRANDS I’VE WORKED WITH</p><Link to="/work" className="plain-link">The work behind the names ↗</Link></div><ul className="brand-grid">{featuredBrands.map(name => <li key={name}>{brandLogos[name] ? <img src={brandLogos[name].src} className={brandLogos[name].className} width="180" height="60" alt={`${name} brand logo`} loading="lazy" /> : <span className="brand-name">{name === 'Prefab UAE (Masah Al Murabaa)' ? <>Prefab UAE<small>Masah Al Murabaa</small></> : name}</span>}</li>)}</ul></section>
+    <section className="stats-band"><div className="section-shell stats-grid"><div><strong>10<span> years</span></strong><p>In digital marketing</p></div><div><strong>300<span>+</span></strong><p>Projects across sectors</p></div><div><strong>$20<span> million+</span></strong><p>Client sales from campaign leads*</p></div><div><strong>Built<span> Prezlo</span></strong><p>From practice to product</p></div></div><p className="stats-note section-shell">*Client sales generated through campaign leads, including property transactions. <Link to="/work">How this figure is counted ↗</Link></p></section>
+    <section className="section-shell home-section" aria-labelledby="services-heading"><div className="section-heading"><div><p className="eyebrow">HOW I CAN HELP</p><h2 id="services-heading">Good strategy.<br /><span>Better execution.</span></h2></div><p>From the first search to the final decision, I help you connect the dots that turn visibility into growth.</p></div><div className="service-grid">{SERVICES.map((service,i) => <Link to={`/${service.slug}`} className="service-card" key={service.slug}><div className="service-top"><span className="service-icon">{serviceCopy[i].icon}</span><span className="service-number">0{i+1}</span></div><p className="eyebrow">{service.navLabel}</p><h3>{serviceCopy[i].title}</h3><p>{serviceCopy[i].copy}</p><div className="service-bottom"><span>{serviceCopy[i].tags}</span><span aria-hidden="true">↗</span></div></Link>)}</div></section>
+    <section className="prezlo-section section-shell" aria-labelledby="prezlo-heading"><div className="prezlo-copy"><p className="eyebrow">BEYOND CONSULTING · BUILDING PREZLO</p><h2 id="prezlo-heading">The future of search<br />is a conversation.</h2><p>I co-founded and built Prezlo to help brands and professionals be found, verified and recommended by AI. It brings the problem I work on every day into a product.</p><div className="prezlo-tags"><span>Trust signals</span><span>Knowledge graphs</span><span>AI visibility</span></div><div className="prezlo-actions"><a href={PREZLO_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">Try Prezlo <span aria-hidden="true">↗</span></a><Link to="/prezlo" className="btn-secondary">How I built it <span aria-hidden="true">↗</span></Link></div><p className="prezlo-adoption"><strong>200+ agencies and consultants</strong> use Prezlo for their GEO work. <a href={PREZLO_PORTFOLIOS} target="_blank" rel="noopener noreferrer">Explore Prezlo portfolios ↗</a></p></div><div className="prezlo-art"><span className="prezlo-logotype">prezlo<span>✳</span></span><p>Make your expertise discoverable.</p><div className="prezlo-flow"><span>Your brand</span><span aria-hidden="true">↓</span><strong>Clear identity. Trusted signals.</strong><span aria-hidden="true">↓</span><div><span>ChatGPT</span><span>Perplexity</span><span>Gemini</span></div></div><span className="prezlo-art-note">A PLATFORM BUILT BY LOPTY PASCAL</span></div></section>
+    <section className="section-shell home-section about-section"><div><p className="eyebrow">THE PERSON BEHIND THE WORK</p><h2>A builder’s mindset.<br /><span>A marketer’s instinct.</span></h2></div><div><p>I’m a senior digital marketing expert and consultant based in Dubai, with expertise in AI SEO and GEO. I work directly with businesses to make their search presence clearer, their campaigns more accountable, and their next move easier to see.</p><p>My background includes roles at {EMPLOYERS.join(', ')} and projects across real estate, travel, car rental, SaaS, hospitality and healthcare.</p><Link to="/about" className="plain-link">A little more about me ↗</Link><div className="client-list"><p className="eyebrow">MORE CLIENT PROJECTS</p><p>{CLIENTS.filter(c => !['Al Basel Group','haus & haus','AuditBOT','Terra Solis','Najd Rent a Car'].includes(c)).join(' · ')}</p></div></div></section>
+    <section className="evidence-section"><div className="section-shell home-section"><div className="section-heading"><div><p className="eyebrow">IN THE INDUSTRY CONVERSATION</p><h2>Ideas that travel<br /><span>beyond this website.</span></h2></div><p>Independent publications have referenced my perspective on entities, identity and the changing search landscape.</p></div><div className="mention-grid">{MENTIONS.map(m => <a href={m.url} className="mention-card" rel="noopener" key={m.url}><div><strong>{m.publisher}</strong><span aria-hidden="true">↗</span></div><h3>{m.title}</h3><p>{m.summary}</p><small>{m.published} · Read the original reference</small></a>)}</div></div></section>
+    <section className="section-shell home-section"><div className="section-heading"><div><p className="eyebrow">NOTES ON WHAT’S NEXT</p><h2>A clearer view of search.</h2></div><Link to="/insights" className="plain-link">All insights ↗</Link></div><div className="insight-grid">{selectedInsights.map((slug,i) => {const p=INSIGHTS.find(p => p.slug===slug)!;return <Link to={`/${slug}`} className="insight-card" key={slug}><span className="eyebrow">0{i+1} / FIELD NOTES</span><h3>{p.h1}</h3><span className="plain-link">Read the article ↗</span></Link>})}</div></section>
+    <section className="section-shell home-section faq-section"><div><p className="eyebrow">A FEW THINGS YOU MIGHT ASK</p><h2>Let’s make it clear.</h2><p className="review-note">Reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time> by {NAME}.</p></div><div>{HOME_FAQS.map(f => <details key={f.q}><summary>{f.q}<span aria-hidden="true">+</span></summary><p>{f.a}</p></details>)}</div></section>
+    <div className="section-shell"><NextStep heading="Let’s make your next move count." /></div>
+  </div>;
 }

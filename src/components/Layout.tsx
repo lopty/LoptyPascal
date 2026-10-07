@@ -22,17 +22,20 @@ export function Rich({ text }: { text: string }) {
 }
 
 function Header() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
   return (
-    <header className="border-b border-black/10 bg-white">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-4 py-4 sm:px-6">
-        <Link to="/" className="font-serif text-xl font-bold tracking-tight text-black">
-          Lopty <span className="font-normal italic text-luxury-accent">Pascal</span>
+    <header className="site-header">
+      <div className="header-inner">
+        <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>
+          lopty<span className="text-luxury-accent">.</span><span className="brand-caption">PASCAL</span>
         </Link>
-        <nav aria-label="Main" className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+        <button type="button" className="menu-toggle" aria-expanded={menuOpen} aria-controls="main-nav" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'Close ×' : 'Menu ☰'}</button>
+        <nav id="main-nav" aria-label="Main" className={`main-nav ${menuOpen ? 'is-open' : ''}`}>
           {NAV.map(item => (
             <NavLink
               key={item.to}
               to={item.to}
+              onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
                 `transition-colors hover:text-luxury-accent ${isActive ? 'font-semibold text-black' : 'text-black/70'}`
               }
@@ -41,6 +44,7 @@ function Header() {
             </NavLink>
           ))}
         </nav>
+        <a href={CONTACT.calendly} className="header-cta">Let’s talk <span aria-hidden="true">↗</span></a>
       </div>
     </header>
   );
@@ -90,6 +94,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <Header />
       <main id="main" className="flex-1">{children}</main>
       <Footer />
+      <a href={CONTACT.whatsapp} className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Lopty on WhatsApp">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.2 7.5c-.9.8-.7 2.7 1.4 4.9 2.2 2.2 4 2.6 5 1.7l1-1.1-2.4-1.2-.9.8a7.6 7.6 0 0 1-2.9-2.9l.7-.9-1-2.1-.9.8Z"/></svg>
+        <span>Chat on WhatsApp</span>
+      </a>
     </div>
   );
 }

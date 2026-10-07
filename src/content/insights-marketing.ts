@@ -293,7 +293,7 @@ export const MARKETING_INSIGHTS: ContentPage[] = [
     h1: 'What is performance marketing, and how is revenue attributed to it?',
     answer: [
       'Performance marketing is marketing that is planned and judged on a measured outcome, such as a lead or a sale, instead of on reach. Revenue is attributed to it by tracking a customer from the first click through to the purchase and recording the value of that purchase against the campaign.',
-      'When a marketer says a campaign "generated" an amount, they should mean client sales that can be traced to it. That is what I mean by my own figure.',
+      'When a marketer says a campaign "generated" an amount, they should mean client sales that can be traced to it. That is how the client sales total is calculated.',
     ],
     sections: [
       {

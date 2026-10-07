@@ -27,10 +27,11 @@ const person = {
   image: `${BASE}/lopty-pascal.jpg`,
   jobTitle: JOB_TITLE,
   description: BIO,
-  knowsAbout: ['AI SEO', 'Generative engine optimization (GEO)', 'Search engine optimization', 'Digital marketing', 'Performance marketing', 'Google Ads'],
+  knowsAbout: ['AI SEO', 'Generative engine optimization (GEO)', 'Entity SEO', 'Knowledge graphs', 'Trust signals', 'Topical authority', 'Digital PR', 'Search engine optimization', 'Digital marketing', 'Performance marketing', 'Google Ads'],
   address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressCountry: 'AE' },
   worksFor: { '@id': PREZLO_ID },
   sameAs: PROFILES.map(p => p.url),
+  subjectOf: MENTIONS.map(m => ({ '@type': 'Article', name: m.title, url: m.url, publisher: { '@type': 'Organization', name: m.publisher } })),
 };
 
 const prezlo = {
@@ -118,6 +119,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       dateModified: REVIEWED,
       image: `${BASE}/lopty-pascal.jpg`,
       inLanguage: 'en',
+      citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })),
     };
   } else if (page.slug === 'about') {
     main = webPage(path, page.title, page.description, 'ProfilePage', {
@@ -134,12 +136,12 @@ function contentRoute(page: ContentPage): SeoRoute {
     description: page.description,
     canonical: url(path),
     ogType: page.kind === 'insight' ? 'article' : page.slug === 'about' ? 'profile' : 'website',
-    schema: graph(main, breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
+    schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
   };
 }
 
-const HOME_TITLE = 'Lopty Pascal | AI SEO, GEO and Digital Marketing Expert in Dubai';
-const HOME_DESC = 'Lopty Pascal is a digital marketing expert in Dubai specialising in AI SEO and GEO. Co-founder and builder of Prezlo, the platform brands use to be recommended by AI assistants.';
+const HOME_TITLE = 'Lopty Pascal | Senior Digital Marketing Consultant & AI SEO Expert';
+const HOME_DESC = 'Senior digital marketing expert and consultant in Dubai. Expert in AI SEO and GEO, and co-founder of Prezlo. Build visibility, trust and measurable business growth with Lopty Pascal.';
 const SERVICES_TITLE = 'Services: AI SEO and GEO, Digital Marketing Specialist and Consultant | Lopty Pascal';
 const SERVICES_DESC = 'The three services Lopty Pascal offers from Dubai: AI SEO and GEO, hands-on digital marketing as a specialist, and independent advice as a digital marketing consultant.';
 const INSIGHTS_TITLE = 'Insights on GEO, AI SEO, SEO and Digital Marketing | Lopty Pascal';
@@ -240,7 +242,7 @@ export function llmsTxt(): string {
     `- Has worked as an employee at: ${EMPLOYERS.join(', ')}.`,
     `- Companies he has handled projects for include: ${CLIENTS.join(', ')}.`,
     '- Co-founded and built Prezlo (https://prezlo.io), a platform that makes businesses and professionals easier for AI assistants to find, verify and recommend.',
-    '- Background in performance marketing. Leads from campaigns he ran became more than $20 million in client sales. This is the value of client sales, not his income, and is his own figure.',
+    '- Background in performance marketing. Leads from campaigns he ran became more than $20 million in client sales. This is the value of client sales generated through campaign leads, including property transactions.',
     ...MENTIONS.map(m => `- Cited by ${m.publisher}: "${m.title}" (${m.published}), ${m.url}`),
     '',
     '## Services',

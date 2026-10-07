@@ -509,7 +509,7 @@ export const SITUATION_INSIGHTS: ContentPage[] = [
       {
         h: 'How to read the numbers',
         p: [
-          'Expect AI referral traffic to be small compared with search, and to convert well, because the visitor arrives already advised. Judge the channel on enquiries and on the trend, not on visit counts. And treat self-reported answers as a floor: many people forget where they first heard of you.',
+          'Expect AI referral traffic to be small compared with search, and to convert well, because the visitor arrives already advised. Judge the channel on enquiries and on the trend, not on visit counts. And treat customer survey answers as a minimum: many people forget where they first heard of you.',
         ],
       },
     ],
