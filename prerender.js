@@ -3,92 +3,70 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const dist = join(__dirname, 'dist');
 
 // Import the SSR bundle (built by vite.ssr.config.ts)
-const { render, seoRoutes } = await import('./dist/server/entry-server.js');
+const { render, seoRoutes, sitemapXml, robotsTxt, llmsTxt, REDIRECTS, BASE, NAME } = await import('./.ssr/entry-server.js');
 
-const template = readFileSync(join(__dirname, 'dist/index.html'), 'utf-8');
+const template = readFileSync(join(dist, 'index.html'), 'utf-8');
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
-let rendered = 0;
-let failed = 0;
-
-for (const route of seoRoutes) {
-  const url = route.path;
-
-  // Build per-page head injection
-  const schemaTag = route.schema
-    ? `<script type="application/ld+json">\n    ${JSON.stringify(route.schema, null, 2)}\n    </script>`
-    : '';
-
-  const perPageHead = `
-    <title>${route.title}</title>
-    <meta name="description" content="${route.description.replace(/"/g, '&quot;')}" />
-    <link rel="canonical" href="${route.canonical}" />
-    <meta property="og:title" content="${route.title.replace(/"/g, '&quot;')}" />
-    <meta property="og:description" content="${route.description.replace(/"/g, '&quot;')}" />
-    <meta property="og:url" content="${route.canonical}" />
-    <meta name="twitter:title" content="${route.title.replace(/"/g, '&quot;')}" />
-    <meta name="twitter:description" content="${route.description.replace(/"/g, '&quot;')}" />
-    ${schemaTag}`;
-
-  try {
-    // Render React app to HTML string
-    const appHtml = render(url);
-
-    // Replace title and inject per-page head before </head>
-    let html = template
-      // Inject app HTML
-      .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
-      // Replace title tag
-      .replace(/<title>[^<]*<\/title>/, `<title>${route.title}</title>`)
-      // Replace meta description
-      .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${route.description.replace(/"/g, '&quot;')}" />`)
-      // Replace canonical
-      .replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${route.canonical}" />`)
-      // Replace OG title
-      .replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${route.title.replace(/"/g, '&quot;')}" />`)
-      // Replace OG description
-      .replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${route.description.replace(/"/g, '&quot;')}" />`)
-      // Replace OG url
-      .replace(/<meta property="og:url"[^>]*>/, `<meta property="og:url" content="${route.canonical}" />`);
-
-    // For non-homepage routes, inject page-specific schema before </head>
-    if (url !== '/' && schemaTag) {
-      html = html.replace('</head>', `  ${schemaTag}\n  </head>`);
-    }
-
-    // Determine output path
-    const outputPath = url === '/'
-      ? join(__dirname, 'dist/index.html')
-      : join(__dirname, `dist${url}/index.html`);
-
-    mkdirSync(dirname(outputPath), { recursive: true });
-    writeFileSync(outputPath, html);
-
-    rendered++;
-    if (rendered % 10 === 0) console.log(`Prerendered ${rendered}/${seoRoutes.length} routes...`);
-  } catch (err) {
-    failed++;
-    console.error(`Failed to prerender ${url}:`, err.message);
-
-    // Fallback: inject meta without app HTML
-    let html = template
-      .replace(/<title>[^<]*<\/title>/, `<title>${route.title}</title>`)
-      .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${route.description.replace(/"/g, '&quot;')}" />`)
-      .replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${route.canonical}" />`);
-
-    if (schemaTag) {
-      html = html.replace('</head>', `  ${schemaTag}\n  </head>`);
-    }
-
-    const outputPath = url === '/'
-      ? join(__dirname, 'dist/index.html')
-      : join(__dirname, `dist${url}/index.html`);
-
-    mkdirSync(dirname(outputPath), { recursive: true });
-    writeFileSync(outputPath, html);
-  }
+function write(path, html) {
+  const out = path === '/' ? join(dist, 'index.html') : join(dist, path, 'index.html');
+  mkdirSync(dirname(out), { recursive: true });
+  writeFileSync(out, html);
 }
 
-console.log(`\nPrerender complete: ${rendered} succeeded, ${failed} failed (fallback meta-only)`);
-console.log(`Total routes: ${seoRoutes.length}`);
+function page(path, title, head) {
+  return template
+    .replace('<div id="root"></div>', `<div id="root">${render(path)}</div>`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
+    .replace('<!--seo-head-->', head);
+}
+
+for (const route of seoRoutes) {
+  const head = `<meta name="description" content="${esc(route.description)}" />
+    <link rel="canonical" href="${route.canonical}" />
+    <meta property="og:type" content="${route.ogType}" />
+    <meta property="og:site_name" content="${NAME}" />
+    <meta property="og:title" content="${esc(route.title)}" />
+    <meta property="og:description" content="${esc(route.description)}" />
+    <meta property="og:url" content="${route.canonical}" />
+    <meta property="og:image" content="${BASE}/lopty-pascal.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="${esc(route.title)}" />
+    <meta name="twitter:description" content="${esc(route.description)}" />
+    <meta name="twitter:image" content="${BASE}/lopty-pascal.jpg" />
+    <script type="application/ld+json">${JSON.stringify(route.schema).replace(/</g, '\\u003c')}</script>`;
+  write(route.path, page(route.path, route.title, head));
+}
+
+// 404 page, served by the host for unknown URLs.
+writeFileSync(
+  join(dist, '404.html'),
+  page('/page-not-found', `Page not found | ${NAME}`, '<meta name="robots" content="noindex" />')
+    .replace('<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />', ''),
+);
+
+// Redirect stubs for retired URLs that have a close replacement.
+for (const { from, to } of REDIRECTS) {
+  const target = `${BASE}${to}`;
+  write(from, `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moved</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="${target}" />
+    <meta http-equiv="refresh" content="0; url=${target}" />
+  </head>
+  <body><p>This page has moved to <a href="${target}">${target}</a>.</p></body>
+</html>
+`);
+}
+
+writeFileSync(join(dist, 'sitemap.xml'), sitemapXml());
+writeFileSync(join(dist, 'robots.txt'), robotsTxt());
+writeFileSync(join(dist, 'llms.txt'), llmsTxt());
+
+console.log(`Prerendered ${seoRoutes.length} pages, ${REDIRECTS.length} redirect stubs, 404.html, sitemap.xml, robots.txt, llms.txt`);

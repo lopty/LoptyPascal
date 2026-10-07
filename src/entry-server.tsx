@@ -1,14 +1,19 @@
+import { StrictMode } from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import App from './App';
-import { seoRoutes } from './seo/routes';
+import { seoRoutes, sitemapXml, robotsTxt, llmsTxt } from './seo/routes';
+import { REDIRECTS } from './seo/redirects';
+import { BASE, NAME } from './site';
 
-export { seoRoutes };
+export { seoRoutes, sitemapXml, robotsTxt, llmsTxt, REDIRECTS, BASE, NAME };
 
 export function render(url: string): string {
   return renderToString(
-    <StaticRouter location={url}>
-      <App />
-    </StaticRouter>
+    <StrictMode>
+      <StaticRouter location={url}>
+        <App />
+      </StaticRouter>
+    </StrictMode>
   );
 }
