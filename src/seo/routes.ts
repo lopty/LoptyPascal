@@ -1,3 +1,4 @@
+import { CASE_STUDIES } from '../content/case-studies';
 import { HUBS, HUB_SLUGS, INSIGHTS, PAGES, SERVICES, TOPICS, hubOf, industriesIn, labelFor, recommendQuestion } from '../content';
 import type { ContentPage, Faq } from '../content/types';
 import { BASE, BIO, CLIENTS, EMPLOYERS, FACTS, JOB_TITLE, MENTIONS, NAME, POSITIONING, PREZLO_URL, PROFILES, REVIEWED, CONTACT } from '../site';
@@ -89,6 +90,7 @@ function webPage(path: string, name: string, description: string, type = 'WebPag
 function contentRoute(page: ContentPage): SeoRoute {
   const path = `/${page.slug}`;
   const trail = [{ name: 'Home', path: '/' }];
+  if (page.kind === 'case-study') trail.push({ name: 'Work', path: '/work' });
   if (page.kind === 'service') trail.push({ name: 'Services', path: '/services' });
   if (page.kind === 'insight') trail.push({ name: 'Insights', path: '/insights' });
   if (page.kind === 'industry') trail.push({ name: HUBS[hubOf(page)].crumb, path: `/${hubOf(page)}` });
@@ -106,7 +108,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       provider: { '@id': PERSON_ID },
       areaServed: { '@type': 'City', name: 'Dubai' },
     };
-  } else if (page.kind === 'insight') {
+  } else if (page.kind === 'insight' || page.kind === 'case-study') {
     main = {
       '@type': 'Article',
       '@id': `${url(path)}#article`,
@@ -117,7 +119,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       publisher: { '@id': PERSON_ID },
       datePublished: REVIEWED,
       dateModified: REVIEWED,
-      image: `${BASE}/lopty-pascal.jpg`,
+      image: page.lead ? `${BASE}/case-studies/${page.lead}.png` : `${BASE}/lopty-pascal.jpg`,
       inLanguage: 'en',
       citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })),
     };
@@ -135,7 +137,7 @@ function contentRoute(page: ContentPage): SeoRoute {
     title: page.title,
     description: page.description,
     canonical: url(path),
-    ogType: page.kind === 'insight' ? 'article' : page.slug === 'about' ? 'profile' : 'website',
+    ogType: (page.kind === 'insight' || page.kind === 'case-study') ? 'article' : page.slug === 'about' ? 'profile' : 'website',
     schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
   };
 }
@@ -255,6 +257,10 @@ export function llmsTxt(): string {
       ...industriesIn(hub).map(p => `- [${p.h1}](${url(`/${p.slug}`)}): ${p.description}`),
       '',
     ]),
+    '## Case studies',
+    '',
+    ...CASE_STUDIES.map(p => link(p.slug, p.description)),
+    '',
     '## About',
     '',
     link('about', 'Background, views and independent citations.'),

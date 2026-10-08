@@ -15,9 +15,15 @@ export interface Faq {
   a: string;
 }
 
-export type PageKind = 'service' | 'insight' | 'industry' | 'page';
+export type PageKind = 'service' | 'insight' | 'industry' | 'page' | 'case-study';
 
 export interface ContentPage {
+  client?: string;
+  scope?: string;
+  period?: string;
+  metrics?: string[][];
+  lead?: string;
+  evidence?: string[][];
   slug: string; // path without the leading slash
   kind: PageKind;
   topic?: 'GEO' | 'AI SEO' | 'SEO' | 'Digital marketing';

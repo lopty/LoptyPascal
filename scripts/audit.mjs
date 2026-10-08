@@ -80,6 +80,7 @@ for (const route of seoRoutes) {
   for (const m of body.matchAll(/<a\s[^>]*href="([^"]*)"/g)) {
     const href = m[1].split('#')[0];
     if (!href.startsWith('/')) continue;
+    if (/^\/case-studies\/[a-z-]+\.png$/.test(href) && existsSync(join(dist, href))) continue;
     const path = href.length > 1 ? href.replace(/\/$/, '') : '/';
     if (redirectFroms.has(path)) fail(`${route.path}: links to redirected URL ${path}`);
     else if (!known.has(path)) fail(`${route.path}: link to missing page ${path}`);

@@ -337,7 +337,7 @@ export const CORE_PAGES: ContentPage[] = [
       {
         h: 'How I show evidence',
         p: [
-          'When a case study is published here it will carry the client’s name with permission, the dates, what I did, what changed, and a screenshot or export from Search Console, analytics, the ad account or Prezlo. If I cannot show it, I will not claim it.',
+          'Explore the named case studies above for Carpools UAE, AD Residences, haus & haus and Prezlo. Each connects a specific result with the reporting window, project context and original screenshot.',
         ],
       },
     ],
@@ -348,7 +348,7 @@ export const CORE_PAGES: ContentPage[] = [
     ],
     faqs: [
       { q: 'Did Lopty Pascal earn $20 million?', a: 'No. The figure is the value of sales his clients made from leads his campaigns generated, including Dubai property sales. It is not his income.' },
-      { q: 'Can I see case studies?', a: 'Named case studies are published only with client permission and evidence. On a call Lopty can walk through the kind of work involved without disclosing confidential client data.' },
+      { q: 'Can I see case studies?', a: 'Yes. Explore the Carpools UAE, AD Residences, haus & haus and Prezlo case studies on this page for SEO and AI visibility results with screenshots.' },
       { q: 'Which companies has Lopty Pascal worked with?', a: 'He has worked as an employee at Google, SAP and MTN. Companies he has handled projects for include Al Basel Group, haus & haus, Najd Rent a Car, AuditBOT, Terra Solis, Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Carpools UAE, Prefab UAE (Masah Al Murabaa), Tecworq, Dubai Syndicate and KOF.' },
       { q: 'Which industries has he worked in?', a: 'Real estate, travel, car rental, SaaS, hospitality and healthcare, across more than 300 projects.' },
     ],

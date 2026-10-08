@@ -2,8 +2,8 @@
 // Only facts supplied by Lopty or published by a named public source belong here.
 
 export const BASE = 'https://loptypascal.com';
-export const REVIEWED = '2026-10-07';
-export const REVIEWED_LABEL = '7 October 2026';
+export const REVIEWED = '2026-10-08';
+export const REVIEWED_LABEL = '8 October 2026';
 
 export const NAME = 'Lopty Pascal';
 export const JOB_TITLE = 'Senior Digital Marketing Expert and Consultant, AI SEO and GEO Expert, Co-Founder of Prezlo';

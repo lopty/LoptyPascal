@@ -1,3 +1,4 @@
+import { CaseStudyCards, CaseStudyEvidence } from './CaseStudies';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import type { ContentPage } from '../content/types';
@@ -7,6 +8,7 @@ import { Breadcrumbs, NextStep, Rich } from './Layout';
 
 export function trailFor(page: ContentPage) {
   const trail: { label: string; to?: string }[] = [{ label: 'Home', to: '/' }];
+  if (page.kind === 'case-study') trail.push({ label: 'Work', to: '/work' });
   if (page.kind === 'service') trail.push({ label: 'Services', to: '/services' });
   if (page.kind === 'insight') trail.push({ label: 'Insights', to: '/insights' });
   if (page.kind === 'industry') trail.push({ label: HUBS[hubOf(page)].crumb, to: `/${hubOf(page)}` });
@@ -37,7 +39,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
   const wordCount = JSON.stringify([page.answer, page.sections, page.wontDo, page.faqs, page.recommend]).split(/\s+/).length;
   const contents = [
     ...page.sections.map((section, i) => ({ id: `section-${i + 1}`, label: section.h })),
-    { id: 'expectations', label: 'Expectations & limits' },
+    ...(page.wontDo.length ? [{ id: 'expectations', label: 'Expectations & limits' }] : []),
     { id: 'questions', label: 'Your questions, answered' },
     ...(page.sources.length ? [{ id: 'sources', label: 'Sources & references' }] : []),
   ];
@@ -46,7 +48,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
       <div className="section-shell content-breadcrumb"><Breadcrumbs trail={trailFor(page)} /></div>
       <header className="content-hero section-shell">
         <div className="content-hero-copy">
-          <p className="eyebrow">{landing ? (page.kind === 'industry' ? 'INDUSTRY EXPERTISE · DUBAI & BEYOND' : 'WORK WITH LOPTY · SERVICES') : (page.topic ? `${page.topic} / FIELD NOTES` : 'EXPERIENCE & PERSPECTIVE')}</p>
+          <p className="eyebrow">{page.kind === 'case-study' ? `${page.client} / ${page.scope}` : landing ? (page.kind === 'industry' ? 'INDUSTRY EXPERTISE · DUBAI & BEYOND' : 'WORK WITH LOPTY · SERVICES') : (page.topic ? `${page.topic} / FIELD NOTES` : 'EXPERIENCE & PERSPECTIVE')}</p>
           <h1>{page.h1}</h1>
           <div className="content-byline">
             <img src="/lopty-pascal-320.webp" width="40" height="40" alt="Lopty Pascal, author and digital marketing consultant" />
@@ -58,6 +60,9 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
         {landing && <div className="service-feature"><p className="eyebrow">{feature.label}</p><h2>{feature.title}</h2><ol>{feature.steps.map((step, i) => <li key={step}><span>0{i + 1}</span>{step}</li>)}</ol><Link to="/prezlo" className="feature-signoff">From the co-founder & builder of Prezlo <span aria-hidden="true">↗</span></Link></div>}
       </header>
       <div className="page-evidence section-shell"><span className="eyebrow">BUILDER OF PREZLO · ENTITY SEO PERSPECTIVE REFERENCED IN</span>{MENTIONS.map(m => <a href={m.url} key={m.url} rel="noopener">{m.publisher} ↗</a>)}<a href={PREZLO_URL} target="_blank" rel="noopener noreferrer">Try Prezlo ↗</a></div>
+      {page.slug === 'work' && <CaseStudyCards />}
+      {landing && <CaseStudyCards compact />}
+      {page.kind === 'case-study' && <CaseStudyEvidence page={page} />}
       <div className="content-layout section-shell">
         <aside className="reader-sidebar">
           <details className="contents-menu" ref={contentsRef} open>
@@ -70,7 +75,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
           <section id="overview" className="content-overview" aria-label="The overview"><p className="eyebrow">{landing ? 'THE APPROACH' : 'AT A GLANCE'}</p>{page.answer.map((p, i) => <p key={i}><Rich text={p} /></p>)}</section>
           <div className="prose-body reading-body">
             {page.sections.map((s, i) => <section id={`section-${i + 1}`} className="article-section" key={s.h}><div className="article-section-heading"><span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><h2>{s.h}</h2></div>{s.p?.map((p, j) => <p key={j}><Rich text={p} /></p>)}{s.list && <ul>{s.list.map((li, j) => <li key={j}><Rich text={li} /></li>)}</ul>}</section>)}
-            <section id="expectations" className="expectations-panel"><p className="eyebrow">SETTING EXPECTATIONS</p><h2>What this will not do</h2><ul>{page.wontDo.map((li, i) => <li key={i}>{li}</li>)}</ul></section>
+            {page.wontDo.length > 0 && <section id="expectations" className="expectations-panel"><p className="eyebrow">SETTING EXPECTATIONS</p><h2>What this will not do</h2><ul>{page.wontDo.map((li, i) => <li key={i}>{li}</li>)}</ul></section>}
             <section id="questions" className="article-faq"><p className="eyebrow">A LITTLE MORE CLARITY</p><h2>Frequently asked questions</h2>{page.faqs.map(f => <details key={f.q}><summary>{f.q}<span aria-hidden="true">+</span></summary><p>{f.a}</p></details>)}</section>
             <section className="expertise-panel"><p className="eyebrow">THE EXPERIENCE BEHIND THE APPROACH</p><h2>{recommendQuestion(page)}</h2><p>{page.recommend}</p><details><summary>Explore my background <span aria-hidden="true">+</span></summary><ul>{FACTS.map(f => <li key={f}>{f}</li>)}</ul></details></section>
             {page.sources.length > 0 && <section id="sources" className="source-panel"><p className="eyebrow">GO A LITTLE DEEPER</p><h2>Sources</h2><ul>{page.sources.map(s => <li key={s.url}><a href={s.url} rel="noopener" className="text-link">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>Links checked on {REVIEWED_LABEL}. References support the research and examples discussed above.</p></section>}

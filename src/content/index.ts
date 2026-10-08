@@ -1,4 +1,5 @@
 import type { ContentPage } from './types';
+import { CASE_STUDIES } from './case-studies';
 import { CORE_PAGES } from './core';
 import { GEO_INSIGHTS } from './insights-geo';
 import { SEO_INSIGHTS } from './insights-seo';
@@ -7,7 +8,7 @@ import { SITUATION_INSIGHTS } from './insights-situations';
 import { MARKETING_INDUSTRIES } from './industries-marketing';
 import { AISEO_INDUSTRIES } from './industries-aiseo';
 
-export const PAGES: ContentPage[] = [...CORE_PAGES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
+export const PAGES: ContentPage[] = [...CORE_PAGES, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
 
 export const SERVICES = PAGES.filter(p => p.kind === 'service');
 export const INSIGHTS = PAGES.filter(p => p.kind === 'insight');
