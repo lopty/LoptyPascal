@@ -10,6 +10,7 @@
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
     "audit": "node scripts/audit.mjs",
+    "indexnow": "node scripts/indexnow.mjs",
     "check": "tsc --noEmit && npm run build && npm run audit"
   },
   "dependencies": {
