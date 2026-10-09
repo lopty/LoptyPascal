@@ -142,8 +142,8 @@ function contentRoute(page: ContentPage): SeoRoute {
   };
 }
 
-const HOME_TITLE = 'Lopty Pascal | Senior Digital Marketing Consultant & AI SEO Expert';
-const HOME_DESC = 'Senior digital marketing expert and consultant in Dubai. Expert in AI SEO and GEO, and co-founder of Prezlo. Build visibility, trust and measurable business growth with Lopty Pascal.';
+const HOME_TITLE = 'Lopty Pascal | AI SEO and GEO Consultant';
+const HOME_DESC = 'Lopty Pascal is an AI SEO and GEO consultant in Dubai with 300+ SEO projects handled. Co-founder of Prezlo, helping brands grow across search and AI answers.';
 const SERVICES_TITLE = 'Services: AI SEO and GEO, Digital Marketing Specialist and Consultant | Lopty Pascal';
 const SERVICES_DESC = 'The three services Lopty Pascal offers from Dubai: AI SEO and GEO, hands-on digital marketing as a specialist, and independent advice as a digital marketing consultant.';
 const INSIGHTS_TITLE = 'Insights on GEO, AI SEO, SEO and Digital Marketing | Lopty Pascal';
