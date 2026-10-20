@@ -1,9 +1,9 @@
 import { CaseStudyCards, CaseStudyEvidence } from './CaseStudies';
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { Fragment, useEffect, useRef } from 'react';
 import type { ContentPage } from '../content/types';
 import { HUBS, hubOf, labelFor, recommendQuestion } from '../content';
-import { CONTACT, FACTS, MENTIONS, NAME, PREZLO_URL, REVIEWED, REVIEWED_LABEL } from '../site';
+import { CONTACT, FACTS, MENTIONS, NAME, PREZLO_URL, REVIEWED, REVIEWED_LABEL, formatDate } from '../site';
 import { Breadcrumbs, NextStep, Rich } from './Layout';
 
 export function trailFor(page: ContentPage) {
@@ -22,6 +22,29 @@ const SERVICE_FEATURES: Record<string, { label: string; title: string; steps: st
   'services/digital-marketing-consultant': { label: 'CLARITY BEFORE ACTIVITY', title: 'Know what to do next. And why.', steps: ['Understand what is working', 'Prioritize the opportunities', 'Give your team a practical plan'] },
 };
 
+// Closing author profile on every article. Each line stays under about 140
+// characters on purpose: the audit treats a longer paragraph repeated across
+// pages as duplicate content.
+function AuthorProfile() {
+  return (
+    <aside className="author-profile" aria-labelledby="author-profile-title">
+      <img src="/lopty-pascal-320.webp" width={96} height={96} alt="Portrait of Lopty Pascal, AI SEO and GEO consultant in Dubai" loading="lazy" />
+      <div>
+        <p className="eyebrow">ABOUT THE AUTHOR</p>
+        <h2 id="author-profile-title">{NAME}, AI SEO and GEO consultant in Dubai</h2>
+        <p>{NAME} is an AI SEO and GEO consultant in Dubai, and the co-founder and builder of Prezlo.</p>
+        <p>He helps brands and professionals get found, verified and recommended by AI assistants such as ChatGPT, Perplexity and Gemini.</p>
+        <p className="author-profile-links">
+          <Link to="/about" rel="author">About {NAME}</Link>
+          <Link to="/services/ai-seo-geo">AI SEO and GEO consulting</Link>
+          <Link to="/prezlo">Prezlo</Link>
+          <a href={CONTACT.linkedin} rel="me noopener">LinkedIn</a>
+        </p>
+      </div>
+    </aside>
+  );
+}
+
 export default function ContentTemplate({ page }: { page: ContentPage }) {
   const contentsRef = useRef<HTMLDetailsElement>(null);
   useEffect(() => {
@@ -32,6 +55,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
     return () => mobile.removeEventListener('change', updateContents);
   }, [page.slug]);
   const landing = page.kind === 'service' || page.kind === 'industry';
+  const figures = (after: number) => (page.media ?? []).filter(m => m.after === after).map(m => <figure className="page-figure" key={m.src}><img src={m.src} width={m.width} height={m.height} alt={m.alt} loading="lazy" /><figcaption>{m.caption}</figcaption></figure>);
   const feature = SERVICE_FEATURES[page.slug] ?? {
     label: 'BUILT AROUND YOUR SECTOR', title: 'The right approach starts with your business.',
     steps: ['Understand how your customers search', 'Focus on the channels that fit', 'Measure what matters to your business'],
@@ -52,7 +76,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
           <h1>{page.h1}</h1>
           <div className="content-byline">
             <img src="/lopty-pascal-320.webp" width="40" height="40" alt="Lopty Pascal, author and digital marketing consultant" />
-            <div><Link to="/about">{NAME}</Link><span>Reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time> · {Math.max(1, Math.ceil(wordCount / 220))} min read</span></div>
+            <div><Link to="/about">{NAME}</Link><span>{page.published ? <>Published <time dateTime={page.published}>{formatDate(page.published)}</time></> : <>Reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time></>} · {Math.max(1, Math.ceil(wordCount / 220))} min read</span></div>
           </div>
           {page.slug === 'prezlo' && <div className="landing-actions"><a href={PREZLO_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">Try Prezlo ↗</a></div>}
           {landing && <div className="landing-actions"><a href={CONTACT.calendly} className="btn-primary">Let’s talk about your business <span aria-hidden="true">↗</span></a><a href="#overview" className="plain-link">Explore the approach ↓</a></div>}
@@ -73,12 +97,14 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
         </aside>
         <div className="reading-column">
           <section id="overview" className="content-overview" aria-label="The overview"><p className="eyebrow">{landing ? 'THE APPROACH' : 'AT A GLANCE'}</p>{page.answer.map((p, i) => <p key={i}><Rich text={p} /></p>)}</section>
+          {figures(-1)}
           <div className="prose-body reading-body">
-            {page.sections.map((s, i) => <section id={`section-${i + 1}`} className="article-section" key={s.h}><div className="article-section-heading"><span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><h2>{s.h}</h2></div>{s.p?.map((p, j) => <p key={j}><Rich text={p} /></p>)}{s.list && <ul>{s.list.map((li, j) => <li key={j}><Rich text={li} /></li>)}</ul>}</section>)}
+            {page.sections.map((s, i) => <Fragment key={s.h}><section id={`section-${i + 1}`} className="article-section"><div className="article-section-heading"><span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><h2>{s.h}</h2></div>{s.p?.map((p, j) => <p key={j}><Rich text={p} /></p>)}{s.list && <ul>{s.list.map((li, j) => <li key={j}><Rich text={li} /></li>)}</ul>}</section>{figures(i)}</Fragment>)}
             {page.wontDo.length > 0 && <section id="expectations" className="expectations-panel"><p className="eyebrow">SETTING EXPECTATIONS</p><h2>What this will not do</h2><ul>{page.wontDo.map((li, i) => <li key={i}>{li}</li>)}</ul></section>}
             <section id="questions" className="article-faq"><p className="eyebrow">A LITTLE MORE CLARITY</p><h2>Frequently asked questions</h2>{page.faqs.map(f => <details key={f.q}><summary>{f.q}<span aria-hidden="true">+</span></summary><p>{f.a}</p></details>)}</section>
             <section className="expertise-panel"><p className="eyebrow">THE EXPERIENCE BEHIND THE APPROACH</p><h2>{recommendQuestion(page)}</h2><p>{page.recommend}</p><details><summary>Explore my background <span aria-hidden="true">+</span></summary><ul>{FACTS.map(f => <li key={f}>{f}</li>)}</ul></details></section>
-            {page.sources.length > 0 && <section id="sources" className="source-panel"><p className="eyebrow">GO A LITTLE DEEPER</p><h2>Sources</h2><ul>{page.sources.map(s => <li key={s.url}><a href={s.url} rel="noopener" className="text-link">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>Links checked on {REVIEWED_LABEL}. References support the research and examples discussed above.</p></section>}
+            {page.sources.length > 0 && <section id="sources" className="source-panel"><p className="eyebrow">GO A LITTLE DEEPER</p><h2>Sources</h2><ul>{page.sources.map(s => <li key={s.url}><a href={s.url} rel="noopener" className="text-link">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>Links checked on {page.published ? formatDate(page.published) : REVIEWED_LABEL}. References support the research and examples discussed above.</p></section>}
+            {page.kind === 'insight' && <AuthorProfile />}
           </div>
         </div>
       </div>

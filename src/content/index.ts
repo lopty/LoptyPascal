@@ -5,10 +5,11 @@ import { GEO_INSIGHTS } from './insights-geo';
 import { SEO_INSIGHTS } from './insights-seo';
 import { MARKETING_INSIGHTS } from './insights-marketing';
 import { SITUATION_INSIGHTS } from './insights-situations';
+import { TALK_INSIGHTS } from './insights-talks';
 import { MARKETING_INDUSTRIES } from './industries-marketing';
 import { AISEO_INDUSTRIES } from './industries-aiseo';
 
-export const PAGES: ContentPage[] = [...CORE_PAGES, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
+export const PAGES: ContentPage[] = [...CORE_PAGES, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
 
 export const SERVICES = PAGES.filter(p => p.kind === 'service');
 export const INSIGHTS = PAGES.filter(p => p.kind === 'insight');

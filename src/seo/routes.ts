@@ -117,9 +117,9 @@ function contentRoute(page: ContentPage): SeoRoute {
       mainEntityOfPage: url(path),
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },
-      datePublished: REVIEWED,
-      dateModified: REVIEWED,
-      image: page.lead ? `${BASE}/case-studies/${page.lead}.png` : `${BASE}/lopty-pascal.jpg`,
+      datePublished: page.published ?? REVIEWED,
+      dateModified: page.published ?? REVIEWED,
+      image: page.lead ? `${BASE}/case-studies/${page.lead}.png` : page.media?.length ? `${BASE}${page.media[page.media.length - 1].src}` : `${BASE}/lopty-pascal.jpg`,
       inLanguage: 'en',
       citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })),
     };

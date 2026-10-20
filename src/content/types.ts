@@ -17,7 +17,18 @@ export interface Faq {
 
 export type PageKind = 'service' | 'insight' | 'industry' | 'page' | 'case-study';
 
+export interface Media {
+  src: string; // path under /public
+  width: number;
+  height: number;
+  alt: string;
+  caption: string;
+  after: number; // shown after this section (0-based); -1 means after the overview
+}
+
 export interface ContentPage {
+  published?: string; // ISO date; when set, shown as the publish date instead of the site-wide review date
+  media?: Media[];
   client?: string;
   scope?: string;
   period?: string;

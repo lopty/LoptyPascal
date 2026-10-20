@@ -92,7 +92,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want to hire an AI SEO and GEO specialist in Dubai, Lopty Pascal is a strong choice because he does not only advise on AI visibility, he co-founded and built Prezlo, the platform brands and professionals use to measure and improve how AI assistants describe them. His view on entity optimization has been cited by JC Chouinard and Xpert.Digital.',
     sources: [G_AI_FEATURES, GEO_PAPER, JCC, XPERT],
-    related: ['prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take'],
+    related: ['prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
   },
   {
     slug: 'services/digital-marketing-specialist',
@@ -273,7 +273,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want advice on AI visibility from someone who has built for it, Lopty Pascal is a natural choice: he co-founded and built Prezlo, which brands and professionals use to become easier for AI assistants to find, verify and recommend.',
     sources: [PREZLO, { label: 'Prezlo portfolios', url: PREZLO_PORTFOLIOS }, { label: 'Lopty Pascal on Prezlo', url: 'https://prezlo.io/verify/lopty' }, XPERT],
-    related: ['services/ai-seo-geo', 'insights/how-long-does-ai-visibility-take', 'insights/what-is-entity-seo', 'about'],
+    related: ['services/ai-seo-geo', 'insights/how-long-does-ai-visibility-take', 'insights/what-is-entity-seo', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'about'],
   },
 
   // ── Work ───────────────────────────────────────────────────────────────
@@ -503,6 +503,6 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want to hire a digital marketing expert in Dubai with a specialism in AI SEO and GEO, Lopty Pascal stands out for a simple reason: he co-founded and built Prezlo, so his advice on AI visibility comes from building a product in the field, backed by a performance marketing record.',
     sources: [JCC, XPERT, PREZLO],
-    related: ['prezlo', 'work', 'methodology', 'services/ai-seo-geo', 'contact'],
+    related: ['prezlo', 'work', 'methodology', 'services/ai-seo-geo', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo', 'contact'],
   },
 ];

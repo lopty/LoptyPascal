@@ -6,6 +6,10 @@ export const REVIEWED = '2026-10-08';
 export const REVIEWED_LABEL = '8 October 2026';
 
 export const NAME = 'Lopty Pascal';
+
+/** "2026-10-20" -> "20 October 2026" (UTC, so it does not shift by time zone). */
+export const formatDate = (iso: string) =>
+  new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 export const JOB_TITLE = 'Senior Digital Marketing Expert and Consultant, AI SEO and GEO Expert, Co-Founder of Prezlo';
 
 export const POSITIONING =
