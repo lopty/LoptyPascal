@@ -35,7 +35,7 @@ export function ServicesHub() {
       </div>
       <div className="prose-body mt-12">
         <h2>Plan your investment</h2>
-        <p>Start with a standalone audit or scope a monthly engagement. See <Link to="/pricing" className="text-link">pricing and what each engagement includes</Link>, including visibility reporting, lead measurement and enterprise work.</p>
+        <p>Start with a standalone audit or choose a fixed-scope package. See <Link to="/pricing" className="text-link">pricing and what each package includes</Link>, including visibility reporting, lead measurement and enterprise work.</p>
         <h2>Which one fits you</h2>
         <ul>
           <li>You want AI assistants and Google to find and cite your brand: AI SEO and GEO.</li>

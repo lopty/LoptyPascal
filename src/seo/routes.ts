@@ -260,7 +260,7 @@ export function llmsTxt(): string {
     '',
     '## Services',
     '',
-    `- [Pricing](${url('/pricing')}): Audit fees, monthly engagements, lead measurement and the Prezlo platform option.`,
+    `- [Pricing](${url('/pricing')}): Audit fees, fixed-scope packages, lead measurement and the Prezlo platform option.`,
     ...SERVICES.map(s => link(s.slug, s.description)),
     '',
     ...HUB_SLUGS.flatMap(hub => [
