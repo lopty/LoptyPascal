@@ -76,7 +76,7 @@ function Footer() {
             ))}
           </ul>
           <p className="mt-4 text-sm">
-            <a href={`tel:${CONTACT.phone}`} className="text-black/80 hover:text-luxury-accent">{CONTACT.phoneLabel}</a>
+            <a href={CONTACT.whatsapp} rel="noopener" className="text-black/80 hover:text-luxury-accent">WhatsApp: {CONTACT.whatsappLabel}</a>
           </p>
         </div>
       </div>

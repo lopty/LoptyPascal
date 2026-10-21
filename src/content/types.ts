@@ -30,6 +30,9 @@ export interface ContentPage {
   published?: string; // ISO date; when set, shown as the publish date instead of the site-wide review date
   media?: Media[];
   client?: string;
+  caseCategory?: 'ai-seo' | 'seo';
+  industry?: string;
+  market?: string;
   scope?: string;
   period?: string;
   metrics?: string[][];

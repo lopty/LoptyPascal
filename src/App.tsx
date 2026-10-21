@@ -5,6 +5,7 @@ import { HeadSync } from './seo/HeadSync';
 import ContentTemplate from './components/ContentTemplate';
 import { HUB_SLUGS, PAGES } from './content';
 import Home from './views/Home';
+import Pricing from './views/Pricing';
 import { Contact, IndustryHub, InsightsHub, NotFound, ServicesHub } from './views/Hubs';
 
 function ScrollToTop() {
@@ -23,6 +24,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesHub />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/insights" element={<InsightsHub />} />
         <Route path="/contact" element={<Contact />} />
         {HUB_SLUGS.map(hub => (

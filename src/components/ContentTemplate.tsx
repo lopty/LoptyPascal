@@ -9,6 +9,8 @@ import { Breadcrumbs, NextStep, Rich } from './Layout';
 export function trailFor(page: ContentPage) {
   const trail: { label: string; to?: string }[] = [{ label: 'Home', to: '/' }];
   if (page.kind === 'case-study') trail.push({ label: 'Work', to: '/work' });
+  if (page.kind === 'case-study' && page.caseCategory) trail.push({ label: page.caseCategory === 'ai-seo' ? 'AI SEO & LLMs' : 'Traditional & local SEO', to: `/work/${page.caseCategory}` });
+  if (page.slug === 'work/ai-seo' || page.slug === 'work/seo') trail.push({ label: 'Work', to: '/work' });
   if (page.kind === 'service') trail.push({ label: 'Services', to: '/services' });
   if (page.kind === 'insight') trail.push({ label: 'Insights', to: '/insights' });
   if (page.kind === 'industry') trail.push({ label: HUBS[hubOf(page)].crumb, to: `/${hubOf(page)}` });
@@ -79,12 +81,14 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
             <div><Link to="/about">{NAME}</Link><span>{page.published ? <>Published <time dateTime={page.published}>{formatDate(page.published)}</time></> : <>Reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time></>} · {Math.max(1, Math.ceil(wordCount / 220))} min read</span></div>
           </div>
           {page.slug === 'prezlo' && <div className="landing-actions"><a href={PREZLO_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">Try Prezlo ↗</a></div>}
-          {landing && <div className="landing-actions"><a href={CONTACT.calendly} className="btn-primary">Let’s talk about your business <span aria-hidden="true">↗</span></a><a href="#overview" className="plain-link">Explore the approach ↓</a></div>}
+          {landing && <div className="landing-actions"><a href={CONTACT.calendly} className="btn-primary">Let’s talk about your business <span aria-hidden="true">↗</span></a><Link to="/pricing" className="plain-link">View pricing ↗</Link><a href="#overview" className="plain-link">Explore the approach ↓</a></div>}
         </div>
         {landing && <div className="service-feature"><p className="eyebrow">{feature.label}</p><h2>{feature.title}</h2><ol>{feature.steps.map((step, i) => <li key={step}><span>0{i + 1}</span>{step}</li>)}</ol><Link to="/prezlo" className="feature-signoff">From the co-founder & builder of Prezlo <span aria-hidden="true">↗</span></Link></div>}
       </header>
       <div className="page-evidence section-shell"><span className="eyebrow">BUILDER OF PREZLO · ENTITY SEO PERSPECTIVE REFERENCED IN</span>{MENTIONS.map(m => <a href={m.url} key={m.url} rel="noopener">{m.publisher} ↗</a>)}<a href={PREZLO_URL} target="_blank" rel="noopener noreferrer">Try Prezlo ↗</a></div>
       {page.slug === 'work' && <CaseStudyCards />}
+      {page.slug === 'work/ai-seo' && <CaseStudyCards category="ai-seo" />}
+      {page.slug === 'work/seo' && <CaseStudyCards category="seo" />}
       {landing && <CaseStudyCards compact />}
       {page.kind === 'case-study' && <CaseStudyEvidence page={page} />}
       <div className="content-layout section-shell">

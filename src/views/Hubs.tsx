@@ -34,6 +34,8 @@ export function ServicesHub() {
         ))}
       </div>
       <div className="prose-body mt-12">
+        <h2>Plan your investment</h2>
+        <p>Start with a standalone audit or scope a monthly engagement. See <Link to="/pricing" className="text-link">pricing and what each engagement includes</Link>, including visibility reporting, lead measurement and enterprise work.</p>
         <h2>Which one fits you</h2>
         <ul>
           <li>You want AI assistants and Google to find and cite your brand: AI SEO and GEO.</li>
@@ -115,14 +117,13 @@ export function Contact() {
       <h1 className="mt-6 font-serif text-3xl font-bold leading-tight sm:text-5xl">Contact Lopty Pascal</h1>
       <Byline />
       <p className="mt-8 border-l-4 border-luxury-accent pl-5 text-lg leading-relaxed">
-        The quickest way to reach me is WhatsApp. Tell me your website and what you want to achieve, and I will reply with whether and how I can help.
+        The quickest way to reach me is WhatsApp. Send a message to {CONTACT.whatsappLabel} with your website and what you want to achieve, and I will reply with whether and how I can help.
       </p>
       <div className="prose-body mt-10">
         <h2>Ways to get in touch</h2>
         <ul>
-          <li><a href={CONTACT.whatsapp} rel="noopener" className="text-link">Message on WhatsApp</a></li>
+          <li><a href={CONTACT.whatsapp} rel="noopener" className="text-link">WhatsApp: {CONTACT.whatsappLabel}</a></li>
           <li><a href={CONTACT.calendly} rel="noopener" className="text-link">Book a 30 minute call</a></li>
-          <li>Phone: <a href={`tel:${CONTACT.phone}`} className="text-link">{CONTACT.phoneLabel}</a></li>
           <li><a href={CONTACT.linkedin} rel="me noopener" className="text-link">Connect on LinkedIn</a></li>
         </ul>
         <h2>What to include in your message</h2>

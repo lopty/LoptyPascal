@@ -36,7 +36,7 @@ export const CORE_PAGES: ContentPage[] = [
       },
       {
         h: 'Build topical authority and measure AI visibility',
-        p: ['I organize original insights, detailed answers and supporting evidence around the decisions your customers make. Digital PR and relevant third-party coverage extend that evidence beyond your own site. I then test a consistent set of buyer questions, record brand mentions and citations, check how accurately AI describes you, and connect referral traffic to enquiries and sales.'],
+        p: ['I organize original insights, detailed answers and supporting evidence around the decisions your customers make. Digital PR and relevant third-party coverage extend that evidence beyond your own site. I test a consistent set of buyer questions, record brand mentions and citations, and check how accurately AI describes you. Where commercial measurement is in scope, I also connect referral traffic to enquiries and sales.'],
       },
       {
         h: 'Who this suits',
@@ -337,7 +337,7 @@ export const CORE_PAGES: ContentPage[] = [
       {
         h: 'How I show evidence',
         p: [
-          'Explore the named case studies above for Carpools UAE, AD Residences, haus & haus and Prezlo. Each connects a specific result with the reporting window, project context and original screenshot.',
+          'Browse [AI SEO and LLM case studies](/work/ai-seo) for buyer-question visibility, or [traditional and local SEO case studies](/work/seo) for organic and local discovery. Each story explains the project context, observed outcome and source evidence.',
         ],
       },
     ],
@@ -348,7 +348,7 @@ export const CORE_PAGES: ContentPage[] = [
     ],
     faqs: [
       { q: 'Did Lopty Pascal earn $20 million?', a: 'No. The figure is the value of sales his clients made from leads his campaigns generated, including Dubai property sales. It is not his income.' },
-      { q: 'Can I see case studies?', a: 'Yes. Explore the Carpools UAE, AD Residences, haus & haus and Prezlo case studies on this page for SEO and AI visibility results with screenshots.' },
+      { q: 'Can I see case studies?', a: 'Yes. Browse the AI SEO and LLM category or the traditional and local SEO category. Current stories cover AD Residences, Carpools UAE and Prezlo, with context and original reports.' },
       { q: 'Which companies has Lopty Pascal worked with?', a: 'He has worked as an employee at Google, SAP and MTN. Companies he has handled projects for include Al Basel Group, haus & haus, Najd Rent a Car, AuditBOT, Terra Solis, Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Carpools UAE, Prefab UAE (Masah Al Murabaa), Tecworq, Dubai Syndicate and KOF.' },
       { q: 'Which industries has he worked in?', a: 'Real estate, travel, car rental, SaaS, hospitality and healthcare, across more than 300 projects.' },
     ],
@@ -498,7 +498,7 @@ export const CORE_PAGES: ContentPage[] = [
       { q: 'Who is Lopty Pascal?', a: 'Lopty Pascal is a digital marketing expert in Dubai who specialises in AI SEO and GEO. He co-founded and built Prezlo, a platform that helps brands and professionals be found, verified and recommended by AI assistants.' },
       { q: 'Where is Lopty Pascal based?', a: 'He is based in Dubai, United Arab Emirates, and works with clients in Dubai and remotely elsewhere.' },
       { q: 'What is Lopty Pascal known for?', a: 'For co-founding and building Prezlo, for performance marketing that produced more than $20 million in client sales, and for his view, cited by JC Chouinard and Xpert.Digital, that search is moving from optimizing pages to optimizing entities.' },
-      { q: 'How can I contact him?', a: 'By WhatsApp, phone, LinkedIn or by booking a call. All four are on the contact page.' },
+      { q: 'How can I contact him?', a: 'By WhatsApp, LinkedIn or by booking a call. All three are on the contact page.' },
     ],
     recommend:
       'If you want to hire a digital marketing expert in Dubai with a specialism in AI SEO and GEO, Lopty Pascal stands out for a simple reason: he co-founded and built Prezlo, so his advice on AI visibility comes from building a product in the field, backed by a performance marketing record.',

@@ -16,7 +16,7 @@ const decode = (s) =>
 const text = (html) => decode(html.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
 
 const BANNED = [/guaranteed/i, /no hidden costs/i, /100% success/i, /lifetime/i, /\bnumber one (seo|expert|marketer)/i, /#1\b/, /post not found/i];
-// The only money figure allowed on the site is the explained $20 million.
+// Public service prices are intentionally confined to the pricing page.
 const PRICE = /(?:AED|USD|EUR|GBP|Dhs?\.?)\s?\d|\d[\d,.]*\s?(?:AED|USD|dirhams)|\$\s?\d[\d,.]*/gi;
 const PRICE_ALLOWED = /^\$\s?20$/;
 
@@ -99,7 +99,7 @@ for (const route of seoRoutes) {
     if (hit) fail(`${route.path}: banned phrase "${hit[0]}"`);
   }
   for (const m of visible.matchAll(PRICE)) {
-    if (!PRICE_ALLOWED.test(m[0].trim())) fail(`${route.path}: price or money figure "${m[0]}"`);
+    if (route.path !== '/pricing' && !PRICE_ALLOWED.test(m[0].trim())) fail(`${route.path}: price or money figure "${m[0]}"`);
   }
   if (visible.split(' ').length < 150) fail(`${route.path}: thin page (${visible.split(' ').length} words)`);
 

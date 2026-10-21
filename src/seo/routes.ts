@@ -1,4 +1,5 @@
 import { CASE_STUDIES } from '../content/case-studies';
+import { PRICING_TITLE, PRICING_DESCRIPTION, PRICING_FAQS } from '../content/pricing';
 import { HUBS, HUB_SLUGS, INSIGHTS, PAGES, SERVICES, TOPICS, hubOf, industriesIn, labelFor, recommendQuestion } from '../content';
 import type { ContentPage, Faq } from '../content/types';
 import { BASE, BIO, CLIENTS, EMPLOYERS, FACTS, JOB_TITLE, MENTIONS, NAME, POSITIONING, PREZLO_URL, PROFILES, REVIEWED, CONTACT } from '../site';
@@ -91,6 +92,8 @@ function contentRoute(page: ContentPage): SeoRoute {
   const path = `/${page.slug}`;
   const trail = [{ name: 'Home', path: '/' }];
   if (page.kind === 'case-study') trail.push({ name: 'Work', path: '/work' });
+  if (page.kind === 'case-study' && page.caseCategory) trail.push({ name: page.caseCategory === 'ai-seo' ? 'AI SEO & LLMs' : 'Traditional & local SEO', path: `/work/${page.caseCategory}` });
+  if (page.slug === 'work/ai-seo' || page.slug === 'work/seo') trail.push({ name: 'Work', path: '/work' });
   if (page.kind === 'service') trail.push({ name: 'Services', path: '/services' });
   if (page.kind === 'insight') trail.push({ name: 'Insights', path: '/insights' });
   if (page.kind === 'industry') trail.push({ name: HUBS[hubOf(page)].crumb, path: `/${hubOf(page)}` });
@@ -149,9 +152,17 @@ const SERVICES_DESC = 'The three services Lopty Pascal offers from Dubai: AI SEO
 const INSIGHTS_TITLE = 'Insights on GEO, AI SEO, SEO and Digital Marketing | Lopty Pascal';
 const INSIGHTS_DESC = 'Direct answers to the questions business owners ask about GEO, AI SEO, SEO and digital marketing, written by Lopty Pascal, co-founder of Prezlo, in Dubai.';
 const CONTACT_TITLE = 'Contact Lopty Pascal | Digital Marketing Expert in Dubai';
-const CONTACT_DESC = 'Contact Lopty Pascal in Dubai by WhatsApp, phone, LinkedIn or a booked call to discuss AI SEO, GEO or digital marketing for your business.';
+const CONTACT_DESC = 'Contact Lopty Pascal in Dubai by WhatsApp, LinkedIn or a booked call to discuss AI SEO, GEO or digital marketing for your business.';
 
 export const seoRoutes: SeoRoute[] = [
+  {
+    path: '/pricing',
+    title: PRICING_TITLE,
+    description: PRICING_DESCRIPTION,
+    canonical: url('/pricing'),
+    ogType: 'website',
+    schema: graph(webPage('/pricing', PRICING_TITLE, PRICING_DESCRIPTION), breadcrumb([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing' }]), faqPage('/pricing', PRICING_FAQS)),
+  },
   {
     path: '/',
     title: HOME_TITLE,
@@ -249,6 +260,7 @@ export function llmsTxt(): string {
     '',
     '## Services',
     '',
+    `- [Pricing](${url('/pricing')}): Audit fees, monthly engagements, lead measurement and the Prezlo platform option.`,
     ...SERVICES.map(s => link(s.slug, s.description)),
     '',
     ...HUB_SLUGS.flatMap(hub => [
@@ -267,7 +279,7 @@ export function llmsTxt(): string {
     link('prezlo', 'What Prezlo is and why he built it.'),
     link('work', 'What he has done and what the $20 million figure means.'),
     link('methodology', 'How he works and measures results.'),
-    `- [Contact](${url('/contact')}): WhatsApp, phone, LinkedIn or a booked call.`,
+    `- [Contact](${url('/contact')}): WhatsApp, LinkedIn or a booked call.`,
     '',
     ...TOPICS.flatMap(topic => [
       `## Insights: ${topic}`,
@@ -278,7 +290,7 @@ export function llmsTxt(): string {
     '## Profiles',
     '',
     ...PROFILES.map(p => `- ${p.label}: ${p.url}`),
-    `- Phone: ${CONTACT.phoneLabel}`,
+    `- [WhatsApp: ${CONTACT.whatsappLabel}](${CONTACT.whatsapp})`,
     '',
   ];
   return lines.join('\n');

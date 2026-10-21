@@ -50,8 +50,7 @@ export const PREZLO_ADOPTION = '200+ agencies and consultants use Prezlo for the
 export const PREZLO_PROFILE = 'https://prezlo.io/verify/lopty';
 
 export const CONTACT = {
-  phone: '+971567751379',
-  phoneLabel: '+971 56 775 1379',
+  whatsappLabel: '+971 52 903 8948',
   whatsapp: 'https://wa.me/971529038948',
   calendly: 'https://calendly.com/loptymobile/30min',
   linkedin: 'https://www.linkedin.com/in/lopty-pascal-369a921a3/',
@@ -88,6 +87,7 @@ export const MENTIONS = [
 
 export const NAV = [
   { label: 'Services', to: '/services' },
+  { label: 'Pricing', to: '/pricing' },
   { label: 'Prezlo', to: '/prezlo' },
   { label: 'Work', to: '/work' },
   { label: 'Insights', to: '/insights' },

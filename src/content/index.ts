@@ -1,6 +1,7 @@
 import type { ContentPage } from './types';
 import { CASE_STUDIES } from './case-studies';
 import { CORE_PAGES } from './core';
+import { WORK_COLLECTIONS } from './work-collections';
 import { GEO_INSIGHTS } from './insights-geo';
 import { SEO_INSIGHTS } from './insights-seo';
 import { MARKETING_INSIGHTS } from './insights-marketing';
@@ -9,7 +10,7 @@ import { TALK_INSIGHTS } from './insights-talks';
 import { MARKETING_INDUSTRIES } from './industries-marketing';
 import { AISEO_INDUSTRIES } from './industries-aiseo';
 
-export const PAGES: ContentPage[] = [...CORE_PAGES, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
+export const PAGES: ContentPage[] = [...CORE_PAGES, ...WORK_COLLECTIONS, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
 
 export const SERVICES = PAGES.filter(p => p.kind === 'service');
 export const INSIGHTS = PAGES.filter(p => p.kind === 'insight');
@@ -53,6 +54,7 @@ const BY_SLUG = new Map(PAGES.map(p => [p.slug, p]));
 const STATIC_LABELS: Record<string, string> = {
   '': 'Home',
   services: 'Services',
+  pricing: 'Pricing',
   insights: 'Insights',
   contact: 'Contact',
   'digital-marketing-dubai': 'Digital marketing in Dubai by industry',

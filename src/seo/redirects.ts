@@ -2,7 +2,7 @@
 // one. Every other retired URL is left to return a real 404.
 const TO: Record<string, string[]> = {
   '/insights': ['/blog'],
-  '/work': ['/results'],
+  '/work': ['/results', '/work/haus-and-haus-ai-visibility'],
   '/about': ['/lopty-pascal-story', '/cameroon-to-dubai-digital-marketing'],
   '/methodology': ['/seo-process-dubai'],
   '/prezlo': [
