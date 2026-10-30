@@ -32,11 +32,11 @@ for (const route of seoRoutes) {
     <meta property="og:title" content="${esc(route.title)}" />
     <meta property="og:description" content="${esc(route.description)}" />
     <meta property="og:url" content="${route.canonical}" />
-    <meta property="og:image" content="${BASE}/lopty-pascal.jpg" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="${esc(route.ogImage ?? `${BASE}/lopty-pascal.jpg`)}" />
+    <meta name="twitter:card" content="${route.ogImage ? 'summary_large_image' : 'summary'}" />
     <meta name="twitter:title" content="${esc(route.title)}" />
     <meta name="twitter:description" content="${esc(route.description)}" />
-    <meta name="twitter:image" content="${BASE}/lopty-pascal.jpg" />
+    <meta name="twitter:image" content="${esc(route.ogImage ?? `${BASE}/lopty-pascal.jpg`)}" />
     <script type="application/ld+json">${JSON.stringify(route.schema).replace(/</g, '\\u003c')}</script>`;
   write(route.path, page(route.path, route.title, head));
 }

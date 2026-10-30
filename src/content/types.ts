@@ -27,6 +27,7 @@ export interface Media {
 }
 
 export interface ContentPage {
+  coverImage?: {url:string;alt:string;width:number;height:number};
   published?: string; // ISO date; when set, shown as the publish date instead of the site-wide review date
   media?: Media[];
   client?: string;
