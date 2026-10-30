@@ -10,6 +10,7 @@ export interface SeoRoute {
   title: string;
   description: string;
   canonical: string;
+  ogImage?: string;
   ogType: 'website' | 'article' | 'profile';
   schema: object;
 }
@@ -122,7 +123,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       publisher: { '@id': PERSON_ID },
       datePublished: page.published ?? REVIEWED,
       dateModified: page.published ?? REVIEWED,
-      image: page.lead ? `${BASE}/case-studies/${page.lead}.png` : page.media?.length ? `${BASE}${page.media[page.media.length - 1].src}` : `${BASE}/lopty-pascal.jpg`,
+      image: page.coverImage?.url ?? (page.lead ? `${BASE}/case-studies/${page.lead}.png` : page.media?.length ? `${BASE}${page.media[page.media.length - 1].src}` : `${BASE}/lopty-pascal.jpg`),
       inLanguage: 'en',
       citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })),
     };
@@ -140,6 +141,7 @@ function contentRoute(page: ContentPage): SeoRoute {
     title: page.title,
     description: page.description,
     canonical: url(path),
+    ogImage:page.coverImage?.url,
     ogType: (page.kind === 'insight' || page.kind === 'case-study') ? 'article' : page.slug === 'about' ? 'profile' : 'website',
     schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
   };
