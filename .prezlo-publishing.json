@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "format": "content-page-json",
+  "dataFilePath": "src/content/prezlo-insights.json",
+  "routePrefix": "insights",
+  "siteUrl": "https://loptypascal.com"
+}

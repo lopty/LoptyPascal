@@ -9,8 +9,9 @@ import { SITUATION_INSIGHTS } from './insights-situations';
 import { TALK_INSIGHTS } from './insights-talks';
 import { MARKETING_INDUSTRIES } from './industries-marketing';
 import { AISEO_INDUSTRIES } from './industries-aiseo';
+import prezloInsights from './prezlo-insights.json';
 
-export const PAGES: ContentPage[] = [...CORE_PAGES, ...WORK_COLLECTIONS, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
+export const PAGES: ContentPage[] = [...CORE_PAGES, ...WORK_COLLECTIONS, ...CASE_STUDIES, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...(prezloInsights as ContentPage[]), ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES];
 
 export const SERVICES = PAGES.filter(p => p.kind === 'service');
 export const INSIGHTS = PAGES.filter(p => p.kind === 'insight');
