@@ -33,6 +33,8 @@ for (const route of seoRoutes) {
     <meta property="og:description" content="${esc(route.description)}" />
     <meta property="og:url" content="${route.canonical}" />
     <meta property="og:image" content="${esc(route.ogImage ?? `${BASE}/lopty-pascal.jpg`)}" />
+    <meta property="og:image:alt" content="${esc(route.ogImageAlt ?? `Portrait of ${NAME}`)}" />
+    <meta name="twitter:image:alt" content="${esc(route.ogImageAlt ?? `Portrait of ${NAME}`)}" />
     <meta name="twitter:card" content="${route.ogImage ? 'summary_large_image' : 'summary'}" />
     <meta name="twitter:title" content="${esc(route.title)}" />
     <meta name="twitter:description" content="${esc(route.description)}" />

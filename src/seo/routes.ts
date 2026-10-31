@@ -11,6 +11,7 @@ export interface SeoRoute {
   description: string;
   canonical: string;
   ogImage?: string;
+  ogImageAlt?:string;
   ogType: 'website' | 'article' | 'profile';
   schema: object;
 }
@@ -142,6 +143,7 @@ function contentRoute(page: ContentPage): SeoRoute {
     description: page.description,
     canonical: url(path),
     ogImage:page.coverImage?.url,
+    ogImageAlt:page.coverImage?.alt,
     ogType: (page.kind === 'insight' || page.kind === 'case-study') ? 'article' : page.slug === 'about' ? 'profile' : 'website',
     schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
   };

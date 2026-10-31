@@ -27,8 +27,8 @@ export function HeadSync() {
     let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.append(canonical); }
     canonical.href = route.canonical;
-    for (const [key, value] of Object.entries({ type: route.ogType, site_name: NAME, title: route.title, description: route.description, url: route.canonical, image: route.ogImage ?? `${BASE}/lopty-pascal.jpg` })) meta(`og:${key}`, value, true);
-    for (const [key, value] of Object.entries({ card: route.ogImage ? 'summary_large_image' : 'summary', title: route.title, description: route.description, image: route.ogImage ?? `${BASE}/lopty-pascal.jpg` })) meta(`twitter:${key}`, value);
+    for (const [key, value] of Object.entries({ type: route.ogType, site_name: NAME, title: route.title, description: route.description, url: route.canonical, image: route.ogImage ?? `${BASE}/lopty-pascal.jpg`, "image:alt":route.ogImageAlt ?? `Portrait of ${NAME}` })) meta(`og:${key}`, value, true);
+    for (const [key, value] of Object.entries({ card: route.ogImage ? 'summary_large_image' : 'summary', title: route.title, description: route.description, image: route.ogImage ?? `${BASE}/lopty-pascal.jpg`, "image:alt":route.ogImageAlt ?? `Portrait of ${NAME}` })) meta(`twitter:${key}`, value);
     let schema = document.head.querySelector<HTMLScriptElement>('script[type="application/ld+json"]');
     if (!schema) { schema = document.createElement('script'); schema.type = 'application/ld+json'; document.head.append(schema); }
     schema.textContent = JSON.stringify(route.schema).replace(/</g, '\\u003c');
