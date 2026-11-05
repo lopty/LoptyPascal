@@ -1,5 +1,38 @@
 [
   {
+    "slug": "insights/what-a-geo-consultant-in-dubai-actually-does-and-how-to-meas-1793855299816",
+    "kind": "insight",
+    "topic": "GEO",
+    "coverImage": {
+      "url": "https://prezlo.io/api/post-cover-assets/3a0af071-ece5-486b-9593-5d40eed62c61.png",
+      "alt": "Lopty Pascal: What a GEO Consultant in Dubai Actually Does (And How to Measure It). Cover photo uploaded by Lopty Pascal.",
+      "width": 1200,
+      "height": 630
+    },
+    "published": "2026-11-05",
+    "navLabel": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
+    "title": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
+    "description": "Learn what a GEO consultant in Dubai does, how they make brands visible in AI answers, and how to measure results using documented case studies.",
+    "h1": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
+    "answer": [
+      "SEO optimizes for search engine ranking algorithms. GEO optimizes for how AI models retrieve and cite information. Both are important, but GEO focuses on entity clarity, structured data, and consistent citation across the web so that AI assistants recognize and recommend your brand."
+    ],
+    "sections": [
+      {
+        "h": "Questions people ask",
+        "p": [
+          "SEO optimizes for search engine ranking algorithms. GEO optimizes for how AI models retrieve and cite information. Both are important, but GEO focuses on entity clarity, structured data, and consistent citation across the web so that AI assistants recognize and recommend your brand.",
+          "[Learn more about AI SEO and GEO consulting](https://loptypascal.com/services/ai-seo-geo) or reach out via WhatsApp."
+        ]
+      }
+    ],
+    "wontDo": [],
+    "faqs": [],
+    "recommend": "",
+    "sources": [],
+    "related": []
+  },
+  {
     "slug": "insights/why-your-business-in-dubai-needs-a-digital-marketing-consult-1793769372282",
     "kind": "insight",
     "topic": "AI SEO",
