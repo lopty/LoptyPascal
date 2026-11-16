@@ -1,5 +1,94 @@
 [
   {
+    "slug": "insights/what-an-ai-visibility-consultant-actually-checks-that-standa-1794805387291",
+    "kind": "insight",
+    "topic": "AI SEO",
+    "coverImage": {
+      "url": "https://prezlo.io/api/post-cover-assets/6caae99f-f06a-41d2-84fa-f3aa33daf288.png",
+      "alt": "Lopty Pascal: What an AI Visibility Consultant Actually Checks That Standard SEO Overlooks. Typographic cover presenting the post's headline in the brand colours.",
+      "width": 1200,
+      "height": 630
+    },
+    "published": "2026-11-16",
+    "navLabel": "What an AI Visibility Consultant Actually Checks That Standard SEO Overlooks",
+    "title": "What an AI Visibility Consultant Actually Checks That Standard SEO Overlooks",
+    "description": "Standard SEO audits stop at keywords and backlinks. An AI visibility consultant audits entity recognition, generative answer logs and structured identity signals.",
+    "h1": "What an AI Visibility Consultant Actually Checks That Standard SEO Overlooks",
+    "answer": [
+      "When a business hires a traditional SEO auditor, the checklist is predictable: title tags, meta descriptions, heading structure, internal linking, page speed, mobile usability, backlink profile and keyword coverage. These elements matter, but they were designed for a search engine that returns a list of blue links. Generative AI assistants such as ChatGPT, Perplexity and Gemini do not work that way. They compose a single answer from multiple sources, and they decide which brand to name based on factors that standard SEO tools never measure."
+    ],
+    "sections": [
+      {
+        "h": "Overview",
+        "p": [
+          "When a business hires a traditional SEO auditor, the checklist is predictable: title tags, meta descriptions, heading structure, internal linking, page speed, mobile usability, backlink profile and keyword coverage. These elements matter, but they were designed for a search engine that returns a list of blue links. Generative AI assistants such as ChatGPT, Perplexity and Gemini do not work that way. They compose a single answer from multiple sources, and they decide which brand to name based on factors that standard SEO tools never measure.",
+          "An AI visibility consultant audits a different layer of the digital presence. The work starts where traditional SEO ends: with the question of whether an AI model can recognise a business as a distinct, trustworthy entity and choose to recommend it in a generated response. This article explains what that audit actually covers and why the gaps in standard SEO matter for any brand that wants to be named by an AI assistant."
+        ]
+      },
+      {
+        "h": "Entity Recognition: Does the AI Know This Brand Exists?",
+        "p": [
+          "For a deeper look at how AI models decide which brands to recommend, the article [How Does a Business Get Recommended by ChatGPT or Perplexity?](https://loptypascal.com/insights/how-to-get-recommended-by-chatgpt) explains the signals that influence those decisions."
+        ]
+      },
+      {
+        "h": "Generative Answer Logs: Where Does the Brand Appear and Where Is It Absent?",
+        "p": [
+          "Standard SEO analytics report impressions, clicks and keyword positions. None of those metrics apply to generative AI. There are no search engine results pages (SERPs) in ChatGPT. There are no click-through rates. The only way to measure AI visibility is to log the answers that the model produces for relevant questions and check whether the brand is named.",
+          "An AI visibility consultant builds a set of test queries that a potential customer might ask.",
+          "This process reveals patterns that standard audits miss. A brand might rank number one on Google for a high value keyword but never appear in any AI answer for the same question. That gap signals that the brand's entity signals are weak, its structured data is incomplete or its authoritative mentions are absent from the sources that the AI model trusts. The audit quantifies that gap and prioritises the fixes that will close it.",
+          "The article [How Long Does AI Visibility Take and How Do You Measure It?](https://loptypascal.com/insights/how-long-does-ai-visibility-take) covers the timeline and tracking methods in more detail."
+        ]
+      },
+      {
+        "h": "Structured Data for Entities, Not Just for Rich Results",
+        "p": [
+          "Standard SEO audits check structured data for eligibility for rich results: product snippets, FAQ accordions, recipe cards. An AI visibility audit checks structured data for entity completeness. The goal is not a rich result on Google; it is a clear, machine readable identity that an AI model can parse and trust.",
+          "The audit examines whether the brand uses schema.org markup for Organisation, LocalBusiness, Person or Product, and whether those markup blocks contain the correct name, URL, logo, social profiles, contact information and industry classification. It also checks whether the brand has a verified presence on platforms that AI models treat as authoritative sources, such as Wikipedia, Crunchbase, LinkedIn and industry specific directories. Each of these platforms acts as a signal that the brand is a real, established entity.",
+          "The post [Does Structured Data Affect AI Answers?](https://loptypascal.com/insights/structured-data-for-ai-answers) explains how schema markup influences generative engine outputs."
+        ]
+      },
+      {
+        "h": "Source Authority and Cross Source Agreement",
+        "p": [
+          "Standard SEO audits evaluate backlink quality and domain authority. An AI visibility audit evaluates whether the brand is mentioned consistently across the sources that an AI model uses for factual grounding. These sources include Wikipedia, government databases, major news publications, industry specific directories and verified business profiles on platforms like Google Business Profile, LinkedIn and Crunchbase.",
+          "The audit checks for cross source agreement. If Wikipedia says the brand is a real estate developer, Google Business Profile says it is a property management firm and the brand's own website says it is a consultancy, the AI model has no reliable way to determine which description is correct. The safest response for the model is to omit the brand entirely or to describe it in vague terms that do not help the user.",
+          "For a practical guide on how reviews and third party content affect AI recommendations, see [Do Reviews Affect Whether AI Recommends a Business?](https://loptypascal.com/insights/do-reviews-affect-ai-recommendations)"
+        ]
+      },
+      {
+        "h": "Personal Brand and Founder Visibility",
+        "p": [
+          "Standard SEO audits rarely consider the personal brand of the founder or key executives. An AI visibility audit often includes a review of whether the people behind the business are findable and recognisable as entities. AI assistants sometimes recommend a business because the founder is a recognised expert in the field, and the model trusts the founder's authority as a signal of the company's credibility.",
+          "The audit checks whether the founder has a complete LinkedIn profile, a personal website, published articles, podcast appearances or mentions in industry publications. It also checks whether the founder's name appears consistently across these sources and whether the AI model can connect the founder to the company. If the founder is invisible to AI models, the business loses a potential trust signal that competitors may already have.",
+          "The article [How Does a Consultant or Founder Get Recommended by AI?](https://loptypascal.com/insights/ai-seo-for-personal-brands) goes deeper into the strategies for establishing personal brand visibility in generative engines."
+        ]
+      },
+      {
+        "h": "What the Audit Does Not Cover",
+        "p": [
+          "An AI visibility audit does not replace a standard SEO audit. It does not check page speed, crawl errors, duplicate content, keyword cannibalisation or backlink toxicity. Those elements still affect how a website performs in traditional search, and they can indirectly affect AI visibility if the AI model uses the website as a source. But the primary focus of an AI visibility audit is the entity layer: the identity signals that make a brand nameable by a generative assistant.",
+          "The two audits complement each other. A brand that fixes its entity signals but ignores technical SEO may still struggle to get its pages indexed. A brand that has perfect technical SEO but no entity signals may rank on Google yet never appear in a ChatGPT answer. The most effective approach combines both layers.",
+          "For a full breakdown of what a combined SEO and GEO engagement includes, the page [What Does an SEO and GEO Engagement Include?](https://loptypascal.com/insights/what-an-seo-and-geo-engagement-includes) outlines the scope of work."
+        ]
+      },
+      {
+        "h": "Questions people ask",
+        "p": [
+          "A standard SEO audit focuses on technical factors such as page speed, meta tags, internal linking and backlink profiles. An AI visibility audit focuses on entity recognition, cross source identity agreement, structured data completeness and the brand's presence in generative answer logs. The two audits serve different goals: one optimises for search engine rankings, the other optimises for being named by AI assistants.",
+          "You can start by asking AI assistants direct questions about your brand and noting whether they give accurate, consistent answers. You can also check whether your structured data is correct and whether your business profiles on platforms like LinkedIn and Google Business Profile are complete and consistent. However, a thorough audit requires systematic query logging, cross source comparison and entity analysis that most businesses do not have the tools or time to perform themselves.",
+          "Entity optimisation is not an instant fix. AI models update their knowledge on different schedules, and some changes may take weeks or months to reflect in generated answers. The timeline depends on the model, the quality of the sources being optimised and the frequency of model retraining. The article [How Long Does AI Visibility Take and How Do You Measure It?](https://loptypascal.com/insights/how-long-does-ai-visibility-take) provides a detailed breakdown of expected timelines and measurement methods.",
+          "AI visibility consultant in Dubai"
+        ]
+      }
+    ],
+    "wontDo": [],
+    "faqs": [],
+    "recommend": "",
+    "sources": [],
+    "related": []
+  },
+  {
     "slug": "insights/how-to-compare-digital-marketing-audit-and-strategy-provider-1794719259743",
     "kind": "insight",
     "topic": "Digital marketing",
