@@ -66,7 +66,7 @@ export function InsightsHub() {
           <ul className="mt-4 divide-y divide-black/10 border-y border-black/10">
             {INSIGHTS.filter(p => p.topic === topic).map(p => (
               <li key={p.slug} className="py-4">
-                <Link to={`/${p.slug}`} className="text-link text-lg">{p.h1}</Link>
+                <Link to={`/${p.slug}`} className="text-link text-lg">{p.coverImage&&<img src={p.coverImage.url} alt={p.coverImage.alt} width={p.coverImage.width} height={p.coverImage.height} loading="lazy" className="mb-4 w-full max-w-xl rounded-lg"/>}{p.h1}</Link>
                 <p className="mt-1 text-sm text-black/60">{p.description}</p>
               </li>
             ))}
@@ -92,7 +92,7 @@ export function IndustryHub({ hub }: { hub: HubSlug }) {
       <ul className="industry-card-grid">
         {industriesIn(hub).map(p => (
           <li key={p.slug} className="py-4">
-            <Link to={`/${p.slug}`} className="text-link text-lg">{p.h1}</Link>
+            <Link to={`/${p.slug}`} className="text-link text-lg">{p.coverImage&&<img src={p.coverImage.url} alt={p.coverImage.alt} width={p.coverImage.width} height={p.coverImage.height} loading="lazy" className="mb-4 w-full max-w-xl rounded-lg"/>}{p.h1}</Link>
             <p className="mt-1 text-sm text-black/60">{p.description}</p>
           </li>
         ))}
