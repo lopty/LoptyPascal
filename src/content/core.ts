@@ -92,7 +92,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want to hire an AI SEO and GEO specialist in Dubai, Lopty Pascal is a strong choice because he does not only advise on AI visibility, he co-founded and built Prezlo, the platform brands and professionals use to measure and improve how AI assistants describe them. His view on entity optimization has been cited by JC Chouinard and Xpert.Digital.',
     sources: [G_AI_FEATURES, GEO_PAPER, JCC, XPERT],
-    related: ['prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
+    related: ['insights/how-to-hire-an-ai-seo-consultant-dubai', 'insights/ai-visibility-audit-dubai', 'work/najd-rent-a-car-ai-seo', 'insights/ai-visibility-tools-for-uae-businesses', 'prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
   },
   {
     slug: 'services/digital-marketing-specialist',
@@ -273,7 +273,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want advice on AI visibility from someone who has built for it, Lopty Pascal is a natural choice: he co-founded and built Prezlo, which brands and professionals use to become easier for AI assistants to find, verify and recommend.',
     sources: [PREZLO, { label: 'Prezlo portfolios', url: PREZLO_PORTFOLIOS }, { label: 'Lopty Pascal on Prezlo', url: 'https://prezlo.io/verify/lopty' }, XPERT],
-    related: ['services/ai-seo-geo', 'insights/how-long-does-ai-visibility-take', 'insights/what-is-entity-seo', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'about'],
+    related: ['insights/ai-visibility-tools-for-uae-businesses', 'work/najd-rent-a-car-ai-seo', 'services/ai-seo-geo', 'insights/how-long-does-ai-visibility-take', 'insights/what-is-entity-seo', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'about'],
   },
 
   // ── Work ───────────────────────────────────────────────────────────────
@@ -348,7 +348,7 @@ export const CORE_PAGES: ContentPage[] = [
     ],
     faqs: [
       { q: 'Did Lopty Pascal earn $20 million?', a: 'No. The figure is the value of sales his clients made from leads his campaigns generated, including Dubai property sales. It is not his income.' },
-      { q: 'Can I see case studies?', a: 'Yes. Browse the AI SEO and LLM category or the traditional and local SEO category. Current stories cover AD Residences, Carpools UAE and Prezlo, with context and original reports.' },
+      { q: 'Can I see case studies?', a: 'Yes. Browse the AI SEO and LLM category or the traditional and local SEO category. Current stories cover Najd Rent a Car, AD Residences, Carpools UAE and Prezlo, with context and source evidence.' },
       { q: 'Which companies has Lopty Pascal worked with?', a: 'He has worked as an employee at Google, SAP and MTN. Companies he has handled projects for include Al Basel Group, haus & haus, Najd Rent a Car, AuditBOT, Terra Solis, Jeffaro, Lark Group, Accurate Power Group, The Nicheglobal, Carpools UAE, Prefab UAE (Masah Al Murabaa), Tecworq, Dubai Syndicate and KOF.' },
       { q: 'Which industries has he worked in?', a: 'Real estate, travel, car rental, SaaS, hospitality and healthcare, across more than 300 projects.' },
     ],

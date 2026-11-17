@@ -17,7 +17,7 @@ const text = (html) => decode(html.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' '
 
 const BANNED = [/guaranteed/i, /no hidden costs/i, /100% success/i, /lifetime/i, /\bnumber one (seo|expert|marketer)/i, /#1\b/, /post not found/i];
 // Public service prices are intentionally confined to the pricing page.
-const PRICE = /(?:AED|USD|EUR|GBP|Dhs?\.?)\s?\d|\d[\d,.]*\s?(?:AED|USD|dirhams)|\$\s?\d[\d,.]*/gi;
+const PRICE = /(?:AED|USD|EUR|GBP|Dhs?\.?)\s?\d[\d,.]*|\d[\d,.]*\s?(?:AED|USD|dirhams)|\$\s?\d[\d,.]*/gi;
 const PRICE_ALLOWED = /^\$\s?20$/;
 
 const titles = new Map();
@@ -99,7 +99,8 @@ for (const route of seoRoutes) {
     if (hit) fail(`${route.path}: banned phrase "${hit[0]}"`);
   }
   for (const m of visible.matchAll(PRICE)) {
-    if (route.path !== '/pricing' && !PRICE_ALLOWED.test(m[0].trim())) fail(`${route.path}: price or money figure "${m[0]}"`);
+    const reportedNajdRevenue = route.path === '/work/najd-rent-a-car-ai-seo' && /^AED 50,000$/.test(m[0].trim());
+    if (route.path !== '/pricing' && !reportedNajdRevenue && !PRICE_ALLOWED.test(m[0].trim())) fail(`${route.path}: price or money figure "${m[0]}"`);
   }
   if (visible.split(' ').length < 150) fail(`${route.path}: thin page (${visible.split(' ').length} words)`);
 

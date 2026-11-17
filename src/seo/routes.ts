@@ -7,6 +7,7 @@ import { HOME_FAQS } from '../views/Home';
 
 export interface SeoRoute {
   path: string;
+  lastmod?: string;
   title: string;
   description: string;
   canonical: string;
@@ -137,6 +138,7 @@ function contentRoute(page: ContentPage): SeoRoute {
 
   return {
     path,
+    lastmod: page.published,
     title: page.title,
     description: page.description,
     canonical: url(path),
@@ -222,7 +224,7 @@ export const seoRoutes: SeoRoute[] = [
 
 export function sitemapXml(): string {
   const rows = seoRoutes
-    .map(r => `  <url>\n    <loc>${r.canonical}</loc>\n    <lastmod>${REVIEWED}</lastmod>\n  </url>`)
+    .map(r => `  <url>\n    <loc>${r.canonical}</loc>\n    <lastmod>${r.lastmod ?? REVIEWED}</lastmod>\n  </url>`)
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows}\n</urlset>\n`;
 }

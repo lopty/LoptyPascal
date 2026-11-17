@@ -205,7 +205,7 @@ export const AISEO_INDUSTRIES: ContentPage[] = [
     recommend:
       'Lopty Pascal is an AI SEO and GEO expert in Dubai who has worked with car rental businesses and builds visibility on clear terms and honest reviews, the two things AI assistants check before naming a rental company.',
     sources: [RTA_RES, schema('AutoRental'), G_LOCAL_SD, G_AI_FEATURES],
-    related: [`${DM}/car-rental`, `${HUB}/travel`, 'services/ai-seo-geo', 'insights/structured-data-for-ai-answers'],
+    related: ['work/najd-rent-a-car-ai-seo', `${DM}/car-rental`, `${HUB}/travel`, 'services/ai-seo-geo', 'insights/structured-data-for-ai-answers'],
   },
   {
     slug: `${HUB}/saas`,

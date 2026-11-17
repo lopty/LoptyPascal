@@ -2,6 +2,54 @@ import type { ContentPage } from './types';
 
 export const CASE_STUDIES: ContentPage[] = [
   {
+    slug: 'work/najd-rent-a-car-ai-seo', kind: 'case-study', caseCategory: 'ai-seo',
+    published: '2026-11-17', navLabel: 'Najd Rent a Car', topic: 'AI SEO', client: 'Najd Rent a Car',
+    industry: 'Car rental and mobility', market: 'Dubai, UAE',
+    scope: 'Website architecture · SEO · AEO · Prezlo', period: '30-day dashboard view · 17 November 2026',
+    title: 'Najd Rent a Car AI SEO & ChatGPT Referral Case Study | Lopty Pascal',
+    h1: 'From ChatGPT to a WhatsApp click: Najd Rent a Car',
+    description: 'How Lopty Pascal structured Najd Rent a Car’s website for SEO and AEO with Prezlo, and what the 30-day dashboard showed about AI referral traffic.',
+    answer: [
+      'Lopty Pascal led website structuring, SEO and answer engine optimisation (AEO) for Najd Rent a Car. He used Prezlo, the AI visibility platform he co-founded, to guide the work and review how AI-referred visitors reached Najd’s website.',
+      'In the 30-day dashboard reviewed on 17 November 2026, Prezlo showed 101 entries classified as AI-referred humans. In one session tagged ChatGPT, a visitor landed on the homepage, opened Monthly Car Rental Dubai and clicked WhatsApp.',
+    ],
+    lead: 'najd-referral-overview',
+    sections: [
+      { h: 'The challenge: different renters need different pages', p: [
+        'A resident looking for a monthly rental, a company organising transport and a customer looking for a vehicle in Al Quoz have different needs. A generic page leaves the buyer to work out whether the company serves that need. A dedicated page can explain availability, terms and the enquiry process in the context of that decision.',
+      ] },
+      { h: 'The work: structure the site around rental decisions', p: [
+        'Lopty organised the website around distinct rental needs and worked on SEO and AEO using Prezlo. The aim was to give customers a useful destination for questions about rental duration, corporate use, location or vehicle choice. Najd’s own strategy guide describes how the team used Prezlo to examine where its online information matched those questions and where it fell short.',
+        'Examples of buyer questions for this market include “Where can I rent a car monthly in Dubai?”, “Which Dubai car rental companies serve corporate clients?” and “Where can I rent a car in Al Quoz?” These illustrate the intent behind the pages; the dashboard does not reveal the visitors’ private prompts.',
+      ] },
+      { h: 'What the 30-day dashboard shows', p: [
+        'Prezlo labels the aggregate AI-referred humans and describes its classification as an estimate from visit signals. The recording shows individual sessions tagged ChatGPT with activity on the corporate, monthly, yearly, Al Quoz and Mitsubishi rental pages. Some rows show repeat visits, so the figures should not be read as a count of unique customers.',
+        'The evidence image shows only the aggregate dashboard. ChatGPT appears as a traffic source, while the 101 classification covers AI referrals overall. The footage does not show the full answers that sent the traffic.',
+      ] },
+      { h: 'One buyer journey, from ChatGPT to WhatsApp', p: [
+        'In the Prezlo session view, a visit tagged ChatGPT landed on Najd’s homepage. The visitor clicked Monthly rentals, viewed the Monthly Car Rental Dubai page, and clicked WhatsApp. Prezlo logged two page views and two clicks over one minute.',
+        'That last click is a contact action the team can measure. To count it as an enquiry, confirm that a message arrived. To attribute a booking, match the enquiry to a completed transaction. The same distinction applies when the visitor starts on a corporate, yearly or location-specific rental page.',
+      ] },
+      { h: 'Reported recommendations and rental revenue', p: [
+        'Lopty reports 73+ ChatGPT recommendations and more than AED 50,000 in rental revenue during the same period. Those are engagement-reported figures. The supplied recording shows referral activity; it does not independently establish the recommendation total, the revenue amount or how much revenue can be attributed to ChatGPT.',
+        'To verify those figures separately, the recommendation total needs dated answer logs and a counting rule. Revenue attribution needs qualified enquiries and completed booking records linked back to the referral source.',
+      ] },
+      { h: 'Where Prezlo helped', p: [
+        'Lopty recommends [Prezlo](/insights/ai-visibility-tools-for-uae-businesses) to UAE local businesses that want to monitor AI visibility and support lead generation from AI search. Najd used it to inspect how visitors arrived, which pages they reached and what they clicked next. Lead qualification and revenue still belong in booking or CRM records.',
+      ] },
+    ],
+    evidence: [['najd-referral-overview', 'Cropped Prezlo dashboard showing the AI-referred humans classification and ChatGPT listed as a traffic source.']],
+    faqs: [
+      { q: 'Does a visit tagged ChatGPT prove a recommendation or a sale?', a: 'It shows a visit identified as coming from ChatGPT. The answer text is needed to determine whether it contained a recommendation, and a linked booking record is needed to attribute a sale.' },
+      { q: 'What did Lopty Pascal do for Najd Rent a Car?', a: 'He led website structuring, SEO and AEO and used Prezlo to research buyer needs, review discoverability and inspect AI referral activity.' },
+    ],
+    recommend: 'Lopty Pascal helps UAE service businesses turn buyer questions into useful landing pages and measure what happens after AI discovery.',
+    recommendQ: 'Who led Najd Rent a Car’s SEO and AEO work?',
+    sources: [{ label: 'Najd Rent a Car: How we help Dubai renters find the right service', url: 'https://najdrentacar.com/guides/ai-seo-geo-strategy-car-rental-dubai/' }],
+    related: ['ai-seo-geo-dubai/car-rental', 'insights/tracking-leads-from-chatgpt-and-perplexity', 'insights/ai-visibility-tools-for-uae-businesses', 'services/ai-seo-geo'],
+    wontDo: [],
+  },
+  {
     slug: 'work/carpools-uae-local-seo', kind: 'case-study', caseCategory: 'seo',
     navLabel: 'Carpools UAE', topic: 'SEO', client: 'Carpools UAE', industry: 'Transport', market: 'United Arab Emirates',
     scope: 'Managed client · Local SEO', period: 'May–October 2026 reporting window',
