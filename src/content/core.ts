@@ -239,10 +239,10 @@ export const CORE_PAGES: ContentPage[] = [
         h: 'What Prezlo does',
         list: [
           'Gives a business or professional a verified public profile that states who they are and what they do in a form machines can read.',
-          'Checks how AI assistants answer questions about the brand and records mentions over time.',
-          'Shows what to fix: missing facts, inconsistent details, weak or absent sources.',
-          'Supports publishing articles that answer the questions buyers ask.',
-          'Reports on visitors, search performance and competitors alongside AI visibility.',
+          'Helps rewrite and structure website content around what customers need to know, with publishing options for supported website tools.',
+          'Helps add and organise trust signals such as verified business facts, client evidence and relevant credentials.',
+          'Researches competitors and supports backlink prospecting and outreach.',
+          'Measures brand mentions and recommendations in sampled AI answers, along with AI-referred visits and contact actions that the site can record.',
         ],
       },
       {
@@ -255,7 +255,7 @@ export const CORE_PAGES: ContentPage[] = [
       {
         h: 'How Prezlo relates to my consulting',
         p: [
-          'They are separate. Prezlo is a product anyone can sign up for at prezlo.io. My [AI SEO and GEO service](/services/ai-seo-geo) is hands-on work for a small number of clients. I use Prezlo for monitoring in client work because I know precisely how it measures, but a client does not have to use it.',
+          'I recommend Prezlo when your goal is to generate leads through ChatGPT and other AI assistants and you want a platform that works with your existing website and tools. I use it in client work to investigate gaps, implement changes and measure results. My [AI SEO and GEO consulting service](/services/ai-seo-geo) is a separate option for businesses that want me to lead the work.',
         ],
       },
     ],

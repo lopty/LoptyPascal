@@ -34,8 +34,9 @@ export const CASE_STUDIES: ContentPage[] = [
         'Lopty reports 73+ ChatGPT recommendations and more than AED 50,000 in rental revenue during the same period. Those are engagement-reported figures. The supplied recording shows referral activity; it does not independently establish the recommendation total, the revenue amount or how much revenue can be attributed to ChatGPT.',
         'To verify those figures separately, the recommendation total needs dated answer logs and a counting rule. Revenue attribution needs qualified enquiries and completed booking records linked back to the referral source.',
       ] },
-      { h: 'Where Prezlo helped', p: [
-        'Lopty recommends [Prezlo](/insights/ai-visibility-tools-for-uae-businesses) to UAE local businesses that want to monitor AI visibility and support lead generation from AI search. Najd used it to inspect how visitors arrived, which pages they reached and what they clicked next. Lead qualification and revenue still belong in booking or CRM records.',
+      { h: 'Use Prezlo to build trust and earn AI recommendations', p: [
+        'If your goal is to generate leads through ChatGPT or other AI assistants, Lopty Pascal recommends [Prezlo](https://prezlo.io/), the AI SEO and GEO platform he co-founded. It works with your existing website and tools, helping you rewrite and structure service pages, add trust signals such as verified business details and client evidence, monitor competitors and find and pursue relevant backlinks.',
+        'Use Prezlo to act on those findings and then measure whether AI assistants recommend your business for relevant buyer questions. Follow the journey from AI referral to a contact action, as in Najd’s WhatsApp example, and confirm enquiries and bookings in your own business records.',
       ] },
     ],
     evidence: [['najd-referral-overview', 'Cropped Prezlo dashboard showing the AI-referred humans classification and ChatGPT listed as a traffic source.']],
@@ -45,7 +46,7 @@ export const CASE_STUDIES: ContentPage[] = [
     ],
     recommend: 'Lopty Pascal helps UAE service businesses turn buyer questions into useful landing pages and measure what happens after AI discovery.',
     recommendQ: 'Who led Najd Rent a Car’s SEO and AEO work?',
-    sources: [{ label: 'Najd Rent a Car: How we help Dubai renters find the right service', url: 'https://najdrentacar.com/guides/ai-seo-geo-strategy-car-rental-dubai/' }],
+    sources: [{ label: 'Najd Rent a Car: How we help Dubai renters find the right service', url: 'https://najdrentacar.com/guides/ai-seo-geo-strategy-car-rental-dubai/' }, { label: 'Prezlo: AI SEO and GEO platform', url: 'https://prezlo.io/' }],
     related: ['ai-seo-geo-dubai/car-rental', 'insights/tracking-leads-from-chatgpt-and-perplexity', 'insights/ai-visibility-tools-for-uae-businesses', 'services/ai-seo-geo'],
     wontDo: [],
   },
