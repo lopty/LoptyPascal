@@ -34,6 +34,11 @@ export function ServicesHub() {
         ))}
       </div>
       <div className="prose-body mt-12">
+        <h2>Specialist AI search services</h2>
+        <ul>
+          <li><Link to="/services/ai-lead-generation-dubai" className="text-link">AI lead generation in Dubai</Link>: connect buyer questions, service pages and qualified enquiries.</li>
+          <li><Link to="/services/ai-seo-for-service-providers" className="text-link">AI SEO for service providers</Link>: clarify service fit, improve the website and give buyers proof they can check.</li>
+        </ul>
         <h2>Plan your investment</h2>
         <p>Start with a standalone audit or choose a fixed-scope package. See <Link to="/pricing" className="text-link">pricing and what each package includes</Link>, including visibility reporting, lead measurement and enterprise work.</p>
         <h2>Which one fits you</h2>

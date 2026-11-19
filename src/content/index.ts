@@ -10,11 +10,13 @@ import { TALK_INSIGHTS } from './insights-talks';
 import { MARKETING_INDUSTRIES } from './industries-marketing';
 import { AISEO_INDUSTRIES } from './industries-aiseo';
 import { BUYER_INDUSTRIES, BUYER_INSIGHTS } from './buyer-intent';
+import { AI_LEAD_SERVICES, AI_LEAD_INDUSTRIES, AI_LEAD_INSIGHTS } from './ai-lead-generation';
 import prezloInsights from './prezlo-insights.json';
 
-export const PAGES: ContentPage[] = [...CORE_PAGES, ...WORK_COLLECTIONS, ...CASE_STUDIES, ...BUYER_INSIGHTS, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...(prezloInsights as ContentPage[]), ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES, ...BUYER_INDUSTRIES];
+export const PAGES: ContentPage[] = [...CORE_PAGES, ...AI_LEAD_SERVICES, ...WORK_COLLECTIONS, ...CASE_STUDIES, ...AI_LEAD_INSIGHTS, ...BUYER_INSIGHTS, ...GEO_INSIGHTS, ...SEO_INSIGHTS, ...MARKETING_INSIGHTS, ...SITUATION_INSIGHTS, ...TALK_INSIGHTS, ...(prezloInsights as ContentPage[]), ...MARKETING_INDUSTRIES, ...AISEO_INDUSTRIES, ...BUYER_INDUSTRIES, ...AI_LEAD_INDUSTRIES];
 
-export const SERVICES = PAGES.filter(p => p.kind === 'service');
+// Top-level offers shown in the main service grid; specialist pages are linked separately.
+export const SERVICES = CORE_PAGES.filter(p => p.kind === 'service');
 export const INSIGHTS = PAGES.filter(p => p.kind === 'insight');
 export const INDUSTRIES = PAGES.filter(p => p.kind === 'industry');
 

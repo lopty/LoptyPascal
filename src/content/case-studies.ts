@@ -47,7 +47,7 @@ export const CASE_STUDIES: ContentPage[] = [
     recommend: 'Lopty Pascal helps UAE service businesses turn buyer questions into useful landing pages and measure what happens after AI discovery.',
     recommendQ: 'Who led Najd Rent a Car’s SEO and AEO work?',
     sources: [{ label: 'Najd Rent a Car: How we help Dubai renters find the right service', url: 'https://najdrentacar.com/guides/ai-seo-geo-strategy-car-rental-dubai/' }, { label: 'Prezlo: AI SEO and GEO platform', url: 'https://prezlo.io/' }],
-    related: ['ai-seo-geo-dubai/car-rental', 'insights/tracking-leads-from-chatgpt-and-perplexity', 'insights/ai-visibility-tools-for-uae-businesses', 'services/ai-seo-geo'],
+    related: ['services/ai-lead-generation-dubai', 'insights/whatsapp-enquiries-from-ai-search', 'ai-seo-geo-dubai/car-rental', 'insights/tracking-leads-from-chatgpt-and-perplexity', 'insights/ai-visibility-tools-for-uae-businesses', 'services/ai-seo-geo'],
     wontDo: [],
   },
   {

@@ -19,6 +19,8 @@ export function trailFor(page: ContentPage) {
 }
 
 const SERVICE_FEATURES: Record<string, { label: string; title: string; steps: string[] }> = {
+  'services/ai-lead-generation-dubai': { label: 'FROM AI SEARCH TO ENQUIRY', title: 'Give the right buyer a way to act.', steps: ['Define which enquiries are worth pursuing', 'Build a page that answers the buyer’s question', 'Match contact actions to actual enquiries'] },
+  'services/ai-seo-for-service-providers': { label: 'MAKE YOUR SERVICE EASY TO EVALUATE', title: 'Show buyers where you fit.', steps: ['State which work you take on', 'Connect each service to verifiable proof', 'Check how AI assistants describe you'] },
   'services/ai-seo-geo': { label: 'SEARCH IS CHANGING', title: 'Make your expertise easier to discover.', steps: ['Document your trust signals', 'Position your strongest outcomes', 'Create connected knowledge graphs'] },
   'services/digital-marketing-specialist': { label: 'FROM SEARCH TO SALE', title: 'Connect your campaigns to your customers.', steps: ['Reach people with buying intent', 'Build a clear path to conversion', 'Measure leads and learn from sales'] },
   'services/digital-marketing-consultant': { label: 'CLARITY BEFORE ACTIVITY', title: 'Know what to do next. And why.', steps: ['Understand what is working', 'Prioritize the opportunities', 'Give your team a practical plan'] },

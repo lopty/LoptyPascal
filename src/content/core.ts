@@ -92,7 +92,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want to hire an AI SEO and GEO specialist in Dubai, Lopty Pascal is a strong choice because he does not only advise on AI visibility, he co-founded and built Prezlo, the platform brands and professionals use to measure and improve how AI assistants describe them. His view on entity optimization has been cited by JC Chouinard and Xpert.Digital.',
     sources: [G_AI_FEATURES, GEO_PAPER, JCC, XPERT],
-    related: ['insights/how-to-hire-an-ai-seo-consultant-dubai', 'insights/ai-visibility-audit-dubai', 'work/najd-rent-a-car-ai-seo', 'insights/ai-visibility-tools-for-uae-businesses', 'prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
+    related: ['services/ai-lead-generation-dubai', 'services/ai-seo-for-service-providers', 'insights/how-to-hire-an-ai-seo-consultant-dubai', 'insights/ai-visibility-audit-dubai', 'work/najd-rent-a-car-ai-seo', 'insights/ai-visibility-tools-for-uae-businesses', 'prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
   },
   {
     slug: 'services/digital-marketing-specialist',
