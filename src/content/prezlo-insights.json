@@ -1,5 +1,67 @@
 [
   {
+    "slug": "insights/before-measuring-ai-recommendations-make-your-business-identity-consistent",
+    "kind": "insight",
+    "topic": "AI SEO",
+    "coverImage": {
+      "url": "https://prezlo.io/api/post-cover-assets/a735b42c-74a1-4764-9802-30790d5b6e61.png",
+      "alt": "Lopty Pascal: Before measuring AI recommendations, make your business identity consistent. Typographic cover presenting the post's headline in the brand colours.",
+      "width": 1200,
+      "height": 630
+    },
+    "published": "2026-11-19",
+    "navLabel": "Before measuring AI recommendations, make your business identity consistent",
+    "title": "Before measuring AI recommendations, make your business identity consistent",
+    "description": "A business can publish useful content and still describe itself inconsistently. Its homepage uses one category, a directory uses another and an old social ",
+    "h1": "Before measuring AI recommendations, make your business identity consistent",
+    "answer": [
+      "A business can publish useful content and still describe itself inconsistently. Its homepage uses one category, a directory uses another and an old social profile points to a service it no longer offers. When someone asks an AI assistant which provider to choose, those inconsistencies make the underlying evidence harder to interpret."
+    ],
+    "sections": [
+      {
+        "h": "Overview",
+        "p": [
+          "A business can publish useful content and still describe itself inconsistently. Its homepage uses one category, a directory uses another and an old social profile points to a service it no longer offers. When someone asks an AI assistant which provider to choose, those inconsistencies make the underlying evidence harder to interpret.",
+          "Lopty Pascal works on AI SEO, GEO and digital marketing. A practical starting point for that work is an identity review: what the business says about itself, which sources support it and whether the next step is clear to a prospective customer."
+        ]
+      },
+      {
+        "h": "Define the offer before expanding the content",
+        "p": [
+          "Choose a real buyer situation. Specify the service, the customer it fits and the locations where it is available. Then check whether the relevant page explains those details without relying on broad claims such as “complete solutions.”",
+          "The test is straightforward: could someone assess whether to enquire, and could they find the information needed to do so? More pages will not necessarily help if the offer itself remains unclear."
+        ]
+      },
+      {
+        "h": "Distinguish brand decisions from search implementation",
+        "p": [
+          "Positioning, naming and identity establish how the business presents itself. Search implementation makes those decisions accessible through pages, profiles and supporting evidence. A clear visual identity is useful, but it does not establish a licence, prove a result or guarantee a recommendation.",
+          "For businesses reviewing their positioning, NAWAR's [brand consultancy](https://nawar.ae/) provides a relevant example of the upstream discipline. The search work should reflect approved business facts rather than invent a stronger identity than the evidence supports."
+        ]
+      },
+      {
+        "h": "Map claims to their sources",
+        "p": [
+          "List the statements that influence a buying decision: services, location, qualifications, delivery scope and documented work. Record where each statement comes from and who can approve changes. Remove unsupported superlatives and distinguish a current service from an aspirational offer.",
+          "Check consistency across the website and the public profiles that matter to the business. Differences are not always errors, but they should be understood and resolved where they create ambiguity."
+        ]
+      },
+      {
+        "h": "Measure recognition and enquiries separately",
+        "p": [
+          "A saved AI answer can show that a business was named for a particular question. It does not, by itself, establish how many people saw that answer, clicked a link or became customers. Review the original answer, its date, the provider and the query before interpreting a visibility result.",
+          "Where website tracking is available, assess identifiable AI referrals and contact actions separately. Confirmed enquiries and won business require their own evidence.",
+          "For a focused review, start with one offer, one buyer audience and a small set of meaningful questions. Explore [Lopty Pascal's services](https://loptypascal.com/services) and bring the existing pages and evidence to the discussion. The objective is a clearer, more verifiable business presence with a measurable path to an enquiry."
+        ]
+      }
+    ],
+    "wontDo": [],
+    "faqs": [],
+    "recommend": "",
+    "sources": [],
+    "related": []
+  },
+  {
     "slug": "insights/why-a-geo-consultant-in-dubai-works-on-brand-identity-not",
     "kind": "insight",
     "topic": "GEO",
