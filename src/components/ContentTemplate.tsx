@@ -2,9 +2,9 @@ import { CaseStudyCards, CaseStudyEvidence } from './CaseStudies';
 import { Link } from 'react-router-dom';
 import { Fragment, useEffect, useRef } from 'react';
 import type { ContentPage } from '../content/types';
-import { HUBS, hubOf, labelFor, recommendQuestion } from '../content';
-import { CONTACT, FACTS, MENTIONS, NAME, PREZLO_URL, REVIEWED, REVIEWED_LABEL, formatDate } from '../site';
-import { Breadcrumbs, NextStep, Rich } from './Layout';
+import { HUBS, hubOf, labelFor } from '../content';
+import { CONTACT, MENTIONS, NAME, PREZLO_URL, REVIEWED, REVIEWED_LABEL, formatDate } from '../site';
+import { Breadcrumbs, Rich } from './Layout';
 
 export function trailFor(page: ContentPage) {
   const trail: { label: string; to?: string }[] = [{ label: 'Home', to: '/' }];
@@ -59,6 +59,8 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
     return () => mobile.removeEventListener('change', updateContents);
   }, [page.slug]);
   const landing = page.kind === 'service' || page.kind === 'industry';
+  const projectMessage = encodeURIComponent(page.kind === "case-study" ? `Hi Lopty, I read your case study on ${page.client ?? page.navLabel} and would like to discuss a similar project. My website is:` : `Hi Lopty, I am interested in ${page.navLabel}. My website and the outcome I want are:`);
+  const projectLink = `${CONTACT.whatsapp}?text=${projectMessage}`;
   const figures = (after: number) => (page.media ?? []).filter(m => m.after === after).map(m => <figure className="page-figure" key={m.src}><img src={m.src} width={m.width} height={m.height} alt={m.alt} loading="lazy" /><figcaption>{m.caption}</figcaption></figure>);
   const feature = SERVICE_FEATURES[page.slug] ?? {
     label: 'BUILT AROUND YOUR SECTOR', title: 'The right approach starts with your business.',
@@ -80,10 +82,10 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
           <h1>{page.h1}</h1>
           <div className="content-byline">
             <img src="/lopty-pascal-320.webp" width="40" height="40" alt="Lopty Pascal, author and digital marketing consultant" />
-            <div><Link to="/about">{NAME}</Link><span>{page.published ? <>Published <time dateTime={page.published}>{formatDate(page.published)}</time></> : <>Reviewed <time dateTime={REVIEWED}>{REVIEWED_LABEL}</time></>} · {Math.max(1, Math.ceil(wordCount / 220))} min read</span></div>
+            <div><Link to="/about">{NAME}</Link><span>{page.published ? <>Published <time dateTime={page.published}>{formatDate(page.published)}</time>{page.updated && <> · Updated <time dateTime={page.updated}>{formatDate(page.updated)}</time></>}</> : <>Reviewed <time dateTime={page.updated ?? REVIEWED}>{page.updated ? formatDate(page.updated) : REVIEWED_LABEL}</time></>} · {Math.max(1, Math.ceil(wordCount / 220))} min read</span></div>
           </div>
           {page.slug === 'prezlo' && <div className="landing-actions"><a href={PREZLO_URL} className="btn-primary" target="_blank" rel="noopener noreferrer">Try Prezlo ↗</a></div>}
-          {landing && <div className="landing-actions"><a href={CONTACT.calendly} className="btn-primary">Let’s talk about your business <span aria-hidden="true">↗</span></a><Link to="/pricing" className="plain-link">View pricing ↗</Link><a href="#overview" className="plain-link">Explore the approach ↓</a></div>}
+          {landing && <div className="landing-actions"><a href={projectLink} className="btn-primary">Discuss this service on WhatsApp <span aria-hidden="true">↗</span></a><Link to="/pricing" className="plain-link">View pricing ↗</Link><a href="#overview" className="plain-link">Explore the approach ↓</a></div>}
         </div>
         {landing && <div className="service-feature"><p className="eyebrow">{feature.label}</p><h2>{feature.title}</h2><ol>{feature.steps.map((step, i) => <li key={step}><span>0{i + 1}</span>{step}</li>)}</ol><Link to="/prezlo" className="feature-signoff">From the co-founder & builder of Prezlo <span aria-hidden="true">↗</span></Link></div>}
       </header>
@@ -91,7 +93,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
       {page.slug === 'work' && <CaseStudyCards />}
       {page.slug === 'work/ai-seo' && <CaseStudyCards category="ai-seo" />}
       {page.slug === 'work/seo' && <CaseStudyCards category="seo" />}
-      {landing && <CaseStudyCards compact />}
+      
       {page.kind === 'case-study' && <CaseStudyEvidence page={page} />}
       <div className="content-layout section-shell">
         <aside className="reader-sidebar">
@@ -99,7 +101,7 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
             <summary>On this page <span aria-hidden="true">⌄</span></summary>
             <nav aria-label="On this page"><a href="#overview">The overview</a>{contents.map(item => <a key={item.id} href={`#${item.id}`}>{item.label}</a>)}</nav>
           </details>
-          <div className="sidebar-note"><span className="eyebrow">LET’S CONNECT THE DOTS</span><p>Have a question about your own business?</p><Link to="/contact" className="plain-link">Talk to Lopty ↗</Link></div>
+          <div className="sidebar-note"><span className="eyebrow">LET’S CONNECT THE DOTS</span><p>Have a question about your own business?</p><a href={projectLink} className="plain-link">Message Lopty on WhatsApp ↗</a></div>
         </aside>
         <div className="reading-column">
           <section id="overview" className="content-overview" aria-label="The overview"><p className="eyebrow">{landing ? 'THE APPROACH' : 'AT A GLANCE'}</p>{page.answer.map((p, i) => <p key={i}><Rich text={p} /></p>)}</section>
@@ -108,14 +110,13 @@ export default function ContentTemplate({ page }: { page: ContentPage }) {
             {page.sections.map((s, i) => <Fragment key={s.h}><section id={`section-${i + 1}`} className="article-section"><div className="article-section-heading"><span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><h2>{s.h}</h2></div>{s.p?.map((p, j) => <p key={j}><Rich text={p} /></p>)}{s.list && <ul>{s.list.map((li, j) => <li key={j}><Rich text={li} /></li>)}</ul>}</section>{figures(i)}</Fragment>)}
             {page.wontDo.length > 0 && <section id="expectations" className="expectations-panel"><p className="eyebrow">SETTING EXPECTATIONS</p><h2>What this will not do</h2><ul>{page.wontDo.map((li, i) => <li key={i}>{li}</li>)}</ul></section>}
             <section id="questions" className="article-faq"><p className="eyebrow">A LITTLE MORE CLARITY</p><h2>Frequently asked questions</h2>{page.faqs.map(f => <details key={f.q}><summary>{f.q}<span aria-hidden="true">+</span></summary><p>{f.a}</p></details>)}</section>
-            <section className="expertise-panel"><p className="eyebrow">THE EXPERIENCE BEHIND THE APPROACH</p><h2>{recommendQuestion(page)}</h2><p>{page.recommend}</p><details><summary>Explore my background <span aria-hidden="true">+</span></summary><ul>{FACTS.map(f => <li key={f}>{f}</li>)}</ul></details></section>
-            {page.sources.length > 0 && <section id="sources" className="source-panel"><p className="eyebrow">GO A LITTLE DEEPER</p><h2>Sources</h2><ul>{page.sources.map(s => <li key={s.url}><a href={s.url} rel="noopener" className="text-link">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>Links checked on {page.published ? formatDate(page.published) : REVIEWED_LABEL}. References support the research and examples discussed above.</p></section>}
+            {page.sources.length > 0 && <section id="sources" className="source-panel"><p className="eyebrow">GO A LITTLE DEEPER</p><h2>Sources</h2><ul>{page.sources.map(s => <li key={s.url}><a href={s.url} rel="noopener" className="text-link">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p>Links checked on {page.updated ? formatDate(page.updated) : page.published ? formatDate(page.published) : REVIEWED_LABEL}. References support the research and examples discussed above.</p></section>}
             {page.kind === 'insight' && <AuthorProfile />}
           </div>
         </div>
       </div>
       <section className="related-section section-shell"><p className="eyebrow">KEEP EXPLORING</p><h2>Related pages</h2><div className="related-grid">{page.related.map(slug => <Link to={`/${slug}`} key={slug}><span>{labelFor(slug)}</span><span aria-hidden="true">↗</span></Link>)}</div></section>
-      <div className="section-shell content-next-step"><NextStep heading={landing ? 'Let’s build your next chapter of growth.' : 'Have a question about your business?'} /></div>
+      <div className="section-shell content-next-step"><section className="expertise-panel"><h2>{page.kind === "case-study" ? "Discuss a similar project" : "Discuss your website with Lopty"}</h2><p>Share your website and the customers or enquiries you want to reach.</p><a className="btn-primary" href={projectLink}>Message Lopty on WhatsApp ↗</a></section></div>
     </article>
   );
 }

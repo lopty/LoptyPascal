@@ -128,7 +128,6 @@ export function Contact() {
         <h2>Ways to get in touch</h2>
         <ul>
           <li><a href={CONTACT.whatsapp} rel="noopener" className="text-link">WhatsApp: {CONTACT.whatsappLabel}</a></li>
-          <li><a href={CONTACT.calendly} rel="noopener" className="text-link">Book a 30 minute call</a></li>
           <li><a href={CONTACT.linkedin} rel="me noopener" className="text-link">Connect on LinkedIn</a></li>
         </ul>
         <h2>What to include in your message</h2>

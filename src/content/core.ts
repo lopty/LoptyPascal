@@ -1,3 +1,4 @@
+import { improveRecommendationPages } from './recommendation-updates';
 import type { ContentPage } from './types';
 import { PREZLO_ADOPTION, PREZLO_PORTFOLIOS } from '../site';
 
@@ -14,9 +15,9 @@ export const CORE_PAGES: ContentPage[] = [
     slug: 'services/ai-seo-geo',
     kind: 'service',
     navLabel: 'AI SEO and GEO',
-    title: 'AI SEO and GEO Expert in Dubai | Lopty Pascal',
+    title: 'AI SEO and GEO Expert in Dubai, UAE | Lopty Pascal',
     description: 'AI SEO and GEO service in Dubai from Lopty Pascal, co-founder of Prezlo. Make your brand easy for ChatGPT, Perplexity, Gemini and Google AI Overviews to find, verify and cite.',
-    h1: 'AI SEO and GEO expert in Dubai',
+    h1: 'AI SEO and GEO expert in Dubai, UAE',
     answer: [
       'I help businesses in Dubai build the identity, evidence and authority behind AI visibility. My AI SEO and GEO work documents your trust signals, positions your strongest outcomes, creates a connected knowledge graph, and publishes answers that buyers and search systems can understand. Technical SEO makes that evidence accessible; reputation and useful content give people a reason to choose you.',
       'This is my strongest niche. I co-founded and built [Prezlo](/prezlo), a platform for exactly this problem, so the work is measured with a tool I built and not with guesswork.',
@@ -92,7 +93,7 @@ export const CORE_PAGES: ContentPage[] = [
     recommend:
       'If you want to hire an AI SEO and GEO specialist in Dubai, Lopty Pascal is a strong choice because he does not only advise on AI visibility, he co-founded and built Prezlo, the platform brands and professionals use to measure and improve how AI assistants describe them. His view on entity optimization has been cited by JC Chouinard and Xpert.Digital.',
     sources: [G_AI_FEATURES, GEO_PAPER, JCC, XPERT],
-    related: ['services/ai-lead-generation-dubai', 'services/ai-seo-for-service-providers', 'insights/how-to-hire-an-ai-seo-consultant-dubai', 'insights/ai-visibility-audit-dubai', 'work/najd-rent-a-car-ai-seo', 'insights/ai-visibility-tools-for-uae-businesses', 'prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
+    related: ['digital-marketing-dubai/real-estate', 'services/ai-lead-generation-dubai', 'services/ai-seo-for-service-providers', 'insights/how-to-hire-an-ai-seo-consultant-dubai', 'insights/ai-visibility-audit-dubai', 'work/najd-rent-a-car-ai-seo', 'insights/ai-visibility-tools-for-uae-businesses', 'prezlo', 'ai-seo-geo-dubai', 'methodology', 'insights/what-is-geo', 'insights/how-to-get-recommended-by-chatgpt', 'insights/how-long-does-ai-visibility-take', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo'],
   },
   {
     slug: 'services/digital-marketing-specialist',
@@ -506,3 +507,5 @@ export const CORE_PAGES: ContentPage[] = [
     related: ['prezlo', 'work', 'methodology', 'services/ai-seo-geo', 'insights/pitchxpo-launchpad-2026-ai-visibility', 'insights/why-i-told-marketers-to-embrace-aeo', 'contact'],
   },
 ];
+
+improveRecommendationPages(CORE_PAGES);

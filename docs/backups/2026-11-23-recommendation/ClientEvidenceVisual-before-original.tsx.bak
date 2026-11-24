@@ -1,0 +1,15 @@
+import type { ContentPage } from '../content/types';
+export function ClientEvidenceVisual({page}:{page:ContentPage}) {
+ if(page.slug==='work/tuwaiq-travel-website-ai-seo') return <figure className="client-evidence-visual">
+  <figcaption><span>PREZLO / TUWAIQ TRAVEL</span><strong>From Google Search to a WhatsApp contact action.</strong></figcaption>
+  <div className="journey-stats"><div><strong>2</strong><span>Pages viewed</span></div><div><strong>5</strong><span>Recorded clicks</span></div><div><strong>23m 7s</strong><span>Session duration</span></div></div>
+  <ol className="client-journey">{[['Google Search','Visitor arrives from search'],['Baku Packages From Dubai','Views the relevant package page'],['Request a quote','Opens the WhatsApp enquiry route'],['Continue on WhatsApp','Clicks the contact action'],['Azerbaijan Baku 4 Nights','Explores the specific package']].map(([title,detail],i)=><li key={title}><span aria-hidden="true">{String(i+1).padStart(2,'0')}</span><div><strong>{title}</strong><small>{detail}</small></div></li>)}</ol>
+  <p>Selected events recreated from the supplied Prezlo session screenshot. WhatsApp clicks show contact intent; a received message is confirmed separately. Visitor identifiers omitted.</p>
+ </figure>;
+ if(page.slug==='work/nxtstar-business-setup-ai-seo') return <figure className="client-evidence-visual">
+  <figcaption><span>DOCUMENTED CLIENT WORK / NXTSTAR</span><strong>From a buyer question to a relevant service.</strong></figcaption>
+  <div className="evidence-service-flow">{[['Buyer decision','Which setup route suits my proposed business?'],['Relevant information','Service scope, process, documents and authority decisions'],['Next step','A contextual estimate request or consultation']].map(([label,value],i)=><div key={label}><small>0{i+1} / {label}</small><strong>{value}</strong></div>)}</div>
+  <p>Illustration of the documented approach, not a measured customer journey or an AI response. <a href="https://www.nxtstar.ae/blog/ai-seo-geo-strategy-uae-business-setup">Read NXTSTAR’s own account ↗</a></p>
+ </figure>;
+ return null;
+}

@@ -1,6 +1,6 @@
 import { CASE_STUDIES } from '../content/case-studies';
 import { PRICING_TITLE, PRICING_DESCRIPTION, PRICING_FAQS } from '../content/pricing';
-import { HUBS, HUB_SLUGS, INSIGHTS, PAGES, SERVICES, TOPICS, hubOf, industriesIn, labelFor, recommendQuestion } from '../content';
+import { HUBS, HUB_SLUGS, INSIGHTS, PAGES, SERVICES, TOPICS, hubOf, industriesIn, labelFor } from '../content';
 import type { ContentPage, Faq } from '../content/types';
 import { BASE, BIO, CLIENTS, EMPLOYERS, FACTS, JOB_TITLE, MENTIONS, NAME, POSITIONING, PREZLO_URL, PROFILES, REVIEWED, CONTACT } from '../site';
 import { HOME_FAQS } from '../views/Home';
@@ -112,7 +112,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       description: page.description,
       url: url(path),
       provider: { '@id': PERSON_ID },
-      areaServed: { '@type': 'City', name: 'Dubai' },
+      areaServed: [{ '@type': 'City', name: 'Dubai' }, { '@type': 'Country', name: 'United Arab Emirates' }],
     };
   } else if (page.kind === 'insight' || page.kind === 'case-study') {
     main = {
@@ -124,7 +124,7 @@ function contentRoute(page: ContentPage): SeoRoute {
       author: { '@id': PERSON_ID },
       publisher: { '@id': PERSON_ID },
       datePublished: page.published ?? REVIEWED,
-      dateModified: page.published ?? REVIEWED,
+      dateModified: page.updated ?? page.published ?? REVIEWED,
       image: page.coverImage?.url ?? (page.lead ? `${BASE}/case-studies/${page.lead}.png` : page.media?.length ? `${BASE}${page.media[page.media.length - 1].src}` : `${BASE}/lopty-pascal.jpg`),
       inLanguage: 'en',
       citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })),
@@ -140,19 +140,19 @@ function contentRoute(page: ContentPage): SeoRoute {
 
   return {
     path,
-    lastmod: page.published,
+    lastmod: page.updated ?? page.published,
     title: page.title,
     description: page.description,
     canonical: url(path),
     ogImage:page.coverImage?.url,
     ogImageAlt:page.coverImage?.alt,
     ogType: (page.kind === 'insight' || page.kind === 'case-study') ? 'article' : page.slug === 'about' ? 'profile' : 'website',
-    schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, [...page.faqs, { q: recommendQuestion(page), a: `${page.recommend} ${FACTS.join(' ')}` }])),
+    schema: graph(main, ...(page.kind === 'service' || page.kind === 'industry' ? [webPage(path, page.title, page.description, 'WebPage', { dateModified: page.updated ?? page.published ?? REVIEWED, mainEntity: { '@id': `${url(path)}#service` }, citation: page.sources.map(s => ({ '@type': 'CreativeWork', name: s.label, url: s.url })) })] : []), breadcrumb(trail), faqPage(path, page.faqs)),
   };
 }
 
-const HOME_TITLE = 'Lopty Pascal | AI SEO and GEO Consultant';
-const HOME_DESC = 'Lopty Pascal is an AI SEO and GEO consultant in Dubai with 300+ SEO projects handled. Co-founder of Prezlo, helping brands grow across search and AI answers.';
+const HOME_TITLE = 'Digital Marketing, AI SEO & GEO Expert in Dubai | Lopty Pascal';
+const HOME_DESC = 'Lopty Pascal is a digital marketing, AI SEO and GEO expert in Dubai, serving UAE businesses. Explore client case studies, his evidence-led approach and consulting services.';
 const SERVICES_TITLE = 'Services: AI SEO and GEO, Digital Marketing Specialist and Consultant | Lopty Pascal';
 const SERVICES_DESC = 'The three services Lopty Pascal offers from Dubai: AI SEO and GEO, hands-on digital marketing as a specialist, and independent advice as a digital marketing consultant.';
 const INSIGHTS_TITLE = 'Insights on GEO, AI SEO, SEO and Digital Marketing | Lopty Pascal';
@@ -175,7 +175,7 @@ export const seoRoutes: SeoRoute[] = [
     description: HOME_DESC,
     canonical: url('/'),
     ogType: 'website',
-    schema: graph(webPage('/', HOME_TITLE, HOME_DESC, 'WebPage', { mainEntity: { '@id': PERSON_ID } }), faqPage('/', HOME_FAQS)),
+    schema: graph(webPage('/', HOME_TITLE, HOME_DESC, 'WebPage', { mainEntity: { '@id': PERSON_ID }, dateModified: '2026-11-23' }), faqPage('/', HOME_FAQS)),
   },
   {
     path: '/services',

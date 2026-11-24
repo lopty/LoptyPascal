@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { CASE_STUDIES } from '../content/case-studies';
 import type { ContentPage } from '../content/types';
 import dimensions from '../content/evidence-dimensions.json';
+import { ClientEvidenceVisual } from './ClientEvidenceVisual';
 
 export function CaseStudyCards({ compact = false, category }: { compact?: boolean; category?: ContentPage['caseCategory'] }) {
   const pages = CASE_STUDIES.filter(page => !category || page.caseCategory === category);
@@ -20,9 +21,10 @@ export function CaseStudyEvidence({ page }: { page: ContentPage }) {
   return <section className="section-shell case-proof" aria-label="Case study results and evidence">
     <dl className="case-context"><div><dt>Industry</dt><dd>{page.industry}</dd></div><div><dt>Market</dt><dd>{page.market}</dd></div><div><dt>Engagement</dt><dd>{page.scope}</dd></div></dl>
     <div className="case-proof-heading"><div><p className="eyebrow">THE REPORTS BEHIND THE RESULT</p><h2>See the evidence.</h2></div><span>{page.period}</span></div>
-    <details className="case-reports"><summary>Open the original reports <span aria-hidden="true">+</span></summary><div className="case-evidence-grid">{page.evidence?.map(([file, caption]) => {
+    <ClientEvidenceVisual page={page} />
+    {!!page.evidence?.length && <details className="case-reports" open><summary>Original reports <span aria-hidden="true">+</span></summary><div className="case-evidence-grid">{page.evidence?.map(([file, caption]) => {
       const size = dimensions[file as keyof typeof dimensions];
       return <figure key={file}><img src={`/case-studies/${file}.png`} width={size[0]} height={size[1]} alt={caption} loading="lazy" /><figcaption>{caption}<br /><a href={`/case-studies/${file}.png`} target="_blank" rel="noopener noreferrer">View full-size report ↗</a></figcaption></figure>;
-    })}</div></details>
+    })}</div></details>}
   </section>;
 }

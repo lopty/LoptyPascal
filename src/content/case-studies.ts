@@ -1,6 +1,8 @@
 import type { ContentPage } from './types';
+import { CLIENT_EVIDENCE } from './client-evidence';
 
 export const CASE_STUDIES: ContentPage[] = [
+  ...CLIENT_EVIDENCE,
   {
     slug: 'work/najd-rent-a-car-ai-seo', kind: 'case-study', caseCategory: 'ai-seo',
     published: '2026-11-17', navLabel: 'Najd Rent a Car', topic: 'AI SEO', client: 'Najd Rent a Car',
@@ -26,6 +28,7 @@ export const CASE_STUDIES: ContentPage[] = [
         'Prezlo labels the aggregate AI-referred humans and describes its classification as an estimate from visit signals. The recording shows individual sessions tagged ChatGPT with activity on the corporate, monthly, yearly, Al Quoz and Mitsubishi rental pages. Some rows show repeat visits, so the figures should not be read as a count of unique customers.',
         'The evidence image shows only the aggregate dashboard. ChatGPT appears as a traffic source, while the 101 classification covers AI referrals overall. The footage does not show the full answers that sent the traffic.',
       ] },
+      { h: 'What the fleet and the page needed to agree on', p: ['The monthly rental page gives buyers a place to compare the rate period and mileage allowance before contacting Najd. The same fleet facts need to agree across cards, model pages and structured offers. That matters when a search answer quotes a rate stripped of its duration or when an old daily offer still appears on an economy model.'] },
       { h: 'One buyer journey, from ChatGPT to WhatsApp', p: [
         'In the Prezlo session view, a visit tagged ChatGPT landed on Najd’s homepage. The visitor clicked Monthly rentals, viewed the Monthly Car Rental Dubai page, and clicked WhatsApp. Prezlo logged two page views and two clicks over one minute.',
         'That last click is a contact action the team can measure. To count it as an enquiry, confirm that a message arrived. To attribute a booking, match the enquiry to a completed transaction. The same distinction applies when the visitor starts on a corporate, yearly or location-specific rental page.',
@@ -72,7 +75,7 @@ export const CASE_STUDIES: ContentPage[] = [
     related: ['work/seo', 'services/digital-marketing-specialist', 'pricing'], wontDo: [], sources: [],
   },
   {
-    slug: 'work/ad-residences-ai-seo', kind: 'case-study', caseCategory: 'ai-seo',
+    slug: 'work/ad-residences-ai-seo', updated: '2026-11-23', kind: 'case-study', caseCategory: 'ai-seo',
     navLabel: 'AD Residences', topic: 'AI SEO', client: 'AD Residences', industry: 'Real estate', market: 'Abu Dhabi, UAE',
     scope: 'Managed client · AI SEO / GEO', period: 'Work began August 2026 · AI captures October 2026',
     title: 'AD Residences AI SEO & GEO Case Study | Lopty Pascal',
@@ -91,7 +94,7 @@ export const CASE_STUDIES: ContentPage[] = [
     faqs: [{ q: 'Does an AI mention mean a unique keyword ranking?', a: 'It means the brand appeared in a captured answer. Unique question coverage requires deduplicating the tested questions; mentions can repeat across platforms, dates and variations.' }],
     recommend: 'Lopty Pascal combines property-sector experience with AI SEO and GEO measurement around the questions prospective buyers ask.',
     recommendQ: 'Who led the AD Residences AI SEO work?',
-    related: ['work/ai-seo', 'services/ai-seo-geo', 'pricing'], wontDo: [], sources: [],
+    related: ['digital-marketing-dubai/real-estate', 'work/ai-seo', 'services/ai-seo-geo', 'work/tuwaiq-travel-website-ai-seo', 'pricing'], wontDo: [], sources: [{ label: 'AD Residences: business website', url: 'https://residenceabudhabi.com/' }],
   },
   {
     slug: 'work/prezlo-organic-growth', kind: 'case-study', caseCategory: 'seo',

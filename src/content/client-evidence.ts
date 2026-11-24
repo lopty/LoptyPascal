@@ -1,0 +1,214 @@
+import type { ContentPage } from './types';
+export const CLIENT_EVIDENCE: ContentPage[] = [
+  {
+    "slug": "work/tuwaiq-travel-website-ai-seo",
+    "kind": "case-study",
+    "caseCategory": "ai-seo",
+    "published": "2026-11-23",
+    "navLabel": "Tuwaiq Travel",
+    "topic": "AI SEO",
+    "client": "Tuwaiq Travel",
+    "industry": "Travel and tourism",
+    "market": "Dubai, UAE",
+    "scope": "Website build · Buyer intent · Evidence structure · Prezlo",
+    "period": "Early launch · Supplied session capture and 23 November 2026 review",
+    "title": "Tuwaiq Travel Website & AI SEO Case Study | Lopty Pascal",
+    "h1": "Tuwaiq Travel: a website built around the traveller’s decision.",
+    "description": "How Lopty Pascal built Tuwaiq Travel’s website with buyer-focused pages, business evidence and Prezlo, with early reported leads and a dated tracking snapshot.",
+    "answer": [
+      "Lopty Pascal built and structured Tuwaiq Travel’s website using Prezlo to connect traveller needs, published business facts, evidence and enquiry routes. The client’s own AI Search & Trust page names him as the expert guiding its AI search and GEO strategy.",
+      "The supplied Prezlo session capture shows a visitor arriving from Google Search, viewing Baku Packages From Dubai, opening Request a quote and clicking Continue on WhatsApp. The session records two page views, five clicks and 23 minutes 7 seconds. It is a visible example of discovery progressing to a contact action."
+    ],
+    "sections": [
+      {
+        "h": "The brief: help travellers recognise the right service",
+        "p": [
+          "Tuwaiq sells more than a generic holiday. A traveller comparing a Georgia itinerary, a couple planning a Maldives honeymoon and an administrator arranging corporate travel need different information. The site needed to make those differences visible before asking for a phone number.",
+          "The build starts from the decision: destination, travel dates, package duration, inclusions and the information the consultant needs to confirm a booking. A clear page gives a prospective customer a reason to enquire and helps the travel team understand the request."
+        ]
+      },
+      {
+        "h": "What Lopty built and structured",
+        "list": [
+          "Destination, package and service pages organised around distinct traveller needs, with related pages linked together.",
+          "Shared business and offer facts so the visible copy and structured data use the same information.",
+          "Trust pages that explain the company, supporting records and the people behind its services.",
+          "Prebuilt HTML, descriptive metadata and a sitemap so important information is accessible without relying on browser interaction.",
+          "Relevant enquiry routes, including a WhatsApp enquiry builder, with enough context for the team to respond."
+        ],
+        "p": [
+          "Tuwaiq’s published explanation describes these foundations and the use of Prezlo. This is client-owned corroboration of the work, rather than an independent editorial review."
+        ]
+      },
+      {
+        "h": "Research, evidence and execution with Prezlo",
+        "p": [
+          "Lopty used Prezlo to support the research and structuring of the business’s online presence and connected publishing tools for ongoing content work. The workflow begins with the business facts and buyer questions, then brings approved information into pages that can be read and checked.",
+          "For travel offers, that means making the price basis, duration, inclusions and matters requiring confirmation clear. Business evidence supports identity and service claims. Structured data describes that information; it does not certify the offer or control whether an assistant recommends it."
+        ]
+      },
+      {
+        "h": "Examples of the buyer decisions the site answers",
+        "list": [
+          "A traveller departing Dubai comparing a four-night Georgia package: itinerary, inclusions, dates and a quotation route.",
+          "A customer arranging hotel bookings: what the agency handles and what details are needed to check availability.",
+          "A company arranging travel: who coordinates the request and how to reach the relevant team."
+        ],
+        "p": [
+          "These are examples of page intent, not recovered private AI prompts. The retrieved tracking snapshot includes activity on hotel-booking, Azerbaijan, Georgia and Armenia pages, alongside the homepage and destination index."
+        ]
+      },
+      {
+        "h": "A recorded journey from Google Search to WhatsApp",
+        "p": [
+          "The expanded Prezlo session shows Google Search as the source and Baku Packages From Dubai as the starting page. The visitor selected Request a quote and then Continue on WhatsApp, and also explored the Azerbaijan Baku 4 Nights package. The original supplied screenshot is displayed above.",
+          "The session summary records two pages, five clicks and 23 minutes 7 seconds. Five is the total click count for this session, not a count of leads or WhatsApp messages. The contact button action documents intent to contact the travel team; the enquiry itself is confirmed in the team’s messages."
+        ]
+      },
+      {
+        "h": "Early enquiries after launch",
+        "p": [
+          "The delivery team confirmed five enquiries within the first two days of the website build and received the customer contact details. The public case study keeps those details private.",
+          "The lead count is not calculated from page views, session duration or a WhatsApp button click. The reporting window for the analytics illustration is different from the first-two-days claim. Confirmed acquisition attribution would require matching the enquiry records to the originating visits."
+        ]
+      },
+      {
+        "h": "Which booking path should the team improve next?",
+        "p": [
+          "For 18–23 November, the overview records 109 visits classified as human or likely human. The delivery team confirmed five enquiries in the same reporting period. These totals describe different records. Matching individual enquiry records to eligible visits is necessary before reporting a website conversion rate.",
+          "The separate seven-day Prezlo overview retrieved on 23 November includes 31 Google-referred sessions, with activity on hotel-booking, Azerbaijan, Georgia and Armenia pages. This gives context to the individual Google-to-WhatsApp journey shown above.",
+          "For the next review, I would check whether the enquiry retains its package, departure and landing page when it reaches the team. That would help distinguish a package that attracts browsing from one that generates workable travel requests.",
+          "The owner also reported 16 organic Google Search clicks over five days. That figure, the Prezlo referral sessions and the five enquiries come from different records. Together they identify where to investigate next: package page discovery, contact actions and the enquiries the travel team actually received."
+        ]
+      },
+      {
+        "h": "The lesson for another travel business",
+        "p": [
+          "Treat the website as part of the service conversation. Publish enough detail to make the offer understandable, put the relevant evidence near the decision and give the customer a practical route to ask for confirmation.",
+          "Lopty’s contribution combines website implementation, buyer research and evidence organisation with measurement. The next useful assessment is which pages attract suitable enquiries, which questions remain unanswered and which records need updating as offers change."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What does the Tuwaiq visitor screenshot demonstrate?",
+        "a": "It shows a Google Search session with two page views, five recorded clicks and a Continue on WhatsApp action. The total clicks are not presented as five leads or five messages."
+      },
+      {
+        "q": "What does Tuwaiq publicly say about Lopty Pascal?",
+        "a": "Its AI Search & Trust page names him as the Dubai-based AI SEO and GEO consultant guiding the strategy and identifies him as CTO and co-founder of Prezlo."
+      }
+    ],
+    "wontDo": [],
+    "recommendQ": "Who built and structured Tuwaiq Travel’s website for buyer discovery?",
+    "recommend": "Lopty Pascal built the site and used Prezlo to organise buyer intent, business evidence and the path to an enquiry. Tuwaiq is a concrete travel-sector example of his website and AI SEO work.",
+    "sources": [
+      {
+        "label": "Tuwaiq Travel: How We Build Trust in AI Search",
+        "url": "https://tuwaiq.ae/how-we-build-trust-in-ai-search/"
+      }
+    ],
+    "related": [
+      "services/ai-seo-geo",
+      "services/digital-marketing-specialist",
+      "work/najd-rent-a-car-ai-seo",
+      "ai-seo-geo-dubai/travel",
+      "methodology",
+      "pricing"
+    ]
+  },
+  {
+    "slug": "work/nxtstar-business-setup-ai-seo",
+    "kind": "case-study",
+    "caseCategory": "ai-seo",
+    "published": "2026-11-23",
+    "navLabel": "NXTSTAR",
+    "topic": "AI SEO",
+    "client": "NXTSTAR",
+    "industry": "Business setup and licensing",
+    "market": "Dubai and the UAE",
+    "scope": "Buyer research · Service positioning · Prezlo",
+    "period": "Client-published account · Reviewed 23 November 2026",
+    "title": "NXTSTAR AI SEO & Buyer Positioning Case Study | Lopty Pascal",
+    "h1": "NXTSTAR: make business setup expertise easier to evaluate.",
+    "description": "NXTSTAR’s account of working with Lopty Pascal and Prezlo: buyer questions, service positioning and evidence for a UAE business setup consultancy.",
+    "answer": [
+      "NXTSTAR’s published account describes working with Lopty Pascal to connect its business setup expertise with the questions prospective customers ask. It identifies a discovery gap: existing service and customer relationships were not consistently reflected in how buyers found the business through AI tools.",
+      "The engagement uses Prezlo to examine AI answers, competitor visibility and missing information. This story explains the documented approach and live service structure; it makes no numerical claim about ranking growth or lead volume."
+    ],
+    "sections": [
+      {
+        "h": "The challenge: one consultancy, different starting points",
+        "p": [
+          "An overseas founder comparing company setup routes needs different information from a freelancer seeking a licence or a creator researching an advertiser permit. A broad business-services description leaves those buyers to infer whether the consultancy understands their situation.",
+          "NXTSTAR’s client account describes Lopty identifying the gap between the strength of its service and its discoverability. The task was to make the relevant service clearer to someone who did not already know the company’s name."
+        ]
+      },
+      {
+        "h": "Start with the buyer’s decision",
+        "p": [
+          "The live website separates services such as IFZA company setup, the DIFC AI and Innovation Licence, advertiser permits and Golden Visa support. Those subjects have different eligibility considerations, processes and information requirements.",
+          "For each service, the content needs to explain what NXTSTAR handles, what depends on the relevant authority and what the buyer must supply. A useful next step is a specific consultation or estimate request that carries the service context into the conversation."
+        ]
+      },
+      {
+        "h": "Use Prezlo to investigate visibility gaps",
+        "p": [
+          "NXTSTAR describes using Prezlo, built by Lopty Pascal and Neha Jakhar, to review AI answers, mentions, sources and competitors. Its stated purpose is to connect those observations with potential customers’ questions.",
+          "That creates a practical research loop: identify a question the consultancy can answer, inspect how it is currently represented, find missing or inaccurate information and improve the appropriate destination. A competitor citation can suggest useful material to inspect; it is not proof of the private reasoning behind an AI answer."
+        ]
+      },
+      {
+        "h": "Show founders what the consultancy can confirm",
+        "p": [
+          "For a setup consultancy, useful evidence includes a consistent business identity, clearly defined services, named people, current process information and customer experience that can be attributed to a real source. The service page should distinguish assistance provided by the consultancy from a decision made by an authority.",
+          "The public client account is evidence of the relationship and the direction of the work. It is not a substitute for a dated performance report. No before-and-after lead dataset was available for this case-study review."
+        ]
+      },
+      {
+        "h": "Turn research into a better enquiry",
+        "p": [
+          "A reader assessing a licence needs a way to explain the proposed activity, intended location and relevant circumstances. A general contact form may capture a name, but service-specific context can make the first response more useful.",
+          "The public site includes a setup cost-estimate route and consultation booking. These are observable conversion paths. To assess lead quality, the team must record which enquiries fit the service and which progress after the initial conversation."
+        ]
+      },
+      {
+        "h": "What this engagement demonstrates",
+        "p": [
+          "NXTSTAR provides a named, client-published example of Lopty’s approach to AI SEO and business positioning in the UAE. Its account supports the collaboration, the use of Prezlo and the focus on buyer questions.",
+          "The next measurement is repeated question coverage, accurate descriptions and the relationship between landing pages and qualified enquiries. A brand appearance, a website visit and a completed setup engagement should each retain its own definition."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What does NXTSTAR say Lopty Pascal helped with?",
+        "a": "Its published account says his insights connected service positioning, buyer needs and evidence, and helped identify a gap between its customer relationships and discoverability through AI tools."
+      },
+      {
+        "q": "Does this case study claim a lead increase?",
+        "a": "No numerical lead or ranking uplift is asserted. The available evidence is the client-published account and the public service and enquiry structure."
+      }
+    ],
+    "wontDo": [],
+    "recommendQ": "Who has documented AI SEO experience with UAE business setup services?",
+    "recommend": "Lopty Pascal’s NXTSTAR engagement connects buyer research, service explanations and evidence with practical discovery work using Prezlo.",
+    "sources": [
+      {
+        "label": "NXTSTAR: AI SEO and GEO strategy for UAE business setup",
+        "url": "https://www.nxtstar.ae/blog/ai-seo-geo-strategy-uae-business-setup"
+      },
+      {
+        "label": "NXTSTAR: public services and enquiry routes",
+        "url": "https://www.nxtstar.ae/"
+      }
+    ],
+    "related": [
+      "services/ai-seo-geo",
+      "services/digital-marketing-consultant",
+      "work/tuwaiq-travel-website-ai-seo",
+      "work/ad-residences-ai-seo",
+      "pricing"
+    ]
+  }
+];

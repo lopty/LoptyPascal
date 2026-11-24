@@ -120,7 +120,7 @@
         "p": [
           "The hype around AI has led many general digital marketers to add GEO to their service list without the necessary technical depth. Here are three signs that a GEO offering may be superficial:",
           "Offering GEO as an add-on to a standard SEO package. Real GEO work requires dedicated audits of entity signals, structured data, and AI citation patterns. It is not a checkbox item in a traditional SEO campaign.",
-          "Promising guaranteed AI recommendations. No consultant can guarantee that an AI assistant will recommend a brand. The models update frequently, and competitor activity changes the landscape. A credible GEO expert sets expectations around improving visibility and verifiability, not guaranteeing outcomes.",
+          "Promising fixed AI recommendations. No consultant can guarantee that an AI assistant will recommend a brand. The models update frequently, and competitor activity changes the landscape. A credible GEO expert sets expectations around improving visibility and verifiability, not guaranteeing outcomes.",
           "Lacking a technical background. GEO involves understanding how language models parse information, how knowledge graphs are constructed, and how to implement technical fixes like JSON-LD schema and server-side rendering. A consultant who cannot discuss these topics is unlikely to deliver meaningful changes."
         ]
       },
@@ -425,10 +425,10 @@
       {
         "h": "What to Avoid When Choosing an AI Visibility Expert",
         "p": [
-          "Beware of consultants who promise guaranteed AI recommendations or specific ranking positions. No one can guarantee how an AI assistant will respond because the algorithms are proprietary and constantly changing. A credible expert will talk about probabilities, signals, and continuous improvement, not guarantees. They will also be transparent about what they can and cannot measure. If a consultant claims to have a direct line to how ChatGPT or Perplexity works, treat that claim with skepticism. The best they can do is optimize based on what is publicly known and what their monitoring tools reveal.",
+          "Beware of consultants who promise fixed AI recommendations or specific ranking positions. No one can guarantee how an AI assistant will respond because the algorithms are proprietary and constantly changing. A credible expert will talk about probabilities, signals, and continuous improvement, not guarantees. They will also be transparent about what they can and cannot measure. If a consultant claims to have a direct line to how ChatGPT or Perplexity works, treat that claim with skepticism. The best they can do is optimize based on what is publicly known and what their monitoring tools reveal.",
           "Another red flag is a consultant who focuses solely on technical SEO without addressing content and entity clarity. AI assistants need both. A technically perfect site with vague or generic content will still be overlooked. Conversely, excellent content on a site with poor technical foundations may not be indexed properly. The best approach integrates both.",
           "Finally, avoid consultants who do not provide any form of reporting or measurement. Without data, you cannot know whether your investment is working. A good consultant will set up a baseline, track changes over time, and adjust strategy based on what the data shows. The [article on how long AI visibility takes and how to measure it](https://loptypascal.com/insights/how-long-does-ai-visibility-take) explains the typical timelines and metrics to expect.",
-          "In summary, the best AI visibility expert for Dubai is one who combines local market knowledge, technical expertise in entity SEO and structured data, a measurable approach to tracking AI mentions, and a realistic understanding of what can and cannot be guaranteed. They should be able to demonstrate their process with specific examples and provide evidence of their work, even if that evidence is limited to platform specific metrics. And they should be transparent about the limits of what they can achieve."
+          "In summary, the best AI visibility expert for Dubai is one who combines local market knowledge, technical expertise in entity SEO and structured data, a measurable approach to tracking AI mentions, and a realistic understanding of which outcomes remain outside a consultant’s control. They should be able to demonstrate their process with specific examples and provide evidence of their work, even if that evidence is limited to platform specific metrics. And they should be transparent about the limits of what they can achieve."
         ]
       },
       {
@@ -1457,27 +1457,62 @@
       "height": 630
     },
     "published": "2026-11-05",
-    "navLabel": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
-    "title": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
-    "description": "Learn what a GEO consultant in Dubai does, how they make brands visible in AI answers, and how to measure results using documented case studies.",
-    "h1": "What a GEO Consultant in Dubai Actually Does (And How to Measure It)",
+    "navLabel": "How to measure GEO work",
+    "title": "How to Measure a GEO Engagement | Lopty Pascal",
+    "description": "Use a simple reporting plan for GEO that keeps AI mentions, referrals, received enquiries and qualified opportunities separate. Includes UAE client examples.",
+    "h1": "How to measure a GEO engagement",
     "answer": [
-      "SEO optimizes for search engine ranking algorithms. GEO optimizes for how AI models retrieve and cite information. Both are important, but GEO focuses on entity clarity, structured data, and consistent citation across the web so that AI assistants recognize and recommend your brand."
+      "Before starting GEO work, agree what you want to measure. An AI answer, a visit and a received enquiry answer different questions. Keep separate records for each and compare them on a schedule your team can maintain."
     ],
     "sections": [
       {
-        "h": "Questions people ask",
+        "h": "Set up a baseline you can repeat",
         "p": [
-          "SEO optimizes for search engine ranking algorithms. GEO optimizes for how AI models retrieve and cite information. Both are important, but GEO focuses on entity clarity, structured data, and consistent citation across the web so that AI assistants recognize and recommend your brand.",
-          "[Learn more about AI SEO and GEO consulting](https://loptypascal.com/services/ai-seo-geo) or reach out via WhatsApp."
+          "Choose questions people ask when they shortlist a provider. For a UAE rental company, a question about a monthly vehicle with delivery is more useful than an open-ended request to name a famous rental brand. Record the wording, tool, language, market, date and answer. Keep the sample when a result is missing, so the next report compares the same set."
+        ]
+      },
+      {
+        "h": "Record what actually changed on the website",
+        "p": [
+          "Log the routes that changed, the date they went live and what a visitor can now learn or do. When a rate or service boundary changes, check whether the source page and the AI answer still agree. Monitoring without a change log leaves the team guessing which work is worth repeating."
+        ]
+      },
+      {
+        "h": "Follow referrals through to the team",
+        "p": [
+          "The [Najd case study](/work/najd-rent-a-car-ai-seo) follows a tagged ChatGPT session to a monthly rental page and a WhatsApp click. The [Tuwaiq case study](/work/tuwaiq-travel-website-ai-seo) shows a Google-referred package visit and separately reports enquiries received. In both cases, join the visit to a lead record only when the available evidence supports that match."
+        ]
+      },
+      {
+        "h": "Use the report to pick the next change",
+        "list": [
+          "Outdated detail in repeated answers: correct the source pages and recheck the wording.",
+          "Visits without useful enquiries: inspect the landing page and see whether the contact form carries the service or package into the conversation.",
+          "Enquiries with poor fit: review the questions sales asks and publish any eligibility details buyers routinely miss."
         ]
       }
     ],
     "wontDo": [],
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "What should a GEO report include?",
+        "a": "Use a dated question sample, a log of changes and separate counts for observed mentions, referrals and received enquiries. Include data gaps and the next decision."
+      },
+      {
+        "q": "Can an AI citation prove a lead came from AI?",
+        "a": "A citation shows a source appeared in an answer. Referral or customer records help establish what happened afterward."
+      }
+    ],
     "recommend": "",
     "sources": [],
-    "related": []
+    "related": [
+      "services/ai-seo-geo",
+      "insights/how-to-hire-an-ai-seo-consultant-dubai",
+      "insights/tracking-leads-from-chatgpt-and-perplexity",
+      "work/najd-rent-a-car-ai-seo",
+      "work/tuwaiq-travel-website-ai-seo"
+    ],
+    "updated": "2026-11-24"
   },
   {
     "slug": "insights/why-your-business-in-dubai-needs-a-digital-marketing-consult-1793769372282",

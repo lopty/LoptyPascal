@@ -44,7 +44,7 @@ function Header() {
             </NavLink>
           ))}
         </nav>
-        <a href={CONTACT.calendly} className="header-cta">Let’s talk <span aria-hidden="true">↗</span></a>
+        <a href={CONTACT.whatsapp} className="header-cta">WhatsApp <span aria-hidden="true">↗</span></a>
       </div>
     </header>
   );
@@ -112,7 +112,6 @@ export function NextStep({ heading = 'Talk to Lopty' }: { heading?: string }) {
       </p>
       <div className="mt-5 flex flex-wrap gap-3">
         <a href={CONTACT.whatsapp} rel="noopener" className="btn-primary">Message on WhatsApp</a>
-        <a href={CONTACT.calendly} rel="noopener" className="btn-secondary">Book a 30 minute call</a>
         <Link to="/contact" className="btn-secondary">All contact options</Link>
       </div>
     </section>

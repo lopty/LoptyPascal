@@ -33,6 +33,7 @@ export const AISEO_INDUSTRIES: ContentPage[] = [
       'I have worked on real estate marketing in Dubai, and this is where I now see buyer behaviour changing fastest.',
     ],
     sections: [
+      { h: "Make an agency shortlist practical", p: ["An overseas buyer comparing brokerages needs to see which communities and transaction types the team handles. Put checkable team and service evidence beside a shortlist request. The [AD Residences case study](/work/ad-residences-ai-seo) illustrates UAE property discovery in Abu Dhabi. For brokerage campaigns and lead qualification in Dubai, see [real estate digital marketing](/digital-marketing-dubai/real-estate)."] },
       {
         h: 'What property buyers ask AI',
         list: [
@@ -94,6 +95,7 @@ export const AISEO_INDUSTRIES: ContentPage[] = [
       'I have worked with travel businesses, and the shift from searching to asking is more visible here than in most sectors.',
     ],
     sections: [
+      { h: "Make package comparisons and quote requests usable", p: ["On a package page I would separate departure city, travel dates, itinerary, inclusions and items the agent still needs to confirm. A quote request should carry the chosen package through to the travel team. In the [Tuwaiq Travel case study](/work/tuwaiq-travel-website-ai-seo), a Google-referred visitor reached a Baku package and clicked WhatsApp. The team’s received enquiries were counted separately."] },
       {
         h: 'What travellers ask AI',
         list: [
@@ -156,6 +158,7 @@ export const AISEO_INDUSTRIES: ContentPage[] = [
       'I have worked with car rental businesses. In this sector, transparency is the optimization.',
     ],
     sections: [
+      { h: "Give monthly renters a page they can act on", p: ["A visitor looking for a five-month rental needs different information from someone considering a weekend luxury car. I would check period-specific rates against the fleet data and make the mileage allowance clear before WhatsApp. The [Najd case study](/work/najd-rent-a-car-ai-seo) records a ChatGPT-tagged visit to the monthly rental page and a WhatsApp click."] },
       {
         h: 'What renters ask AI',
         list: [

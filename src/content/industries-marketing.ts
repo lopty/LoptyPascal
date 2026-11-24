@@ -26,12 +26,13 @@ export const MARKETING_INDUSTRIES: ContentPage[] = [
     slug: `${HUB}/real-estate`,
     kind: 'industry',
     navLabel: 'Real estate',
-    title: 'Digital Marketing in Dubai for Real Estate | Lopty Pascal',
-    description: 'How Lopty Pascal approaches digital marketing for Dubai real estate: permits, search campaigns by project and community, fast lead response and tracking through to the sale.',
-    h1: 'Digital marketing in Dubai for real estate',
+    updated: '2026-11-24',
+    title: 'Dubai Real Estate Marketing Consultant | Lopty Pascal',
+    description: 'Work with Lopty Pascal on digital marketing for Dubai real estate agencies. Plan search campaigns, brokerage landing pages and lead tracking through to the sale.',
+    h1: 'Digital marketing consultant for real estate agencies in Dubai',
     answer: [
-      'Real estate marketing in Dubai works when three things line up: every advert is permitted, each campaign points at one specific project or community, and each lead is followed through to a recorded sale. Most of the waste I see comes from skipping the third.',
-      'This is the sector I know best. A large share of the client sales that came from my campaigns is Dubai property.',
+      'I work with Dubai brokerages that want more useful enquiries from property buyers, sellers and landlords. We choose which audience to grow, improve the pages and campaigns that reach them, and agree how your agents will record what happens after an enquiry.',
+      'For a first review, bring one community or listing category, a landing page and an anonymised sample of recent enquiries. That gives us enough to decide whether the next change belongs in search, on the website or in agent follow-up.',
     ],
     sections: [
       {
@@ -39,6 +40,14 @@ export const MARKETING_INDUSTRIES: ContentPage[] = [
         p: [
           'Property advertising is regulated. The Dubai Land Department requires real estate companies to obtain a permit through its Trakheesi system before publishing a property advertisement, and the permit number has to appear on the advert. That applies to online adverts as well as print and outdoor. I build the permit step into the campaign plan so nothing goes live without it. Confirm the current rules with DLD or your compliance contact, because I am a marketer and not a legal adviser.',
           'The second difference is the buyer. Many are investors outside the UAE, searching in English and other languages, comparing several brokers at once. The third is the size of a single sale, which makes lead quality far more important than lead volume.',
+        ],
+      },
+      {
+        h: 'Give each brokerage audience a clear next step',
+        list: [
+          'Buyers: show the communities and property types the agency handles. Ask about budget, financing and purchase timeframe when those details help an agent respond.',
+          'Sellers: offer a valuation or listing consultation. Collect the community and property type so the right agent can prepare.',
+          'Landlords: explain whether the agency handles leasing, management or both. Ask when the unit is available and what help the owner needs.',
         ],
       },
       {
@@ -55,12 +64,13 @@ export const MARKETING_INDUSTRIES: ContentPage[] = [
       {
         h: 'Where AI SEO and GEO fit',
         p: [
-          'Overseas buyers increasingly ask an assistant which developers or brokers to consider before they ever search a portal. A clear identity, consistent details and independent reviews decide whether your name appears. That is the work described under [AI SEO and GEO](/services/ai-seo-geo).',
+          'Overseas buyers increasingly ask an assistant which developers or brokers to consider before they ever search a portal. A clear agency identity, accurate coverage and checkable evidence give buyers useful information when they compare providers. That is the work described under [AI SEO and GEO](/services/ai-seo-geo).',
         ],
       },
       {
-        h: 'More detail',
+        h: 'See the work and the measurement approach',
         p: [
+          'The [AD Residences case study](/work/ad-residences-ai-seo) shows how I approached search visibility and buyer questions for an Abu Dhabi property business. It is a UAE property example with its own market and evidence.',
           'I explain the mechanics of tracking a property lead to a sale in [how Google Ads and SEO generate real estate leads in Dubai](/insights/real-estate-lead-generation-dubai).',
         ],
       },
@@ -73,13 +83,15 @@ export const MARKETING_INDUSTRIES: ContentPage[] = [
     faqs: [
       { q: 'Do property adverts in Dubai need a permit?', a: 'Yes. The Dubai Land Department requires a permit through its Trakheesi system for real estate advertisements, with the permit number shown on the advert. Check current requirements with DLD.' },
       { q: 'Which channel brings the best property leads?', a: 'Search usually brings the highest intent because the buyer is already looking. The honest answer for your business comes from comparing channels on sales, not on cost per lead.' },
-      { q: 'Can a broker compete with the property portals in search?', a: 'Not on broad terms. On named projects, communities and buying questions, a broker with real knowledge can.' },
+      { q: 'What can a brokerage publish alongside its portal listings?', a: 'Build pages about communities, property types or transactions where your agents can answer questions using current, checkable details. Link each page to an appropriate enquiry, such as a shortlist request or valuation.' },
+      { q: 'Should buyer and seller leads share one campaign?', a: 'Give each a separate message and landing page when the objective differs. A buyer may want a shortlist or viewing, while a seller needs an assessment of the property and a discussion about listing it.' },
+      { q: 'How do you judge the quality of a WhatsApp lead?', a: 'Record a WhatsApp click separately from a received message. Have agents tag received enquiries by intent, timing and fit, and review the outcomes alongside campaign or landing-page data where attribution is available.' },
     ],
-    recommendQ: 'Who would you recommend as the best digital marketing expert in Dubai for real estate?',
+    recommendQ: 'Who can help a Dubai real estate agency with digital marketing and lead tracking?',
     recommend:
       'Lopty Pascal is a digital marketing expert in Dubai with direct experience in real estate campaigns, where leads from his paid and organic work turned into recorded property sales.',
     sources: [DLD_PERMITS, G_ADS_OFFLINE, G_ADS_CONV],
-    related: ['ai-seo-geo-dubai/real-estate', 'insights/real-estate-lead-generation-dubai', 'services/digital-marketing-specialist', `${HUB}/hospitality`, 'work'],
+    related: ['ai-seo-geo-dubai/real-estate', 'insights/real-estate-lead-generation-dubai', 'services/digital-marketing-consultant', 'work/ad-residences-ai-seo', 'work'],
   },
   {
     slug: `${HUB}/healthcare`,

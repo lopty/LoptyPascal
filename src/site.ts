@@ -24,7 +24,7 @@ export const EMPLOYERS = ['Google', 'SAP', 'MTN'];
 // Companies he has handled projects for, as supplied by him. Brand styling
 // follows each company's own where it could be confirmed.
 export const CLIENTS = [
-  'Al Basel Group', 'haus & haus', 'Najd Rent a Car', 'AuditBOT', 'Terra Solis', 'Jeffaro',
+  'Al Basel Group', 'Tuwaiq Travel', 'NXTSTAR', 'AD Residences', 'haus & haus', 'Najd Rent a Car', 'AuditBOT', 'Terra Solis', 'Jeffaro',
   'Lark Group', 'Accurate Power Group', 'The Nicheglobal', 'Carpools UAE', 'Prefab UAE (Masah Al Murabaa)',
   'Tecworq', 'Dubai Syndicate', 'KOF',
 ];
@@ -47,7 +47,7 @@ export const PREZLO_URL = 'https://prezlo.io';
 export const PREZLO_PORTFOLIOS = 'https://prezlo.io/portfolios';
 // Adoption figure supplied by Lopty on 7 October 2026.
 export const PREZLO_ADOPTION = '200+ agencies and consultants use Prezlo for their GEO work.';
-export const PREZLO_PROFILE = 'https://prezlo.io/verify/lopty';
+export const PREZLO_PROFILE = 'https://prezlo.io/verified/lopty';
 
 export const CONTACT = {
   whatsappLabel: '+971 52 903 8948',
